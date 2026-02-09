@@ -1,0 +1,4 @@
+[submodule "codes/BAM/bam-private"]
+	path = codes/BAM/bam-private
+	url = ../../cardiffgravity/bam-private
+	branch = miren_working
