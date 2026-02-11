@@ -2,3 +2,7 @@
 	path = codes/BAM/bam-private
 	url = ../../cardiffgravity/bam-private
 	branch = miren_working
+[submodule "codes/MHDuet/MHDuet-debug"]
+	path = codes/MHDuet/MHDuet-debug
+	url = ../../Simflowny-Codes/MHDuet-debug
+	branch = miren/working/bbh
