@@ -1,0 +1,1199 @@
+====
+Starting job 9497851 at Wed 11 Feb 16:33:44 GMT 2026 for user dc-radi1.
+Running on nodes: m[8390-8393,8489-8492]
+====
+------------------------------------------------------------------------------
+Welcome to bam.
+------------------------------------------------------------------------------
+  checkpoint filename = GW150914_previous/checkpoint.0000
+  checkpoint filename = GW150914/checkpoint.0000
+Safety first: checking data before overwriting previous directory.
+mv: cannot stat 'GW150914': No such file or directory
+Adding command line parameters
+  parameter outdir                     =  GW150914
+  parameter parameterfile              =  GW150914.par
+Reading parameter file "GW150914.par"
+  parameter stdout_flush               =  no
+  parameter stdout_redirect            =  no
+------------------------------------------------------------------------------
+Initializing libraries
+Adding amr
+  variable  x
+  variable  y
+  variable  z
+  parameter amr                        =  bo newfmr move
+  parameter amr_bo_dxmax               =  0.3
+  parameter amr_bo_lmin                =  0
+  parameter amr_lmax                   =  11
+  parameter amr_lmax2                  =  11
+  parameter amr_nxyz                   =  320 288 288 288 384 576 832 192 192 192 192 192
+  parameter storage_verbose            =  no
+  parameter grid_half                  =  
+  parameter grid_fournplustwo          =  yes
+  parameter amr_fmr                    =  nestedboxes
+  parameter amr_fmr_centerx            =  0
+  parameter amr_fmr_centery            =  0
+  parameter amr_fmr_centerz            =  0
+  parameter amr_fmr_rx_min             =  -1
+  parameter amr_fmr_ry_min             =  -1
+  parameter amr_fmr_rz_min             =  -1
+  parameter amr_fmr_nx_finest          =  0
+  parameter amr_fmr_ny_finest          =  0
+  parameter amr_fmr_nz_finest          =  0
+  parameter amr_nbuffer                =  16
+  parameter amr_buffer_addextra        =  yes
+  parameter amr_move_lcube             =  6
+  parameter amr_move_nxyz              =  0
+  variable  flagregrid
+  variable  flagrestrict
+  variable  flagprolong
+  parameter amr_move_force             =  -1
+  parameter amr_move_force_o           =  0.7
+  parameter amr_move_oldstable         =  no
+  parameter matter_interpolate_Vars    =  
+  parameter interpolate_scheme         =  lagrange
+  parameter amr_lmax_Nghost            =  0
+Adding boundary
+  parameter boundary_verbose           =  yes
+  parameter boundary                   =  radiative
+  parameter boundary_radpower          =  0
+  parameter boundary_radconstant       =  
+  parameter boundary_rad_shiftadvection  =  no
+  parameter robin_1oR_constant         =  0
+Adding checkpoint
+  parameter checkpoint                 =  no
+Adding elliptic/iterative
+  parameter ell_verbose                =  yes
+  variable  u
+  variable  f
+  variable  r
+  variable  iterative_p
+  variable  iterative_ph
+  variable  iterative_rt
+  variable  iterative_s
+  variable  iterative_sh
+  variable  iterative_t
+  variable  iterative_v
+Adding multigrid
+  variable  mg_redblack
+  parameter mg_relaxation              =  rgbs
+  parameter mg_persist                 =  no
+  parameter mg_verbose                 =  no
+  parameter mg_typeofcycles            =  fullV
+  parameter mg_levels_nmax             =  -1
+  parameter mg_size_nmin               =  5
+  parameter mg_size_nmin_local         =  4
+  parameter mg_relax_npre              =  3
+  parameter mg_relax_npost             =  3
+  parameter mg_exact_nmin              =  150
+  parameter mg_exact_nmax              =  500
+  parameter mg_vcycle_nmin             =  0
+  parameter mg_vcycle_nmax             =  100
+  parameter mg_wcycle_nmin             =  0
+  parameter mg_wcycle_nmax             =  0
+  parameter mg_wcycle_factol           =  1.0
+  parameter mg_setbound                =  set_boundary_elliptic
+Adding evolve
+  function  evolve with method of lines like icn, rk, dlf
+  parameter evolution_method           =  rk
+  parameter evolution_method_rk        =  rk4
+  parameter evolve_ngs_iterations      =  5
+  parameter evolve_persist             =  yes
+  parameter evolve_euler_debug         =  no
+  parameter evolve_store_rhs           =  no
+  parameter evolve_compute_change      =  
+  parameter evolve_DissipationFactor   =  0
+  parameter evolve_Dissipation_h_Power  =  3
+  parameter evolve_DissipationOrder    =  2
+  parameter evolve_DissipationDiagonalCoupling  =  1
+  parameter evolve_Dissipation         =  no
+Adding interpolate
+  parameter interpolate_RP_boxtobox    =  yes N
+Adding output
+  function  write data to files
+  function  write data to files, FMR style
+  parameter 0doutiter                  =  -1
+  parameter 1doutiter                  =  -1
+  parameter 2doutiter                  =  -1
+  parameter 3doutiter                  =  -1
+  parameter 0douttime                  =  -1
+  parameter 1douttime                  =  -1
+  parameter 2douttime                  =  -1
+  parameter 3douttime                  =  -1
+  parameter 0doutlmin                  =  0
+  parameter 1doutlmin                  =  0
+  parameter 2doutlmin                  =  0
+  parameter 3doutlmin                  =  0
+  parameter 0doutlmax                  =  10000
+  parameter 1doutlmax                  =  10000
+  parameter 2doutlmax                  =  10000
+  parameter 3doutlmax                  =  10000
+  parameter outputinterpolatescheme    =  lagrange
+  parameter 1doutinterpolate           =  no
+  parameter 2doutinterpolate           =  no
+  parameter 3doutinterpolate           =  no
+  parameter 0doutput                   =  
+  parameter 0doutputpt                 =  no
+  parameter 1doutput                   =  
+  parameter 2doutput                   =  
+  parameter 3doutput                   =  
+  parameter outputall                  =  no
+  parameter 0doutputall                =  no
+  parameter 1doutputall                =  no
+  parameter 2doutputall                =  no
+  parameter 3doutputall                =  no
+  parameter 0doutputmax                =  
+  parameter 0doutputmin                =  
+  parameter 0doutputnorm               =  
+  parameter 0doutputnorminf            =  
+  parameter 0doutputmaxpos             =  
+  parameter 0doutputminpos             =  
+  parameter 0doutputintegral           =  
+  parameter 0doutputnormmask           =  
+  parameter 0doutputintegralmask       =  
+  parameter 1doutputx                  =  
+  parameter 1doutputy                  =  
+  parameter 1doutputz                  =  
+  parameter 1doutputd                  =  
+  parameter 2doutputxy                 =  
+  parameter 2doutputxz                 =  
+  parameter 2doutputyz                 =  
+  parameter 2doutputxd                 =  
+  parameter 2doutputyd                 =  
+  parameter 2doutputzd                 =  
+  parameter 2doutputr                  =  
+  parameter 2doutputr_type             =  matrix
+  parameter 2dformat                   =  opendx binary float
+  parameter 3dformat                   =  opendx binary float
+  parameter hdf5_timesteps_in_one_file  =  yes
+  parameter outputx0                   =  0
+  parameter outputy0                   =  0
+  parameter outputz0                   =  0
+  parameter 0doutputpt_x1              =  0.0
+  parameter 0doutputpt_y1              =  0.0
+  parameter 0doutputpt_z1              =  0.0
+  parameter 1doutputconnect            =  no
+Adding utility/FiniteDiff
+  parameter advection_lopsided         =  1
+  parameter advection_lopsided6        =  2
+  parameter advection_lopsided8        =  3
+  parameter advection_lopsided10       =  4
+  parameter advection_lopsidedN        =  1
+Adding NumericUtils
+  parameter sphere_x0                  =  0
+  parameter sphere_y0                  =  0
+  parameter sphere_z0                  =  0
+Adding adm
+  function  compute ADM constraints
+  variable  gxx
+  variable  gxy
+  variable  gxz
+  variable  gyy
+  variable  gyz
+  variable  gzz
+  variable  Kxx
+  variable  Kxy
+  variable  Kxz
+  variable  Kyy
+  variable  Kyz
+  variable  Kzz
+  variable  alpha
+  variable  betax
+  variable  betay
+  variable  betaz
+  variable  betadotx
+  variable  betadoty
+  variable  betadotz
+  variable  ham
+  variable  momx
+  variable  momy
+  variable  momz
+  variable  trK
+  parameter adm_normalizedConstraints  =  no
+  variable  psi
+  variable  dpsiopsix
+  variable  dpsiopsiy
+  variable  dpsiopsiz
+  variable  ddpsiopsixx
+  variable  ddpsiopsixy
+  variable  ddpsiopsixz
+  variable  ddpsiopsiyy
+  variable  ddpsiopsiyz
+  variable  ddpsiopsizz
+  parameter adm_conformal              =  no
+  function  undo conformal transformation
+  variable  K_initial
+  function  compute and save initial value of the trace of K_ij
+  parameter adm_NANcheck               =  no
+  parameter adm_exitifNAN              =  gxx
+  function  exit if NAN
+  parameter adm_data                   =  none
+Adding bssn
+  function  initialize bssn system from adm initial data
+  function  fill in ADM variables from BSSN variables
+  variable  bssn_gxx
+  variable  bssn_gxy
+  variable  bssn_gxz
+  variable  bssn_gyy
+  variable  bssn_gyz
+  variable  bssn_gzz
+  variable  bssn_phi
+  variable  bssn_Axx
+  variable  bssn_Axy
+  variable  bssn_Axz
+  variable  bssn_Ayy
+  variable  bssn_Ayz
+  variable  bssn_Azz
+  variable  bssn_K
+  variable  bssn_Gx
+  variable  bssn_Gy
+  variable  bssn_Gz
+  variable  bssn_alphaDensity
+  variable  bssn_trA
+  variable  bssn_detg
+  variable  bssn_ginvtmpxx
+  variable  bssn_ginvtmpxy
+  variable  bssn_ginvtmpxz
+  variable  bssn_ginvtmpyy
+  variable  bssn_ginvtmpyz
+  variable  bssn_ginvtmpzz
+  parameter bssn_densitizedLapse       =  no
+  parameter bssn_alphaDensityWeight    =  1.0
+  parameter bssn_forceKzero            =  no
+  parameter bssn_subtractA             =  yes
+  parameter bssn_normalizedetg         =  yes
+  parameter bssn_register_algcon       =  yes store
+  function  handle algebraic constraints
+  parameter bssn_lapsepsipower         =  0
+  parameter bssn_lapseharmonicf        =  2
+  parameter bssn_subtractK0            =  yes
+  parameter bssn_shiftpsipower         =  0
+  parameter bssn_shiftalphapower       =  0.0
+  parameter bssn_shiftgammacoeff       =  0.75
+  parameter bssn_shiftdriver           =  1.0
+  parameter bssn_shiftdriver_time      =  100000000
+  parameter bssn_shiftdriver_timeweight  =  0.0
+  parameter bssn_shift                 =  gamma0 withGadv withBadv withShiftadv
+  parameter bssn_lapse                 =  1+log withshift
+  parameter bssn_shift_stop_time       =  -1.0
+  parameter bssn_initial_shift         =  zero
+  parameter bssn_initial_lapse         =  donothing
+  parameter chi_div_floor              =  0.00001
+  parameter bssn_use_eta               =  yes
+  variable  bssn_eta
+  parameter bssn_eta_useswitch         =  10.
+  parameter bssn_eta_width             =  50.
+  parameter bssn_eta_epunc             =  2.8
+  parameter bssn_eta_einf              =  1.
+  parameter bssn_eta_rpower            =  2.
+  parameter bssn_eta_width1            =  4.
+  parameter bssn_eta_width2            =  4.
+  parameter bssn_eta_rpower0           =  3
+  parameter bssn_eta_eta0              =  1.
+  parameter bssn_eta_eta1              =  1.
+  parameter bssn_moving_punctures      =  yes
+  variable  bssn_chi
+  parameter bssn_chi_psipower          =  -4
+  parameter bssn_moving_punctures_type  =  chi
+  parameter hardchi                    =  no
+  parameter bssnRHSto0                 =  no
+  parameter bssnsourceRHSto0           =  no
+Adding Gauge
+  parameter Gauge                      =  moving_puncture new
+  function  track puncture
+  parameter moving_puncture_di         =  0
+  parameter moving_puncture_dt         =  0
+  parameter moving_puncture_x          =  0
+  parameter moving_puncture_y          =  0
+  parameter moving_puncture_z          =  0
+  parameter moving_puncture1_x         =  0
+  parameter moving_puncture1_y         =  0
+  parameter moving_puncture1_z         =  0
+  parameter moving_puncture2_x         =  0
+  parameter moving_puncture2_y         =  0
+  parameter moving_puncture2_z         =  0
+  parameter moving_puncture1_move      =  yes
+  parameter moving_puncture2_move      =  yes
+  parameter moving_puncture_phi        =  0
+  parameter moving_puncture_phi_x      =  0
+  parameter moving_puncture_phi_y      =  0
+  parameter moving_puncture_phi_z      =  0
+  parameter moving_puncture_alpha      =  0
+  parameter moving_puncture_alpha_x    =  0
+  parameter moving_puncture_alpha_y    =  0
+  parameter moving_puncture_alpha_z    =  0
+  parameter moving_puncture_zero       =  
+  parameter moving_puncture_merge_t    =  1e100
+  parameter moving_puncture_merge_d    =  -1
+  parameter moving_puncture_merge_lmax  =  -1
+  function  write lapse between punctures
+  parameter alpha_center_merger        =  0.3
+  parameter alpha_center_value         =  1.0
+  parameter alpha_center_time          =  0.0
+  parameter moving_puncture_spin       =  no
+  parameter compute_moving_puncture_distance  =  no
+  parameter track_matter               =  yes
+  parameter track_matter_var           =  alpha
+  parameter track_matter_mode          =  min
+  parameter track_matter_minmove       =  0.01
+Adding punctures: black hole parameters
+  parameter bhmass1                    =  0.0
+  parameter bhx1                       =  0.0
+  parameter bhy1                       =  0.0
+  parameter bhz1                       =  0.0
+  parameter bhpx1                      =  0.0
+  parameter bhpy1                      =  0.0
+  parameter bhpz1                      =  0.0
+  parameter bhsx1                      =  0.0
+  parameter bhsy1                      =  0.0
+  parameter bhsz1                      =  0.0
+  parameter bhmass2                    =  0.0
+  parameter bhx2                       =  0.0
+  parameter bhy2                       =  0.0
+  parameter bhz2                       =  0.0
+  parameter bhpx2                      =  0.0
+  parameter bhpy2                      =  0.0
+  parameter bhpz2                      =  0.0
+  parameter bhsx2                      =  0.0
+  parameter bhsy2                      =  0.0
+  parameter bhsz2                      =  0.0
+  parameter bh_fmr                     =  default
+  parameter bh_fmr_ry_o_r_max          =  1.0
+  parameter bh_fmr_ry_o_rx_max         =  2.0
+  parameter punctures_from_fit         =  no
+  parameter punctures_from_PN          =  no
+  parameter punctures_with_given_M_ADM  =  no
+Adding punctures
+  function  compute puncture data
+  function  flags for box/sphere refinement
+  parameter punctures_perturbAlp       =  no
+  parameter punctures_perturbAlpw      =  0
+  parameter punctures_perturbAlpA      =  0
+  parameter punctures_perturbAlpR      =  0
+  variable  punctures_u
+  variable  punctures_v
+  variable  punctures_a
+  variable  punctures_b
+  variable  punctures_c
+  variable  punctures_cf
+  variable  punctures_d
+  variable  punctures_ex
+  variable  punctures_ey
+  variable  punctures_ez
+  variable  punctures_f
+  variable  punctures_r
+  variable  punctures_sx
+  variable  punctures_sy
+  variable  punctures_sz
+  variable  punctures_lu
+  parameter punctures_solver           =  spectral
+  parameter punctures_persist          =  no
+  parameter punctures_itmax            =  10
+  parameter punctures_tolerance        =  1e-6
+  parameter punctures_linSolver        =  bicgstab
+  parameter punctures_linSolver_itmax  =  20
+  parameter punctures_linSolver_tolFac  =  0.1
+  parameter punctures_use_HYPRE_tol    =  yes
+  parameter punctures_fourth_order     =  no
+  parameter punctures_Absorbpsi        =  no
+  parameter punctures_mass             =  no
+  parameter punctures_ps_order         =  8
+  parameter punctures_ps_file          =  GW150914id.psid
+  function  read spectral puncture parameters from file
+  parameter punctures_lapse            =  psiBL^(-2)
+  parameter punctures_alp_psipower     =  0
+  parameter punctures_lapse_at_puncture  =  -1
+  parameter punctures_lapse_MK_MADM_diff  =  0.001
+  parameter punctures_lapse_rPower_atPunc  =  4
+  parameter punctures_shift            =  none
+  parameter punctures_shift_add_beta_rot  =  yes
+  parameter punctures_shift_falloff    =  2
+  parameter punctures_shift_rhs        =  delA
+  parameter punctures_shift_test       =  no
+  parameter punctures_MK_eq_MADM_Sequence  =  no
+  parameter punctures_Sequence_D1      =  2
+  parameter punctures_Sequence_Dstep   =  1.0
+  parameter punctures_Sequence_PointNumber  =  1
+  parameter punctures_Sequence_D2      =  use_Dstep
+  parameter punctures_Sequence_newtMAXITS  =  200
+  parameter punctures_Sequence_newtTOLF  =  1e-4
+  parameter punctures_boundary         =  robin
+  parameter punctures_robin_falloff    =  1
+  variable  robinindex
+  variable  robinflag
+Adding ADM_mass
+  function  ADM_mass
+  variable  integrand
+  variable  integrand_phi
+  variable  Pxint
+  variable  Pyint
+  variable  Pzint
+  variable  Jxint
+  variable  Jyint
+  variable  Jzint
+  parameter ADM_mass_persist           =  no
+  parameter ADM_mass_ncircles          =  101
+  parameter ADM_mass_npoints           =  80
+  parameter ADM_mass_findevery         =  1
+  parameter ADM_mass_lmin              =  4
+  parameter ADM_mass_lmax              =  7
+  parameter ADM_mass_r                 =  50 60 70 80 90 100 120 180
+Adding AHmod
+  function  look for marginally trapped surfaces
+  parameter AHmod_verbose              =  yes
+  parameter AHmod_ntheta               =  60
+  parameter AHmod_nphi                 =  60
+  parameter AHmod_flow_iter            =  5000
+  parameter AHmod_flow_c_stepsize      =  0.0125
+  parameter AHmod_mass_tol             =  1.0e-06
+  parameter AHmod_hmean_tol            =  100.0
+  parameter AHmod_time                 =  0.453359375
+  parameter AHmod_LMAX                 =  12
+  parameter AHmod_uselast              =  yes
+  parameter AHmod_initial_guess_expand  =  1
+  parameter AHmod_UseOptimalLevel      =  no
+  parameter AHmod_box_savety_factor    =  1.2
+  parameter AHmod_initial_radius       =  1.0
+  parameter AHmod_nhorizons            =  2
+  parameter AHmod_searchMTS            =  1 0 10000 0 1 0 10000 1
+  parameter AHmod_output               =  no
+  parameter AHmod_output_xyt           =  no
+  parameter AHmod_output_lm            =  no
+  variable  AHmod_dgdxxx
+  variable  AHmod_dgdxxy
+  variable  AHmod_dgdxxz
+  variable  AHmod_dgdxyy
+  variable  AHmod_dgdxyz
+  variable  AHmod_dgdxzz
+  variable  AHmod_dgdyxx
+  variable  AHmod_dgdyxy
+  variable  AHmod_dgdyxz
+  variable  AHmod_dgdyyy
+  variable  AHmod_dgdyyz
+  variable  AHmod_dgdyzz
+  variable  AHmod_dgdzxx
+  variable  AHmod_dgdzxy
+  variable  AHmod_dgdzxz
+  variable  AHmod_dgdzyy
+  variable  AHmod_dgdzyz
+  variable  AHmod_dgdzzz
+  parameter AHmod_interpolation_order  =  4
+  parameter AHmod_merger_distance      =  0.1
+Adding Invariants
+  function  compute curvature invariants
+  parameter invariants_order           =  4
+  parameter invariants_EB              =  no
+  parameter invariants_persist         =  no
+  variable  rpsi0
+  variable  ipsi0
+  variable  rpsi1
+  variable  ipsi1
+  variable  rpsi2
+  variable  ipsi2
+  variable  rpsi3
+  variable  ipsi3
+  variable  rpsi4
+  variable  ipsi4
+  variable  rI
+  variable  iI
+  variable  rJ
+  variable  iJ
+  variable  rS
+  variable  iS
+  variable  Csqr
+  variable  rpsi4mode20
+  variable  rpsi4mode22
+  variable  ipsi4mode22
+  variable  rpsi4mode2m2
+  variable  ipsi4mode2m2
+  variable  integrand_dEdt
+  variable  integrand_dPxdt
+  variable  integrand_dPydt
+  variable  integrand_dPzdt
+  variable  integrand_dJzdt
+  variable  int_rpsi4
+  variable  int_ipsi4
+  variable  dint_rpsi4dphi
+  variable  dint_ipsi4dphi
+  variable  int2_rpsi4
+  variable  int2_ipsi4
+  variable  rpsi4_p
+  variable  ipsi4_p
+  variable  invariants_storage
+  parameter invariants_tetrad          =  GS
+  parameter gauss_codacci_mainardi     =  standard
+  parameter invariants_rescale         =  psi4
+  parameter invariants_compute_modes   =  yes
+  parameter invariants_modes_lmin      =  4
+  parameter invariants_modes_lmax      =  7
+  parameter invariants_modes_r         =  50 60 70 80 90 100 120 180
+  parameter invariants_energy_r        =  50 60 70 80 90 100 120 180
+  parameter invariants_r1              =  20.0
+  parameter invariants_r2              =  25.0
+  parameter invariants_r3              =  30.0
+  parameter invariants_x0              =  0
+  parameter invariants_y0              =  0
+  parameter invariants_z0              =  0
+  parameter invariants_vx0             =  0
+  parameter invariants_vy0             =  0
+  parameter invariants_vz0             =  0
+  parameter invariants_extraction_points  =  no
+  parameter invariants_analytic_Psi4   =  no
+  parameter invariants_xn1             =  3.0
+  parameter invariants_yn1             =  0.0
+  parameter invariants_zn1             =  0.0
+  parameter invariants_xn2             =  4.0
+  parameter invariants_yn2             =  0.0
+  parameter invariants_zn2             =  0.0
+  parameter invariants_xn3             =  5.0
+  parameter invariants_yn3             =  0.0
+  parameter invariants_zn3             =  0.0
+  parameter invariants_xn4             =  6.0
+  parameter invariants_yn4             =  0.0
+  parameter invariants_zn4             =  0.0
+  parameter invariants_xn5             =  7.0
+  parameter invariants_yn5             =  0.0
+  parameter invariants_zn5             =  0.0
+  parameter invariants_xana            =  1.0
+  parameter invariants_yana            =  1.0
+  parameter invariants_zana            =  1.0
+  parameter ntheta                     =  67
+  parameter nphi                       =  66
+  parameter invariants_compute_modes_general  =  no
+  parameter invariants_output_modes_general  =  all
+  parameter mode_lmin                  =  2
+  parameter mode_lmax                  =  4
+Adding bampi
+  parameter bampi_nghosts              =  4
+  parameter bampi_box_decomp_error_messages  =  no
+  parameter bampi_xsize                =  0
+  parameter bampi_ysize                =  0
+  parameter bampi_zsize                =  0
+  parameter bampi_sizes_constant       =  yes
+  parameter bampi_symmpointsextra      =  yes
+  parameter bampi_lowlatency           =  yes
+  parameter bampi_verbose              =  no
+  parameter bampi_timer_on             =  yes
+  parameter bampi_timer_barrier        =  no
+Adding main
+  function  write system status
+  function  write system status
+  parameter physics                    =  adm bssn multigrid punctures Gauge Invariants ADM_mass AHmod
+  parameter system_monitor_every       =  1
+  parameter system_monitor_verbose     =  no
+  parameter grid                       =  box bitant
+  parameter r_sphere                   =  0.5
+  parameter nx                         =  5
+  parameter ny                         =  5
+  parameter nz                         =  5
+  parameter nxyz                       =  0
+  parameter dx                         =  0.1
+  parameter dy                         =  0.1
+  parameter dz                         =  0.1
+  parameter dxyz                       =  13.75
+  parameter xmin                       =  0
+  parameter xmax                       =  0
+  parameter ymin                       =  0
+  parameter ymax                       =  0
+  parameter zmin                       =  0
+  parameter zmax                       =  0
+  parameter dtfac                      =  0.25
+  parameter iterations                 =  0
+  parameter finaltime                  =  0.107421875
+  parameter iterate_parameters         =  no
+  parameter order_centered             =  6
+  parameter order_advection            =  6
+  parameter order_RP                   =  6
+  parameter order_timeinterpolation    =  3
+  parameter mg_order                   =  2
+  parameter boundary_order             =  2
+  parameter boundary_order_1           =  2
+  parameter order_dissipation          =  8
+  parameter dissipation_factor         =  0.75
+------------------------------------------------------------------------------
+Creating grid
+  Reading spectral puncture parameters from GW150914id.psid
+  Creating a rectangular box
+  bitant selected, setting size to 322x322x165
+  nx = 322, lx = 4413.750, xmin = -2206.875, xmax = 2206.875, dx = 13.750000
+  ny = 322, ly = 4413.750, ymin = -2206.875, ymax = 2206.875, dy = 13.750000
+  nz = 165, lz = 2255.000, zmin =  -48.125, zmax = 2206.875, dz = 13.750000
+------------------------------------------------------------------------------
+Initializing grid
+------------------------------------------------------------------------------
+Regrid l1
+l=1, h=6.875,6.875,6.875: [-1096.562,-938.438]x[-1096.562,-938.438]x[-24.062,299.062] 
+l=0, h=13.750,13.750,13.750: [-1148.125,-914.375]x[-1148.125,-914.375]x[-48.125,323.125] 
+Created new level:
+l=1, h=6.875,6.875,6.875: [-1096.562,1096.562]x[-1096.562,1096.562]x[-24.062,1096.562]  320x320x164 = 16793600
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Regrid l2
+l=2, h=3.438,3.438,3.438: [-548.281,-469.219]x[-548.281,-469.219]x[-12.031,149.531] 
+l=1, h=6.875,6.875,6.875: [-574.062,-457.188]x[-574.062,-457.188]x[-24.062,161.562] 
+Created new level:
+l=2, h=3.438,3.438,3.438: [-548.281,548.281]x[-548.281,548.281]x[-12.031,548.281]  320x320x164 = 16793600
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Regrid l3
+l=3, h=1.719,1.719,1.719: [-274.141,-234.609]x[-274.141,-234.609]x[ -6.016, 74.766] 
+l=2, h=3.438,3.438,3.438: [-287.031,-228.594]x[-287.031,-228.594]x[-12.031, 80.781] 
+Created new level:
+l=3, h=1.719,1.719,1.719: [-274.141,274.141]x[-274.141,274.141]x[ -6.016,274.141]  320x320x164 = 16793600
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Regrid l4
+l=4, h=0.859,0.859,0.859: [-178.320,-153.398]x[-178.320,-153.398]x[ -3.008, 47.695] 
+l=3, h=1.719,1.719,1.719: [-184.766,-150.391]x[-184.766,-150.391]x[ -6.016, 50.703] 
+Created new level:
+l=4, h=0.859,0.859,0.859: [-178.320,178.320]x[-178.320,178.320]x[ -3.008,178.320]  416x416x212 = 36687872
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Regrid l5
+l=5, h=0.430,0.430,0.430: [-130.410,-112.793]x[-130.410,-112.793]x[ -1.504, 34.160] 
+l=4, h=0.859,0.859,0.859: [-133.633,-111.289]x[-133.633,-111.289]x[ -3.008, 35.664] 
+Created new level:
+l=5, h=0.430,0.430,0.430: [-130.410,130.410]x[-130.410,130.410]x[ -1.504,130.410]  608x608x308 = 113856512
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Regrid l6
+l=6, h=0.215,0.215,0.215: [-92.705,-80.459]x[-92.705,-80.459]x[ -0.752, 23.955] 
+l=5, h=0.430,0.430,0.430: [-94.316,-79.707]x[-94.316,-79.707]x[ -1.504, 24.707] 
+Created new level:
+l=6, h=0.215,0.215,0.215: [-92.705, 92.705]x[-92.705, 92.705]x[ -0.752, 92.705]  864x864x436 = 325472256
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Regrid l7
+l=7, h=0.107,0.107,0.107: [-17.349,-14.878]x[-11.978,-10.151]x[ -0.376,  3.384] 
+l=6, h=0.215,0.215,0.215: [-18.154,-14.502]x[-12.783, -9.775]x[ -0.752,  3.760] 
+Created new level:
+l=7, h=0.107,0.107,0.107: [-17.349, 16.274]x[-11.978, 11.978]x[ -0.376, 11.978]  314x224x116 = 8158976
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Regrid l8
+l=8, h=0.054,0.054,0.054: [-11.467, -9.910]x[ -5.989, -5.076]x[ -0.188,  1.692] 
+l=7, h=0.107,0.107,0.107: [-11.870, -9.722]x[ -6.392, -4.888]x[ -0.376,  1.880] 
+Created new level:
+l=8, h=0.054,0.054,0.054: [-11.467, 10.393]x[ -5.989,  5.989]x[ -0.188,  5.989]  408x224x116 = 10601472
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Regrid l9
+l=9, h=0.027,0.027,0.027: [  1.464,  1.920]x[ -2.994, -2.538]x[ -0.094,  0.846] 
+l=8, h=0.054,0.054,0.054: [  1.262,  2.014]x[ -3.196, -2.444]x[ -0.188,  0.940] 
+l=9, h=0.027,0.027,0.027: [ -8.527, -8.070]x[ -2.994, -2.538]x[ -0.094,  0.846] 
+l=8, h=0.054,0.054,0.054: [  1.262,  2.014]x[ -3.196, -2.444]x[ -0.188,  0.940] 
+l=9, h=0.027,0.027,0.027: [ -8.527, -8.070]x[ -2.994, -2.538]x[ -0.094,  0.846] 
+l=8, h=0.054,0.054,0.054: [ -8.728, -7.976]x[ -3.196, -2.444]x[ -0.188,  0.940] 
+Created new level:
+l=9, h=0.027,0.027,0.027: [  1.464,  7.452]x[ -2.994,  2.994]x[ -0.094,  2.994]  224x224x116 = 5820416
+l=9, h=0.027,0.027,0.027: [ -8.527, -2.538]x[ -2.994,  2.994]x[ -0.094,  2.994]  224x224x116 = 5820416
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Regrid l10
+l=10, h=0.013,0.013,0.013: [  2.961,  3.189]x[ -1.497, -1.269]x[ -0.047,  0.423] 
+l=9, h=0.027,0.027,0.027: [  2.860,  3.236]x[ -1.598, -1.222]x[ -0.094,  0.470] 
+l=10, h=0.013,0.013,0.013: [ -7.029, -6.801]x[ -1.497, -1.269]x[ -0.047,  0.423] 
+l=9, h=0.027,0.027,0.027: [  2.860,  3.236]x[ -1.598, -1.222]x[ -0.094,  0.470] 
+l=10, h=0.013,0.013,0.013: [ -7.029, -6.801]x[ -1.497, -1.269]x[ -0.047,  0.423] 
+l=9, h=0.027,0.027,0.027: [ -7.130, -6.754]x[ -1.598, -1.222]x[ -0.094,  0.470] 
+Created new level:
+l=10, h=0.013,0.013,0.013: [  2.961,  5.955]x[ -1.497,  1.497]x[ -0.047,  1.497]  224x224x116 = 5820416
+l=10, h=0.013,0.013,0.013: [ -7.029, -4.035]x[ -1.497,  1.497]x[ -0.047,  1.497]  224x224x116 = 5820416
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Regrid l11
+l=11, h=0.007,0.007,0.007: [  3.709,  3.824]x[ -0.749, -0.634]x[ -0.023,  0.211] 
+l=10, h=0.013,0.013,0.013: [  3.659,  3.847]x[ -0.799, -0.611]x[ -0.047,  0.235] 
+l=11, h=0.007,0.007,0.007: [ -6.281, -6.167]x[ -0.749, -0.634]x[ -0.023,  0.211] 
+l=10, h=0.013,0.013,0.013: [  3.659,  3.847]x[ -0.799, -0.611]x[ -0.047,  0.235] 
+l=11, h=0.007,0.007,0.007: [ -6.281, -6.167]x[ -0.749, -0.634]x[ -0.023,  0.211] 
+l=10, h=0.013,0.013,0.013: [ -6.331, -6.143]x[ -0.799, -0.611]x[ -0.047,  0.235] 
+Created new level:
+l=11, h=0.007,0.007,0.007: [  3.709,  5.207]x[ -0.749,  0.749]x[ -0.023,  0.749]  224x224x116 = 5820416
+l=11, h=0.007,0.007,0.007: [ -6.281, -4.784]x[ -0.749,  0.749]x[ -0.023,  0.749]  224x224x116 = 5820416
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+grid 0x2163530: nlevels 12, lmin 0, lmax 11, nvariables 160
+p=16x16x4, l=0, h=13.750,13.750,13.750: [-2206.875,2206.875]x[-2206.875,2206.875]x[-48.125,2206.875]  322x322x165 = 17107860
+p=16x16x4, l=1, h=6.875,6.875,6.875: [-1096.562,1096.562]x[-1096.562,1096.562]x[-24.062,1096.562]  320x320x164 = 16793600
+p=16x16x4, l=2, h=3.438,3.438,3.438: [-548.281,548.281]x[-548.281,548.281]x[-12.031,548.281]  320x320x164 = 16793600
+p=16x16x4, l=3, h=1.719,1.719,1.719: [-274.141,274.141]x[-274.141,274.141]x[ -6.016,274.141]  320x320x164 = 16793600
+p=16x16x4, l=4, h=0.859,0.859,0.859: [-178.320,178.320]x[-178.320,178.320]x[ -3.008,178.320]  416x416x212 = 36687872
+p=16x16x4, l=5, h=0.430,0.430,0.430: [-130.410,130.410]x[-130.410,130.410]x[ -1.504,130.410]  608x608x308 = 113856512
+p=16x16x4, l=6, h=0.215,0.215,0.215: [-92.705, 92.705]x[-92.705, 92.705]x[ -0.752, 92.705]  864x864x436 = 325472256
+p=16x16x4, l=7, h=0.107,0.107,0.107: [-17.349, 16.274]x[-11.978, 11.978]x[ -0.376, 11.978]  314x224x116 = 8158976
+p=16x16x4, l=8, h=0.054,0.054,0.054: [-11.467, 10.393]x[ -5.989,  5.989]x[ -0.188,  5.989]  408x224x116 = 10601472
+p=16x16x4, l=9, h=0.027,0.027,0.027: [  1.464,  7.452]x[ -2.994,  2.994]x[ -0.094,  2.994]  224x224x116 = 5820416
+p=16x16x4, l=9, h=0.027,0.027,0.027: [ -8.527, -2.538]x[ -2.994,  2.994]x[ -0.094,  2.994]  224x224x116 = 5820416
+p=16x16x4, l=10, h=0.013,0.013,0.013: [  2.961,  5.955]x[ -1.497,  1.497]x[ -0.047,  1.497]  224x224x116 = 5820416
+p=16x16x4, l=10, h=0.013,0.013,0.013: [ -7.029, -4.035]x[ -1.497,  1.497]x[ -0.047,  1.497]  224x224x116 = 5820416
+p=16x16x4, l=11, h=0.007,0.007,0.007: [  3.709,  5.207]x[ -0.749,  0.749]x[ -0.023,  0.749]  224x224x116 = 5820416
+p=16x16x4, l=11, h=0.007,0.007,0.007: [ -6.281, -4.784]x[ -0.749,  0.749]x[ -0.023,  0.749]  224x224x116 = 5820416
+local boxes:
+l=0: box=0   [-2206.875,-1876.875]x[-2206.875,-1876.875]x[-48.125,611.875]  25x25x49 = 30625
+l=1: box=0   [-1096.562,-938.438]x[-1096.562,-938.438]x[-24.062,299.062]  24x24x48 = 27648
+l=2: box=0   [-548.281,-469.219]x[-548.281,-469.219]x[-12.031,149.531]  24x24x48 = 27648
+l=3: box=0   [-274.141,-234.609]x[-274.141,-234.609]x[ -6.016, 74.766]  24x24x48 = 27648
+l=4: box=0   [-178.320,-153.398]x[-178.320,-153.398]x[ -3.008, 47.695]  30x30x60 = 54000
+l=5: box=0   [-130.410,-112.793]x[-130.410,-112.793]x[ -1.504, 34.160]  42x42x84 = 148176
+l=6: box=0   [-92.705,-80.459]x[-92.705,-80.459]x[ -0.752, 23.955]  58x58x116 = 390224
+l=7: box=0   [-17.349,-14.878]x[-11.978,-10.151]x[ -0.376,  3.384]  24x18x36 = 15552
+l=8: box=0   [-11.467, -9.910]x[ -5.989, -5.076]x[ -0.188,  1.692]  30x18x36 = 19440
+l=9: box=0   [  1.464,  1.920]x[ -2.994, -2.538]x[ -0.094,  0.846]  18x18x36 = 11664
+l=9: box=1   [ -8.527, -8.070]x[ -2.994, -2.538]x[ -0.094,  0.846]  18x18x36 = 11664
+l=10: box=0   [  2.961,  3.189]x[ -1.497, -1.269]x[ -0.047,  0.423]  18x18x36 = 11664
+l=10: box=1   [ -7.029, -6.801]x[ -1.497, -1.269]x[ -0.047,  0.423]  18x18x36 = 11664
+l=11: box=0   [  3.709,  3.824]x[ -0.749, -0.634]x[ -0.023,  0.211]  18x18x36 = 11664
+l=11: box=1   [ -6.281, -6.167]x[ -0.749, -0.634]x[ -0.023,  0.211]  18x18x36 = 11664
+local inner boxes:
+l=0: box=0   [-2193.125,-1931.875]x[-2193.125,-1931.875]x[  6.875,556.875]  20x20x41 = 16400
+l=1: box=0   [-1089.688,-965.938]x[-1089.688,-965.938]x[  3.438,271.562]  19x19x40 = 14440
+l=2: box=0   [-544.844,-482.969]x[-544.844,-482.969]x[  1.719,135.781]  19x19x40 = 14440
+l=3: box=0   [-272.422,-241.484]x[-272.422,-241.484]x[  0.859, 67.891]  19x19x40 = 14440
+l=4: box=0   [-177.461,-156.836]x[-177.461,-156.836]x[  0.430, 44.258]  25x25x52 = 32500
+l=5: box=0   [-129.980,-114.512]x[-129.980,-114.512]x[  0.215, 32.441]  37x37x76 = 104044
+l=6: box=0   [-92.490,-81.318]x[-92.490,-81.318]x[  0.107, 23.096]  53x53x108 = 303372
+l=7: box=0   [-17.241,-15.308]x[-11.870,-10.581]x[  0.054,  2.954]  19x13x28 = 6916
+l=8: box=0   [-11.414,-10.125]x[ -5.935, -5.291]x[  0.027,  1.477]  25x13x28 = 9100
+l=9: box=0   [  1.490,  1.813]x[ -2.968, -2.645]x[  0.013,  0.739]  13x13x28 = 4732
+l=9: box=1   [ -8.500, -8.177]x[ -2.968, -2.645]x[  0.013,  0.739]  13x13x28 = 4732
+l=10: box=0   [  2.974,  3.135]x[ -1.484, -1.323]x[  0.007,  0.369]  13x13x28 = 4732
+l=10: box=1   [ -7.016, -6.855]x[ -1.484, -1.323]x[  0.007,  0.369]  13x13x28 = 4732
+l=11: box=0   [  3.716,  3.797]x[ -0.742, -0.661]x[  0.003,  0.185]  13x13x28 = 4732
+l=11: box=1   [ -6.274, -6.194]x[ -0.742, -0.661]x[  0.003,  0.185]  13x13x28 = 4732
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Computing black hole initial data (puncture data):
+m1   5.184e-01
+x1   4.462e+00  y1   0.000e+00  z1   0.000e+00
+px1 -8.454e-04  py1  9.530e-02  pz1  0.000e+00
+sx1  0.000e+00  sy1  0.000e+00  sz1  9.509e-02
+
+m2   3.919e-01
+x2  -5.538e+00  y2   0.000e+00  z2   0.000e+00
+px2  8.454e-04  py2 -9.530e-02  pz2  0.000e+00
+sx2  0.000e+00  sy2  0.000e+00  sz2 -9.156e-02
+
+------------------------------------------------------------------------------
+Reading spectral puncture data:
+  reading data from GW150914id.psid
+  found data with dimensions 60 x 60 x 40 = 144000
+  read 144000 data lines
+Interpolating from spectral to cartesian coordinates
+  level  0,  points 30625
+  level  1,  points 27648
+  level  2,  points 27648
+  level  3,  points 27648
+  level  4,  points 54000
+  level  5,  points 148176
+  level  6,  points 390224
+  level  7,  points 15552
+  level  8,  points 19440
+  level  9,  points 23328
+  level 10,  points 23328
+  level 11,  points 23328
+------------------------------------------------------------------------------
+ADM mass at puncture1 = 0.553846441910695   (u1 = 0.0487387566700413)
+ADM mass at puncture2 = 0.446157253527546   (u2 = 0.112422043478831)
+Setting alpha=psi^(psipower).
+Setting alpha=psi^(psipower).
+Setting alpha=psi^(psipower).
+Setting alpha=psi^(psipower).
+Setting alpha=psi^(psipower).
+Setting alpha=psi^(psipower).
+Setting alpha=psi^(psipower).
+Setting alpha=psi^(psipower).
+Setting alpha=psi^(psipower).
+Setting alpha=psi^(psipower).
+Setting alpha=psi^(psipower).
+Setting alpha=psi^(psipower).
+------------------------------------------------------------------------------
+adm: undoing conformal transformation
+adm: undoing conformal transformation
+adm: undoing conformal transformation
+adm: undoing conformal transformation
+adm: undoing conformal transformation
+adm: undoing conformal transformation
+adm: undoing conformal transformation
+adm: undoing conformal transformation
+adm: undoing conformal transformation
+adm: undoing conformal transformation
+adm: undoing conformal transformation
+adm: undoing conformal transformation
+Initializing bssn:   left lapse unchanged
+  set shift to zero
+  deriving BSSN variables from ADM variables
+Initializing bssn:   left lapse unchanged
+  set shift to zero
+  deriving BSSN variables from ADM variables
+Initializing bssn:   left lapse unchanged
+  set shift to zero
+  deriving BSSN variables from ADM variables
+Initializing bssn:   left lapse unchanged
+  set shift to zero
+  deriving BSSN variables from ADM variables
+Initializing bssn:   left lapse unchanged
+  set shift to zero
+  deriving BSSN variables from ADM variables
+Initializing bssn:   left lapse unchanged
+  set shift to zero
+  deriving BSSN variables from ADM variables
+Initializing bssn:   left lapse unchanged
+  set shift to zero
+  deriving BSSN variables from ADM variables
+Initializing bssn:   left lapse unchanged
+  set shift to zero
+  deriving BSSN variables from ADM variables
+Initializing bssn:   left lapse unchanged
+  set shift to zero
+  deriving BSSN variables from ADM variables
+Initializing bssn:   left lapse unchanged
+  set shift to zero
+  deriving BSSN variables from ADM variables
+Initializing bssn:   left lapse unchanged
+  set shift to zero
+  deriving BSSN variables from ADM variables
+Initializing bssn:   left lapse unchanged
+  set shift to zero
+  deriving BSSN variables from ADM variables
+------------------------------------------------------------------------------
+Done with initialization
+ 0     0   0.000
+  parameter ahf0_x                     =  0.0
+  parameter ahf0_y                     =  0.0
+  parameter ahf0_z                     =  0.0
+  parameter ahf0_m                     =  0.0
+  parameter ahf0_r                     =  -1.0
+  parameter ahf1_x                     =  0.0
+  parameter ahf1_y                     =  0.0
+  parameter ahf1_z                     =  0.0
+  parameter ahf1_m                     =  0.0
+  parameter ahf1_r                     =  -1.0
+  parameter AHmod_surface0_centerx     =  0.0
+  parameter AHmod_surface0_centery     =  0.0
+  parameter AHmod_surface0_centerz     =  0.0
+  parameter AHmod_surface1_centerx     =  0.0
+  parameter AHmod_surface1_centery     =  0.0
+  parameter AHmod_surface1_centerz     =  0.0
+  parameter AHmod_surface0_WaitUntilClosePunctures  =  no
+  parameter AHmod_surface1_WaitUntilClosePunctures  =  no
+
+Searching for horizon 0 in level 11 at time 0.000000
+  centered in:  x = 4.461538  y = 0.000000  z = 0.000000,  r_mean = 0.259210
+Iteration 0
+  mass=5.470011089249e-01,  meanradius=2.592099676680e-01,  hmean=3.125040034931e-01
+Iteration 1
+  mass=5.470003346462e-01,  meanradius=2.591788014922e-01,  hmean=3.109571946769e-01
+
+Horizon found
+  mass = 5.4700033464621700e-01
+  radius = 2.5917880149224226e-01
+  hrms = 1.4784168107169040e-03
+  hmean = 3.1095719467687455e-01
+  Sx = -6.6582402427454244e-19
+  Sy = -5.5945934414645701e-20
+  Sz = 9.5091109560988249e-02
+  S = 9.5091109560988249e-02
+
+  Horizon log at GW150914/horizon_0
+
+Searching for horizon 1 in level 11 at time 0.000000
+  centered in:  x = -5.538462  y = 0.000000  z = 0.000000,  r_mean = 0.195968
+Iteration 0
+  mass=4.333620662736e-01,  meanradius=1.959678399893e-01,  hmean=2.913328410912e-01
+Iteration 1
+  mass=4.333606824923e-01,  meanradius=1.959237138246e-01,  hmean=2.891731589473e-01
+Iteration 2
+  mass=4.333593388780e-01,  meanradius=1.958799380240e-01,  hmean=2.870294355145e-01
+Iteration 3
+  mass=4.333580341320e-01,  meanradius=1.958365094689e-01,  hmean=2.849016110877e-01
+Iteration 4
+  mass=4.333567675006e-01,  meanradius=1.957934250670e-01,  hmean=2.827894956911e-01
+Iteration 5
+  mass=4.333555381345e-01,  meanradius=1.957506817711e-01,  hmean=2.806929345424e-01
+Iteration 6
+  mass=4.333543450033e-01,  meanradius=1.957082765743e-01,  hmean=2.786118226425e-01
+Iteration 7
+  mass=4.333531869970e-01,  meanradius=1.956662065011e-01,  hmean=2.765460823949e-01
+Iteration 8
+  mass=4.333520633614e-01,  meanradius=1.956244686033e-01,  hmean=2.744955536464e-01
+Iteration 9
+  mass=4.333509732269e-01,  meanradius=1.955830599722e-01,  hmean=2.724601127240e-01
+Iteration 10
+  mass=4.333499157049e-01,  meanradius=1.955419777327e-01,  hmean=2.704396463663e-01
+Iteration 11
+  mass=4.333488897927e-01,  meanradius=1.955012190411e-01,  hmean=2.684340768183e-01
+Iteration 12
+  mass=4.333478945933e-01,  meanradius=1.954607810797e-01,  hmean=2.664433064596e-01
+
+Horizon found
+  mass = 4.3334789459334766e-01
+  radius = 1.9546078107970208e-01
+  hrms = 2.6362481013579376e-03
+  hmean = 2.6644330645959358e-01
+  Sx = 4.7897808427767754e-19
+  Sy = -2.3451794254476635e-19
+  Sz = -9.1564507125308059e-02
+  S = 9.1564507125308059e-02
+
+  Horizon log at GW150914/horizon_1
+------------------------------------------------------------------------------
+Evolving grid for 2 top level iterations to time 0.107
+  Times:      dt_min=1.6784667968750000e-03 
+                                                                        | 
+  if you want to output after 10000 steps, up to this line the numbers HAVE to coincide
+  within accuracy=1.000000e-10   -> 10 digets
+Adding variables for evolution:
+  variable  bssn_gxx_p
+  variable  bssn_gxy_p
+  variable  bssn_gxz_p
+  variable  bssn_gyy_p
+  variable  bssn_gyz_p
+  variable  bssn_gzz_p
+  variable  bssn_phi_p
+  variable  bssn_Axx_p
+  variable  bssn_Axy_p
+  variable  bssn_Axz_p
+  variable  bssn_Ayy_p
+  variable  bssn_Ayz_p
+  variable  bssn_Azz_p
+  variable  bssn_K_p
+  variable  bssn_Gx_p
+  variable  bssn_Gy_p
+  variable  bssn_Gz_p
+  variable  alpha_p
+  variable  betax_p
+  variable  betay_p
+  variable  betaz_p
+  variable  betadotx_p
+  variable  betadoty_p
+  variable  betadotz_p
+  variable  bssn_alphaDensity_p
+  variable  bssn_chi_p
+  variable  bssn_eta_p
+  variable  bssn_gxx_pp
+  variable  bssn_gxy_pp
+  variable  bssn_gxz_pp
+  variable  bssn_gyy_pp
+  variable  bssn_gyz_pp
+  variable  bssn_gzz_pp
+  variable  bssn_phi_pp
+  variable  bssn_Axx_pp
+  variable  bssn_Axy_pp
+  variable  bssn_Axz_pp
+  variable  bssn_Ayy_pp
+  variable  bssn_Ayz_pp
+  variable  bssn_Azz_pp
+  variable  bssn_K_pp
+  variable  bssn_Gx_pp
+  variable  bssn_Gy_pp
+  variable  bssn_Gz_pp
+  variable  alpha_pp
+  variable  betax_pp
+  variable  betay_pp
+  variable  betaz_pp
+  variable  betadotx_pp
+  variable  betadoty_pp
+  variable  betadotz_pp
+  variable  bssn_alphaDensity_pp
+  variable  bssn_chi_pp
+  variable  bssn_eta_pp
+  variable  bssn_gxx_r
+  variable  bssn_gxy_r
+  variable  bssn_gxz_r
+  variable  bssn_gyy_r
+  variable  bssn_gyz_r
+  variable  bssn_gzz_r
+  variable  bssn_phi_r
+  variable  bssn_Axx_r
+  variable  bssn_Axy_r
+  variable  bssn_Axz_r
+  variable  bssn_Ayy_r
+  variable  bssn_Ayz_r
+  variable  bssn_Azz_r
+  variable  bssn_K_r
+  variable  bssn_Gx_r
+  variable  bssn_Gy_r
+  variable  bssn_Gz_r
+  variable  alpha_r
+  variable  betax_r
+  variable  betay_r
+  variable  betaz_r
+  variable  betadotx_r
+  variable  betadoty_r
+  variable  betadotz_r
+  variable  bssn_alphaDensity_r
+  variable  bssn_chi_r
+  variable  bssn_eta_r
+  variable  bssn_gxx_s
+  variable  bssn_gxy_s
+  variable  bssn_gxz_s
+  variable  bssn_gyy_s
+  variable  bssn_gyz_s
+  variable  bssn_gzz_s
+  variable  bssn_phi_s
+  variable  bssn_Axx_s
+  variable  bssn_Axy_s
+  variable  bssn_Axz_s
+  variable  bssn_Ayy_s
+  variable  bssn_Ayz_s
+  variable  bssn_Azz_s
+  variable  bssn_K_s
+  variable  bssn_Gx_s
+  variable  bssn_Gy_s
+  variable  bssn_Gz_s
+  variable  alpha_s
+  variable  betax_s
+  variable  betay_s
+  variable  betaz_s
+  variable  betadotx_s
+  variable  betadoty_s
+  variable  betadotz_s
+  variable  bssn_alphaDensity_s
+  variable  bssn_chi_s
+  variable  bssn_eta_s
+ 0          1         0.054
+   1          1         0.054
+     2          1         0.054
+       3          1         0.054
+         4          1         0.054
+           5          1         0.054
+             6          1         0.054
+               7          1         0.027
+                 8          1         0.013
+                   9          1         0.007
+                    10          1         0.003
+                      11          1         0.002
+                      11          2         0.003
+                    10          2         0.007
+                      11          3         0.005
+                      11          4         0.007
+                   9          2         0.013
+                    10          3         0.010
+                      11          5         0.008
+                      11          6         0.010
+                    10          4         0.013
+                      11          7         0.012
+                      11          8         0.013
+                 8          2         0.027
+                   9          3         0.020
+                    10          5         0.017
+                      11          9         0.015
+                      11         10         0.017
+                    10          6         0.020
+                      11         11         0.018
+                      11         12         0.020
+                   9          4         0.027
+                    10          7         0.023
+                      11         13         0.022
+                      11         14         0.023
+                    10          8         0.027
+                      11         15         0.025
+                      11         16         0.027
+               7          2         0.054
+                 8          3         0.040
+                   9          5         0.034
+                    10          9         0.030
+                      11         17         0.029
+                      11         18         0.030
+                    10         10         0.034
+                      11         19         0.032
+                      11         20         0.034
+                   9          6         0.040
+                    10         11         0.037
+                      11         21         0.035
+                      11         22         0.037
+                    10         12         0.040
+                      11         23         0.039
+                      11         24         0.040
+                 8          4         0.054
+                   9          7         0.047
+                    10         13         0.044
+                      11         25         0.042
+                      11         26         0.044
+                    10         14         0.047
+                      11         27         0.045
+                      11         28         0.047
+                   9          8         0.054
+                    10         15         0.050
+                      11         29         0.049
+                      11         30         0.050
+                    10         16         0.054
+                      11         31         0.052
+                      11         32         0.054
+ 0          2         0.107
+   1          2         0.107
+     2          2         0.107
+       3          2         0.107
+         4          2         0.107
+           5          2         0.107
+             6          2         0.107
+               7          3         0.081
+                 8          5         0.067
+                   9          9         0.060
+                    10         17         0.057
+                      11         33         0.055
+                      11         34         0.057
+                    10         18         0.060
+                      11         35         0.059
+                      11         36         0.060
+                   9         10         0.067
+                    10         19         0.064
+                      11         37         0.062
+                      11         38         0.064
+                    10         20         0.067
+                      11         39         0.065
+                      11         40         0.067
+                 8          6         0.081
+                   9         11         0.074
+                    10         21         0.070
+                      11         41         0.069
+                      11         42         0.070
+                    10         22         0.074
+                      11         43         0.072
+                      11         44         0.074
+                   9         12         0.081
+                    10         23         0.077
+                      11         45         0.076
+                      11         46         0.077
+                    10         24         0.081
+                      11         47         0.079
+                      11         48         0.081
+               7          4         0.107
+                 8          7         0.094
+                   9         13         0.087
+                    10         25         0.084
+                      11         49         0.082
+                      11         50         0.084
+                    10         26         0.087
+                      11         51         0.086
+                      11         52         0.087
+                   9         14         0.094
+                    10         27         0.091
+                      11         53         0.089
+                      11         54         0.091
+                    10         28         0.094
+                      11         55         0.092
+                      11         56         0.094
+                 8          8         0.107
+                   9         15         0.101
+                    10         29         0.097
+                      11         57         0.096
+                      11         58         0.097
+                    10         30         0.101
+                      11         59         0.099
+                      11         60         0.101
+                   9         16         0.107
+                    10         31         0.104
+                      11         61         0.102
+                      11         62         0.104
+                    10         32         0.107
+                      11         63         0.106
+                      11         64         0.107
+------------------------------------------------------------------------------
+Thank you for running b a m.
+
+real	4m47.811s
+user	567m11.934s
+sys	29m17.318s
+/cosma/apps/dp415/dc-radi1/uknr-benchmarking/codes/BAM/COSMA8/submit
