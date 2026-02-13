@@ -1,0 +1,234 @@
+amrex.v = 1
+# *****************************************************************
+# Problem parameters
+# *****************************************************************
+problem.tend = 1.6
+problem.R_0 = 30.0
+problem.eta_damping_exp = 2.0
+problem.chi_floor = 0.0001
+
+problem.Betau_x_0 = 0.0
+problem.Betau_y_0 = 0.0
+problem.Betau_z_0 = 0.0
+problem.lambda_0 = 1.0
+problem.lambda_1 = 1.0
+problem.lambda_2 = 1.0
+problem.lambda_f0 = 1.0
+problem.lambda_f1 = 0.0
+problem.lambda_f2 = 1.0
+problem.lambda_f3 = 0.0
+problem.p_feta = 1.0
+problem.p_kappa_cc = 1.0
+problem.p_kappa_z1 = 0.5
+problem.p_kappa_z2 = 0.0
+problem.trK0 = 0.0
+
+problem.bh1_mass = 0.5538461538461539
+problem.bh1_px = -0.00084541526517121
+problem.bh1_py = 0.09530152296974252
+problem.bh1_pz = 0.0
+problem.bh1_x = 4.461538461538462
+problem.bh1_y = 0.0
+problem.bh1_z = 0.0
+problem.bh2_mass = 0.4461538461538462
+problem.bh2_px = 0.00084541526517121
+problem.bh2_py = -0.09530152296974252
+problem.bh2_pz = 0.0
+problem.bh2_x = -5.5384615384615383
+problem.bh2_y = 0.0
+problem.bh2_z = 0.0
+
+problem.dissipation_factor_Alpha = 0.1
+problem.dissipation_factor_Atd_xx = 0.1
+problem.dissipation_factor_Atd_xy = 0.1
+problem.dissipation_factor_Atd_xz = 0.1
+problem.dissipation_factor_Atd_yy = 0.1
+problem.dissipation_factor_Atd_yz = 0.1
+problem.dissipation_factor_Atd_zz = 0.1
+problem.dissipation_factor_Betau_x = 0.1
+problem.dissipation_factor_Betau_y = 0.1
+problem.dissipation_factor_Betau_z = 0.1
+problem.dissipation_factor_Gamh_x = 0.1
+problem.dissipation_factor_Gamh_y = 0.1
+problem.dissipation_factor_Gamh_z = 0.1
+problem.dissipation_factor_chi = 0.1
+problem.dissipation_factor_gtd_xx = 0.1
+problem.dissipation_factor_gtd_xy = 0.1
+problem.dissipation_factor_gtd_xz = 0.1
+problem.dissipation_factor_gtd_yy = 0.1
+problem.dissipation_factor_gtd_yz = 0.1
+problem.dissipation_factor_gtd_zz = 0.1
+problem.dissipation_factor_theta = 0.1
+problem.dissipation_factor_trK = 0.1
+
+problem.chi_asymptotic = 1.0
+problem.chi_falloff = 1.0
+problem.gtd_xx_asymptotic = 1.0
+problem.gtd_xx_falloff = 1.0
+problem.gtd_xy_asymptotic = 0.0
+problem.gtd_xy_falloff = 1.0
+problem.gtd_xz_asymptotic = 0.0
+problem.gtd_xz_falloff = 1.0
+problem.gtd_yy_asymptotic = 1.0
+problem.gtd_yy_falloff = 1.0
+problem.gtd_yz_asymptotic = 0.0
+problem.gtd_yz_falloff = 1.0
+problem.gtd_zz_asymptotic = 1.0
+problem.gtd_zz_falloff = 1.0
+problem.Alpha_asymptotic = 1.0
+problem.Alpha_falloff = 1.0
+problem.Atd_xx_asymptotic = 0.0
+problem.Atd_xx_falloff = 2.0
+problem.Atd_xy_asymptotic = 0.0
+problem.Atd_xy_falloff = 2.0
+problem.Atd_xz_asymptotic = 0.0
+problem.Atd_xz_falloff = 2.0
+problem.Atd_yy_asymptotic = 0.0
+problem.Atd_yy_falloff = 2.0
+problem.Atd_yz_asymptotic = 0.0
+problem.Atd_yz_falloff = 2.0
+problem.Atd_zz_asymptotic = 0.0
+problem.Atd_zz_falloff = 2.0
+problem.Betau_x_asymptotic = 0.0
+problem.Betau_x_falloff = 1.0
+problem.Betau_y_asymptotic = 0.0
+problem.Betau_y_falloff = 1.0
+problem.Betau_z_asymptotic = 0.0
+problem.Betau_z_falloff = 1.0
+problem.Gamh_x_asymptotic = 0.0
+problem.Gamh_x_falloff = 2.0
+problem.Gamh_y_asymptotic = 0.0
+problem.Gamh_y_falloff = 2.0
+problem.Gamh_z_asymptotic = 0.0
+problem.Gamh_z_falloff = 2.0
+problem.theta_asymptotic = 0.0
+problem.theta_falloff = 1.0
+problem.trK_asymptotic = 0.0
+problem.trK_falloff = 1.0
+
+# *****************************************************************
+# Are we restarting from an existing checkpoint file?
+# *****************************************************************
+#chk.restart  = chk00500 # restart from this checkpoint file
+
+# *****************************************************************
+# Problem size and geometry
+# *****************************************************************
+geometry.prob_lo     =  -512.0 -512.0 -512.0
+geometry.prob_hi     =  512.0 512.0 512.0
+geometry.is_periodic =  0 0 0
+
+# *****************************************************************
+# Resolution and refinement
+# *****************************************************************
+amr.v              = 1       # verbosity in Amr
+amr.n_cell         = 256 256 256   # number of cells (resolution)
+amr.max_level      = 9     # maximum number of levels allowed
+                            # number of levels = max_level + 1
+
+amr.ref_ratio      = 2       # refinement ratio between levels
+                             # set different ratios by level adding more numbers
+                             # 2 4 6 are ratio 2 for level 0, 4 for level 1 and 6 for level 3 and higher
+
+amr.regrid_int     = 32       # regridding frequency
+amr.interpolator = QUINTIC_REFINE    #LINEAR_REFINE, CUBIC_REFINE or QUINTIC_REFINE
+
+amr.fmr_levels     = 5                     # number of fmr levels
+
+# Add as fmr_level_x_lo and fmr_level_x_up entries as number of fmr_levels specified.
+
+amr.fmr_level_0_lo = -256.0 -256.0 -256.0      # lower end of refinement box.
+amr.fmr_level_0_hi = 256.0 256.0 256.0      # upper end of refinement box.
+
+amr.fmr_level_1_lo = -128.0 -128.0 -128.0      # lower end of refinement box.
+amr.fmr_level_1_hi = 128.0 128.0 128.0      # upper end of refinement box.
+
+amr.fmr_level_2_lo = -64.0 -64.0 -64.0      # lower end of refinement box.
+amr.fmr_level_2_hi = 64.0 64.0 64.0      # upper end of refinement box.
+
+amr.fmr_level_3_lo = -32.0 -32.0 -32.0      # lower end of refinement box.
+amr.fmr_level_3_hi = 32.0 32.0 32.0      # upper end of refinement box.
+
+amr.fmr_level_4_lo = -16.0 -16.0 -16.0      # lower end of refinement box.
+amr.fmr_level_4_hi = 16.0 16.0 16.0      # upper end of refinement box.
+
+
+# *****************************************************************
+# Control of grid creation
+# *****************************************************************
+# Blocking factor for grid creation in each dimension 
+#   this ensures that every grid is coarsenable by a factor of 8 
+#   this is mostly relevant for 
+#   multigrid performance
+amr.blocking_factor = 16
+amr.max_grid_size   = 128
+amr.n_error_buf = 6   # proper_nesting_buffer
+# amr.n_proper = 16
+
+amrex.the_arena_is_managed = 1
+amrex.use_gpu_aware_mpi = 1
+
+# *****************************************************************
+# Time step control
+# *****************************************************************
+problem.cfl            = 0.4     # CFL constraint
+problem.do_subcycle    = 1       # Do we subcycle in time?
+
+# *****************************************************************
+# AMR Tagging 
+# *****************************************************************
+amr.regridding_type = 2         # Type 0: FUNCTION. The cell is refined if the provided field is greater than a given threshold.
+                                # Type 1: SHADOW. Current field at time n + 1 is compared at a given shadow time, if the difference is greater than a given error, the cell is to be refined.
+amr.tag_err   = 0.75 0.6 0.45 0.3
+amr.tag_field = chi
+amr.tag_shadow_time = "n"
+
+# *****************************************************************
+# Plotfile name and frequency
+# *****************************************************************
+plt.plot_overwrite = 1
+
+plt_full.dir  = plt_full      # root name of plot file
+plt_full.varnames = "Alpha" "Atd_xx" "Atd_xy" "Atd_xz" "Atd_yy" "Atd_yz" "Atd_zz" "Betau_x" "Betau_y" "Betau_z" "Gamh_x" "Gamh_y" "Gamh_z" "chi" "gtd_xx" "gtd_xy" "gtd_xz" "gtd_yy" "gtd_yz" "gtd_zz" "theta" "trK" "Rscalar" "HamCon" "MomCon_x" "MomCon_y" "MomCon_z" "trA" "detgtm1" "M_ADM_surf" "Jz_ADM_surf" "M_Komar" "Jz_Komar" "psi4R" "psi4I" "Z_x" "Z_y" "Z_z" #"regrid_tag"
+plt_full.int      = -1   # number of timesteps between plot files
+                        # if negative then no plot files will be written
+
+# Slice plot, can be repeated for different slices using plt_slice_x prefix being x a correlative number
+plt_slice_1.dir = plt_slicez        # Output directory name
+plt_slice_1.int = -1               # Output frequency
+plt_slice_1.varnames = "Alpha" "Atd_xx" "Atd_xy" "Atd_xz" "Atd_yy" "Atd_yz" "Atd_zz" "Betau_x" "Betau_y" "Betau_z" "Gamh_x" "Gamh_y" "Gamh_z" "chi" "gtd_xx" "gtd_xy" "gtd_xz" "gtd_yy" "gtd_yz" "gtd_zz" "theta" "trK" "Rscalar" "HamCon" "MomCon_x" "MomCon_y" "MomCon_z" "trA" "detgtm1" "M_ADM_surf" "Jz_ADM_surf" "M_Komar" "Jz_Komar" "psi4R" "psi4I" "Z_x" "Z_y" "Z_z"
+plt_slice_1.plane_normal_axis = 3   # Value must be 1, 2 or 3
+plt_slice_1.distance_to_origin = 0  # In domain units
+
+plt_slice_2.dir = plt_slicey        # Output directory name
+plt_slice_2.int = -1               # Output frequency
+plt_slice_2.varnames = "Alpha" "Atd_xx" "Atd_xy" "Atd_xz" "Atd_yy" "Atd_yz" "Atd_zz" "Betau_x" "Betau_y" "Betau_z" "Gamh_x" "Gamh_y" "Gamh_z" "chi" "gtd_xx" "gtd_xy" "gtd_xz" "gtd_yy" "gtd_yz" "gtd_zz" "theta" "trK" "Rscalar" "HamCon" "MomCon_x" "MomCon_y" "MomCon_z" "trA" "detgtm1" "M_ADM_surf" "Jz_ADM_surf" "M_Komar" "Jz_Komar" "psi4R" "psi4I" "Z_x" "Z_y" "Z_z"
+plt_slice_2.plane_normal_axis = 2   # Value must be 1, 2 or 3
+plt_slice_2.distance_to_origin = 0  # In domain units
+
+# Sphere plot, can be repeated for different spheres using plt_sphere_x prefix being x a correlative number
+plt_sphere_1.dir = plt_sphere       # Output directory name
+plt_sphere_1.int = -1               # Output frequency
+plt_sphere_1.varnames = "M_ADM_surf" "Jz_ADM_surf" "psi4R" "psi4I"
+plt_sphere_1.radius = 100             # In domain units
+plt_sphere_1.center = 0 0 0         # In domain units
+plt_sphere_1.resolution = 160 80    # Number of points for theta[0,2pi], phi[0,pi]
+
+# Integral plot, can be repeated for different integrations using plt_integral_x prefix being x a correlative number
+plt_integral_1.dir = plt_integrals      # Output directory name
+plt_integral_1.int = -1                 # Output frequency
+plt_integral_1.varnames = "Alpha" "Atd_xx" "Atd_xy" "Atd_xz" "Atd_yy" "Atd_yz" "Atd_zz" "Betau_x" "Betau_y" "Betau_z" "Gamh_x" "Gamh_y" "Gamh_z" "chi" "gtd_xx" "gtd_xy" "gtd_xz" "gtd_yy" "gtd_yz" "gtd_zz" "theta" "trK" "Rscalar" "HamCon" "MomCon_x" "MomCon_y" "MomCon_z" "trA" "detgtm1" "M_ADM_surf" "Jz_ADM_surf" "M_Komar" "Jz_Komar" "psi4R" "psi4I" "Z_x" "Z_y" "Z_z"
+plt_integral_1.calculations = "INTEGRAL" "L2NORM" "MIN" "MAX" "ABSMIN" "ABSMAX"
+
+# Puntual plot, can be repeated for different points using plt_point_x prefix being x a correlative number
+plt_point_1.dir = plt_point      # Output directory name
+plt_point_1.int = -1             # Output frequency
+plt_point_1.varnames = "Alpha" "Atd_xx" "Atd_xy" "Atd_xz" "Atd_yy" "Atd_yz" "Atd_zz" "Betau_x" "Betau_y" "Betau_z" "Gamh_x" "Gamh_y" "Gamh_z" "chi" "gtd_xx" "gtd_xy" "gtd_xz" "gtd_yy" "gtd_yz" "gtd_zz" "theta" "trK" "Rscalar" "HamCon" "MomCon_x" "MomCon_y" "MomCon_z" "trA" "detgtm1" "M_ADM_surf" "Jz_ADM_surf" "M_Komar" "Jz_Komar" "psi4R" "psi4I" "Z_x" "Z_y" "Z_z"
+plt_point_1.coordinates = 150.0 0.0 0.0   # In domain units
+
+# *****************************************************************
+# Checkpoint name and frequency
+# *****************************************************************
+chk.file = chk      # root name of checkpoint file
+chk.int  = -1       # number of timesteps between checkpoint files
+                    # if negative then no checkpoint files will be written
