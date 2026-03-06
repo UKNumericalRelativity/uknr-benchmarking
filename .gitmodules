@@ -6,3 +6,9 @@
 	path = codes/MHDuet/MHDuet-debug
 	url = ../../Simflowny-Codes/MHDuet-debug
 	branch = miren/working/bbh
+[submodule "codes/GRTeclyn/GRTeclyn"]
+	path = codes/GRTeclyn/GRTeclyn
+	url = ../../GRTLCollaboration/GRTeclyn.git
+[submodule "codes/GRTeclyn/amrex"]
+	path = codes/GRTeclyn/amrex
+	url = ../../AMReX-Codes/amrex
