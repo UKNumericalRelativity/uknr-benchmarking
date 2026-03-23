@@ -1,0 +1,188 @@
+# This is a Spack Environment file.
+#
+# It describes a set of packages to be installed, along with
+# configuration settings.
+
+
+spack:
+  config:
+    install_tree:
+      root: $env/../../opt
+  modules:
+    prefix_inspections:
+      include:
+      - CPATH
+      lib:
+      - LD_LIBRARY_PATH
+      - LIBRARY_PATH
+      lib64:
+      - LD_LIBRARY_PATH
+      - LIBRARY_PATH
+    default:
+      roots:
+        tcl: $env/../../modules
+      enable:
+      - tcl
+      tcl:
+        projections:
+          all: '{name}/{version}/{compiler.name}-{compiler.version}'
+          ^mpi: '{name}/{version}/{^mpi.name}-{^mpi.version}-{compiler.name}-{compiler.version}'
+        all:
+          autoload: direct
+          # prerequisites: direct
+          conflict:
+          - '{name}'
+          environment:
+            set:
+              "{name}_DIR": "{prefix}"
+        openmpi:
+          environment:
+            set:
+              # copied from /mnt/lustre/tursafs1/apps/cuda-12.3-modulefiles/openmpi/4.1.5-cuda12.3
+              OMPI_MCA_pml: ucx
+              OMPI_MCA_osc: ucx
+              OMPI_MCA_btl: ^openib
+
+  packages:
+    all:
+      compiler: [gcc@12.2.0]
+      providers:
+        mpi: [openmpi]
+    rdma-core:
+      externals:
+      - spec: rdma-core@44.0
+        prefix: /usr
+    knem:
+      externals:
+      - spec: knem@1.1.4
+        prefix: /opt/knem-1.1.4.90mlnx3
+      buildable: False
+    binutils:
+      externals:
+      - spec: binutils@2.30.119
+        prefix: /usr
+    coreutils:
+      externals:
+      - spec: coreutils@8.30
+        prefix: /usr
+    diffutils:
+      externals:
+      - spec: diffutils@3.6
+        prefix: /usr
+    findutils:
+      externals:
+      - spec: findutils@4.6.0
+        prefix: /usr
+    gawk:
+      externals:
+      - spec: gawk@4.2.1
+        prefix: /usr
+    openssh:
+      externals:
+      - spec: openssh@8.0p1
+        prefix: /usr
+    tar:
+      externals:
+      - spec: tar@1.30
+        prefix: /usr
+    autoconf:
+      externals:
+      - spec: autoconf@2.69
+        prefix: /usr
+    automake:
+      externals:
+      - spec: automake@1.16.1
+        prefix: /usr
+    bison:
+      externals:
+      - spec: bison@3.0.4
+        prefix: /usr
+    flex:
+      externals:
+      - spec: flex@2.6.1+lex
+        prefix: /usr
+    git:
+      externals:
+      - spec: git@2.39.3~tcltk
+        prefix: /usr
+    gmake:
+      externals:
+      - spec: gmake@4.2.1
+        prefix: /usr
+    groff:
+      externals:
+      - spec: groff@1.22.3
+        prefix: /usr
+    libtool:
+      externals:
+      - spec: libtool@2.4.6
+        prefix: /usr
+    m4:
+      externals:
+      - spec: m4@1.4.18
+        prefix: /usr
+    pkgconf:
+      externals:
+      - spec: pkgconf@1.4.2
+        prefix: /usr
+    cmake:
+      externals:
+      - spec: cmake@3.27.4
+        prefix: /home/y07/shared/utils/core/cmake/3.27.4
+    nvhpc:
+      externals:
+      - spec: nvhpc@23.5
+        prefix: /home/y07/shared/utils/core/nvhpc/23.5
+    slurm:
+      externals:
+      - spec: slurm@23-02-6-1
+        prefix: /usr
+      buildable: false
+    gsl:
+      require:
+      - ~shared
+    fftw:
+      require:
+      - ~shared
+    hdf5:
+      require:
+      - +mpi +fortran +cxx +hl ~shared
+    silo:
+      require:
+      - ~fortran ~hzip ~python ~shared
+    adios2:
+      require:
+      - ~bzip2 ~blosc2 ~libcatalyst ~fortran ~mgard ~shared ~png ~sz ~zfp
+    openpmd-api:
+      require:
+      - ~shared
+    amrex:
+      require:
+      - +hdf5 +mpi +particles +cuda cuda_arch=80
+    yaml-cpp:
+      require:
+      - ~shared
+    zlib:
+      require:
+      - ~shared
+  # add package specs to the `specs` list
+  specs:
+  - hdf5
+  - netlib-lapack
+  - libjpeg
+  - openssl
+  - fftw
+  - zlib
+  - papi
+  - gsl
+  - hwloc
+  - xz
+  - nsimd
+  - yaml-cpp
+  - amrex
+  - adios2
+  - silo
+
+  view: false
+  concretizer:
+    unify: true
