@@ -3,3 +3,7 @@ test*
 # plots
 *.png
 *.pdf
+
+# Cactus/ETK
+Cactus/
+GetComponents
