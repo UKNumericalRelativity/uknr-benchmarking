@@ -1,0 +1,170 @@
+# GW150914
+
+ActiveThorns = "
+  ADMBaseX
+  # AEILocalInterp
+  # AHFinderDirect
+  BoxInBox
+  CarpetX
+  CoordinatesX
+  IOUtil
+  # Multipole
+  ODESolvers
+  PunctureTracker
+  TimerReport
+  TmunuBaseX
+  TwoPuncturesX
+  # WeylScalo
+  Z4c
+"
+
+$nlevels = 10
+
+Cactus::cctk_show_schedule = yes
+Cactus::presync_mode = "mixed-error"
+
+Cactus::terminate = "iteration"
+Cactus::cctk_itlast = 512
+
+CarpetX::use_subcycling_wip = yes
+CarpetX::restrict_during_sync = no
+
+CarpetX::verbose = no
+CarpetX::poison_undefined_values = no
+
+CarpetX::xmin = -512.0
+CarpetX::ymin = -512.0
+CarpetX::zmin = -512.0
+CarpetX::xmax = 512.0
+CarpetX::ymax = 512.0
+CarpetX::zmax = 512.0
+
+CarpetX::ncells_x = 288
+CarpetX::ncells_y = 288
+CarpetX::ncells_z = 288
+CarpetX::max_tile_size_x = 1024000
+CarpetX::max_tile_size_y = 1024000
+CarpetX::max_tile_size_z = 1024000
+
+CarpetX::boundary_x = "linear extrapolation"
+CarpetX::boundary_y = "linear extrapolation"
+CarpetX::boundary_z = "linear extrapolation"
+CarpetX::boundary_upper_x = "linear extrapolation"
+CarpetX::boundary_upper_y = "linear extrapolation"
+CarpetX::boundary_upper_z = "linear extrapolation"
+
+# CarpetX::reflection_z = yes
+
+CarpetX::ghost_size = 3
+CarpetX::prolongation_type = "ddf"
+#CarpetX::prolongation_order = 5
+CarpetX::interpolation_order = 4 # Multipole needs 3 by default
+CarpetX::dtfac = 0.25
+
+CarpetX::max_num_levels = $nlevels
+CarpetX::regrid_every = 128
+CarpetX::regrid_error_threshold = 0.03125
+
+BoxInBox::num_regions = 2
+# Region 1
+BoxInBox::shape_1 = "cube"
+BoxInBox::num_levels_1 = $nlevels
+BoxInBox::radius_1 = [256.0,128.0,64.0,42.535384,21.267692,10.633846,5.316923,2.658462,1.329231,0.664615]
+BoxInBox::position_x_1 = 4.461538461538462
+
+# Region 2
+BoxInBox::shape_2 = "cube"
+BoxInBox::num_levels_2 = $nlevels
+BoxInBox::radius_2 = [256.0,128.0,64.0,34.264616,17.132308,8.566154,4.283077,2.141538,1.070769,0.535385]
+BoxInBox::position_x_2 = -5.538461538461538
+
+ODESolvers::verbose = yes
+ODESolvers::method = "RK4"
+
+PunctureTracker::verbose = yes
+PunctureTracker::interp_order = 4
+PunctureTracker::track_boxes = yes
+
+PunctureTracker::track    [0] = yes
+PunctureTracker::initial_x[0] = 4.461538461538462
+
+PunctureTracker::track    [1] = yes
+PunctureTracker::initial_x[1] = -5.538461538461538
+
+ADMBaseX::initial_data  = "TwoPunctures"
+ADMBaseX::initial_lapse = "TwoPunctures-averaged"
+
+# GW150914 setup
+TwoPuncturesX::par_b             =  5.0
+TwoPuncturesX::center_offset[0]  = -0.5384615384615383
+
+TwoPuncturesX::par_m_plus        =  0.5538461538461539
+TwoPuncturesX::par_m_minus       =  0.4461538461538462
+
+TwoPuncturesX::par_P_plus [0]    = -0.00084541526517121
+TwoPuncturesX::par_P_plus [1]    = 0.09530152296974252
+TwoPuncturesX::par_P_plus [2]    = 0.0
+
+TwoPuncturesX::par_P_minus[0]    = 0.00084541526517121
+TwoPuncturesX::par_P_minus[1]    = -0.09530152296974252
+TwoPuncturesX::par_P_minus[2]    = 0.0
+
+TwoPuncturesX::par_S_plus[0]     = 0.0
+TwoPuncturesX::par_S_plus[1]     = 0.0
+TwoPuncturesX::par_S_plus[2]     = 0.09509112426035504
+
+TwoPuncturesX::par_S_minus[0]    = 0.0
+TwoPuncturesX::par_S_minus[1]    = 0.0
+TwoPuncturesX::par_S_minus[2]    = -0.09156449704142013
+
+# TwoPuncturesX::npoints_A         = 30
+# TwoPuncturesX::npoints_B         = 30
+# TwoPuncturesX::npoints_phi       = 16
+TwoPuncturesX::grid_setup_method = "Taylor expansion"
+TwoPuncturesX::TP_epsilon        = 1.0e-6
+TwoPuncturesX::TP_Tiny           = 1.0e-8
+TwoPuncturesX::adm_tol           = 1e-10
+TwoPuncturesX::Newton_tol        = 1e-10
+TwoPuncturesX::verbose           = yes
+
+Z4c::calc_ADM_vars    = yes
+Z4c::calc_ADMRHS_vars = no
+Z4c::calc_constraints = no
+Z4c::chi_floor        = 1.0e-6
+Z4c::alphaG_floor     = 1.0e-30
+Z4c::epsdiss          = 0.32
+Z4c::boundary_conditions = "NewRadX"
+
+#IO::out_dir = $parfile
+IO::out_every = 0
+IOUtil::parfile_write = "no"
+
+CarpetX::checkpoint_method = "openpmd"
+CarpetX::recover_method = "openpmd"
+CarpetX::openpmd_format = "ADIOS2_BP4"
+
+# IO::checkpoint_ID = yes
+
+CarpetX::out_metadata = no
+
+# TimerReport::out_every = 2
+TimerReport::output_all_timers_readable = yes
+TimerReport::out_filename = "TimerReport"
+TimerReport::output_schedule_timers = yes
+TimerReport::n_top_timers = 100
+
+#Multipole::nradii       = 6
+#Multipole::radius[0]    = 100
+#Multipole::radius[1]    = 115
+#Multipole::radius[2]    = 136
+#Multipole::radius[3]    = 167
+#Multipole::radius[4]    = 214
+#Multipole::radius[5]    = 300
+#Multipole::ntheta       = 120
+#Multipole::nphi         = 240
+#Multipole::variables    = "WeylScalo::Psi4r{sw=-2 cmplx='WeylScal4::Psi4i' name='psi4'}"
+#Multipole::out_every    = 256
+#Multipole::l_max        = 8
+#Multipole::output_hdf5  = no
+#Multipole::output_tsv   = yes
+#Multipole::interpolator_pars = "order=4"
