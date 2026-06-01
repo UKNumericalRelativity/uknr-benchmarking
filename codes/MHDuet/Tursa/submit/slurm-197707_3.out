@@ -1,0 +1,2237 @@
+
+	GCC 12.2.0 loaded
+
+GpuFreq=control_disabled
+GpuFreq=control_disabled
+GpuFreq=control_disabled
+GpuFreq=control_disabled
+GpuFreq=control_disabled
+GpuFreq=control_disabled
+GpuFreq=control_disabled
+GpuFreq=control_disabled
+GpuFreq=control_disabled
+GpuFreq=control_disabled
+GpuFreq=control_disabled
+GpuFreq=control_disabled
+GpuFreq=control_disabled
+GpuFreq=control_disabled
+GpuFreq=control_disabled
+GpuFreq=control_disabled
+GpuFreq=control_disabled
+GpuFreq=control_disabled
+GpuFreq=control_disabled
+GpuFreq=control_disabled
+GpuFreq=control_disabled
+GpuFreq=control_disabled
+GpuFreq=control_disabled
+GpuFreq=control_disabled
+GpuFreq=control_disabled
+GpuFreq=control_disabled
+GpuFreq=control_disabled
+GpuFreq=control_disabled
+GpuFreq=control_disabled
+GpuFreq=control_disabled
+GpuFreq=control_disabled
+GpuFreq=control_disabled
+Initializing AMReX (24.10)...
+MPI initialized with 128 MPI processes
+MPI initialized with thread support level 0
+Initializing CUDA...
+CUDA initialized with 128 devices.
+AMReX (24.10) initialized
+Successfully read inputs file ... 
+
+Coarse STEP 1 starts ...
+[Level 0 step 1] ADVANCE with time = 0 dt = 1.6
+[Level 0 step 1] Advanced 16777216 cells
+[Level 1 step 1] ADVANCE with time = 0 dt = 0.8
+[Level 1 step 1] Advanced 16777216 cells
+[Level 2 step 1] ADVANCE with time = 0 dt = 0.4
+[Level 2 step 1] Advanced 16777216 cells
+[Level 3 step 1] ADVANCE with time = 0 dt = 0.2
+[Level 3 step 1] Advanced 16777216 cells
+[Level 4 step 1] ADVANCE with time = 0 dt = 0.1
+[Level 4 step 1] Advanced 16777216 cells
+[Level 5 step 1] ADVANCE with time = 0 dt = 0.05
+[Level 5 step 1] Advanced 16777216 cells
+[Level 6 step 1] ADVANCE with time = 0 dt = 0.025
+[Level 6 step 1] Advanced 12386304 cells
+[Level 7 step 1] ADVANCE with time = 0 dt = 0.0125
+[Level 7 step 1] Advanced 11350016 cells
+[Level 8 step 1] ADVANCE with time = 0 dt = 0.00625
+[Level 8 step 1] Advanced 15904768 cells
+[Level 9 step 1] ADVANCE with time = 0 dt = 0.003125
+[Level 9 step 1] Advanced 22876160 cells
+[Level 9 step 2] ADVANCE with time = 0.003125 dt = 0.003125 speed = 38.93659352 units/h
+[Level 9 step 2] Advanced 22876160 cells
+[Level 8 step 2] ADVANCE with time = 0.00625 dt = 0.00625 speed = 65.72631531 units/h
+[Level 8 step 2] Advanced 15904768 cells
+[Level 9 step 3] ADVANCE with time = 0.00625 dt = 0.003125 speed = 61.36854423 units/h
+[Level 9 step 3] Advanced 22876160 cells
+[Level 9 step 4] ADVANCE with time = 0.009375 dt = 0.003125 speed = 81.00412454 units/h
+[Level 9 step 4] Advanced 22876160 cells
+[Level 7 step 2] ADVANCE with time = 0.0125 dt = 0.0125 speed = 95.54951527 units/h
+[Level 7 step 2] Advanced 11350016 cells
+[Level 8 step 3] ADVANCE with time = 0.0125 dt = 0.00625 speed = 91.87808996 units/h
+[Level 8 step 3] Advanced 15904768 cells
+[Level 9 step 5] ADVANCE with time = 0.0125 dt = 0.003125 speed = 87.45473319 units/h
+[Level 9 step 5] Advanced 22876160 cells
+[Level 9 step 6] ADVANCE with time = 0.015625 dt = 0.003125 speed = 99.66199983 units/h
+[Level 9 step 6] Advanced 22876160 cells
+[Level 8 step 4] ADVANCE with time = 0.01875 dt = 0.00625 speed = 109.5561382 units/h
+[Level 8 step 4] Advanced 15904768 cells
+[Level 9 step 7] ADVANCE with time = 0.01875 dt = 0.003125 speed = 105.3662617 units/h
+[Level 9 step 7] Advanced 22876160 cells
+[Level 9 step 8] ADVANCE with time = 0.021875 dt = 0.003125 speed = 114.0984859 units/h
+[Level 9 step 8] Advanced 22876160 cells
+[Level 6 step 2] ADVANCE with time = 0.025 dt = 0.025 speed = 120.9216763 units/h
+[Level 6 step 2] Advanced 12386304 cells
+[Level 7 step 3] ADVANCE with time = 0.025 dt = 0.0125 speed = 117.6105119 units/h
+[Level 7 step 3] Advanced 11350016 cells
+[Level 8 step 5] ADVANCE with time = 0.025 dt = 0.00625 speed = 114.8236924 units/h
+[Level 8 step 5] Advanced 15904768 cells
+[Level 9 step 9] ADVANCE with time = 0.025 dt = 0.003125 speed = 111.2603267 units/h
+[Level 9 step 9] Advanced 22876160 cells
+[Level 9 step 10] ADVANCE with time = 0.028125 dt = 0.003125 speed = 117.883532 units/h
+[Level 9 step 10] Advanced 22876160 cells
+[Level 8 step 6] ADVANCE with time = 0.03125 dt = 0.00625 speed = 123.61717 units/h
+[Level 8 step 6] Advanced 15904768 cells
+[Level 9 step 11] ADVANCE with time = 0.03125 dt = 0.003125 speed = 120.3176442 units/h
+[Level 9 step 11] Advanced 22876160 cells
+[Level 9 step 12] ADVANCE with time = 0.034375 dt = 0.003125 speed = 125.6546922 units/h
+[Level 9 step 12] Advanced 22876160 cells
+[Level 7 step 4] ADVANCE with time = 0.0375 dt = 0.0125 speed = 129.9647426 units/h
+[Level 7 step 4] Advanced 11350016 cells
+[Level 8 step 7] ADVANCE with time = 0.0375 dt = 0.00625 speed = 127.6508495 units/h
+[Level 8 step 7] Advanced 15904768 cells
+[Level 9 step 13] ADVANCE with time = 0.0375 dt = 0.003125 speed = 124.7327377 units/h
+[Level 9 step 13] Advanced 22876160 cells
+[Level 9 step 14] ADVANCE with time = 0.040625 dt = 0.003125 speed = 129.177107 units/h
+[Level 9 step 14] Advanced 22876160 cells
+[Level 8 step 8] ADVANCE with time = 0.04375 dt = 0.00625 speed = 132.8094648 units/h
+[Level 8 step 8] Advanced 15904768 cells
+[Level 9 step 15] ADVANCE with time = 0.04375 dt = 0.003125 speed = 130.0837913 units/h
+[Level 9 step 15] Advanced 22876160 cells
+[Level 9 step 16] ADVANCE with time = 0.046875 dt = 0.003125 speed = 133.8442487 units/h
+[Level 9 step 16] Advanced 22876160 cells
+[Level 5 step 2] ADVANCE with time = 0.05 dt = 0.05 speed = 136.622971 units/h
+[Level 5 step 2] Advanced 16777216 cells
+[Level 6 step 3] ADVANCE with time = 0.05 dt = 0.025 speed = 134.4150062 units/h
+[Level 6 step 3] Advanced 12386304 cells
+[Level 7 step 5] ADVANCE with time = 0.05 dt = 0.0125 speed = 132.5893863 units/h
+[Level 7 step 5] Advanced 11350016 cells
+[Level 8 step 9] ADVANCE with time = 0.05 dt = 0.00625 speed = 130.8041981 units/h
+[Level 8 step 9] Advanced 15904768 cells
+[Level 9 step 17] ADVANCE with time = 0.05 dt = 0.003125 speed = 128.4660308 units/h
+[Level 9 step 17] Advanced 22876160 cells
+[Level 9 step 18] ADVANCE with time = 0.053125 dt = 0.003125 speed = 131.8133044 units/h
+[Level 9 step 18] Advanced 22876160 cells
+[Level 8 step 10] ADVANCE with time = 0.05625 dt = 0.00625 speed = 134.7337832 units/h
+[Level 8 step 10] Advanced 15904768 cells
+[Level 9 step 19] ADVANCE with time = 0.05625 dt = 0.003125 speed = 132.549399 units/h
+[Level 9 step 19] Advanced 22876160 cells
+[Level 9 step 20] ADVANCE with time = 0.059375 dt = 0.003125 speed = 135.5271711 units/h
+[Level 9 step 20] Advanced 22876160 cells
+[Level 7 step 6] ADVANCE with time = 0.0625 dt = 0.0125 speed = 138.0115329 units/h
+[Level 7 step 6] Advanced 11350016 cells
+[Level 8 step 11] ADVANCE with time = 0.0625 dt = 0.00625 speed = 136.4392552 units/h
+[Level 8 step 11] Advanced 15904768 cells
+[Level 9 step 21] ADVANCE with time = 0.0625 dt = 0.003125 speed = 134.4088837 units/h
+[Level 9 step 21] Advanced 22876160 cells
+[Level 9 step 22] ADVANCE with time = 0.065625 dt = 0.003125 speed = 137.0599251 units/h
+[Level 9 step 22] Advanced 22876160 cells
+[Level 8 step 12] ADVANCE with time = 0.06875 dt = 0.00625 speed = 139.4228025 units/h
+[Level 8 step 12] Advanced 15904768 cells
+[Level 9 step 23] ADVANCE with time = 0.06875 dt = 0.003125 speed = 137.5106783 units/h
+[Level 9 step 23] Advanced 22876160 cells
+[Level 9 step 24] ADVANCE with time = 0.071875 dt = 0.003125 speed = 139.8947917 units/h
+[Level 9 step 24] Advanced 22876160 cells
+[Level 6 step 4] ADVANCE with time = 0.075 dt = 0.025 speed = 141.8434379 units/h
+[Level 6 step 4] Advanced 12386304 cells
+[Level 7 step 7] ADVANCE with time = 0.075 dt = 0.0125 speed = 140.4083817 units/h
+[Level 7 step 7] Advanced 11350016 cells
+[Level 8 step 13] ADVANCE with time = 0.075 dt = 0.00625 speed = 139.0764526 units/h
+[Level 8 step 13] Advanced 15904768 cells
+[Level 9 step 25] ADVANCE with time = 0.075 dt = 0.003125 speed = 137.3069355 units/h
+[Level 9 step 25] Advanced 22876160 cells
+[Level 9 step 26] ADVANCE with time = 0.078125 dt = 0.003125 speed = 139.4913869 units/h
+[Level 9 step 26] Advanced 22876160 cells
+[Level 8 step 14] ADVANCE with time = 0.08125 dt = 0.00625 speed = 141.4786565 units/h
+[Level 8 step 14] Advanced 15904768 cells
+[Level 9 step 27] ADVANCE with time = 0.08125 dt = 0.003125 speed = 139.7729334 units/h
+[Level 9 step 27] Advanced 22876160 cells
+[Level 9 step 28] ADVANCE with time = 0.084375 dt = 0.003125 speed = 141.7853437 units/h
+[Level 9 step 28] Advanced 22876160 cells
+[Level 7 step 8] ADVANCE with time = 0.0875 dt = 0.0125 speed = 143.4872468 units/h
+[Level 7 step 8] Advanced 11350016 cells
+[Level 8 step 15] ADVANCE with time = 0.0875 dt = 0.00625 speed = 142.2707257 units/h
+[Level 8 step 15] Advanced 15904768 cells
+[Level 9 step 29] ADVANCE with time = 0.0875 dt = 0.003125 speed = 140.6859848 units/h
+[Level 9 step 29] Advanced 22876160 cells
+[Level 9 step 30] ADVANCE with time = 0.090625 dt = 0.003125 speed = 142.539633 units/h
+[Level 9 step 30] Advanced 22876160 cells
+[Level 8 step 16] ADVANCE with time = 0.09375 dt = 0.00625 speed = 144.209193 units/h
+[Level 8 step 16] Advanced 15904768 cells
+[Level 9 step 31] ADVANCE with time = 0.09375 dt = 0.003125 speed = 142.7017245 units/h
+[Level 9 step 31] Advanced 22876160 cells
+[Level 9 step 32] ADVANCE with time = 0.096875 dt = 0.003125 speed = 144.4249355 units/h
+[Level 9 step 32] Advanced 22876160 cells
+[Level 4 step 2] ADVANCE with time = 0.1 dt = 0.1 speed = 145.5625544 units/h
+[Level 4 step 2] Advanced 16777216 cells
+[Level 5 step 3] ADVANCE with time = 0.1 dt = 0.05 speed = 144.3247755 units/h
+[Level 5 step 3] Advanced 16777216 cells
+[Level 6 step 5] ADVANCE with time = 0.1 dt = 0.025 speed = 143.2651787 units/h
+[Level 6 step 5] Advanced 12386304 cells
+[Level 7 step 9] ADVANCE with time = 0.1 dt = 0.0125 speed = 142.2135632 units/h
+[Level 7 step 9] Advanced 11350016 cells
+[Level 8 step 17] ADVANCE with time = 0.1 dt = 0.00625 speed = 141.1907722 units/h
+[Level 8 step 17] Advanced 15904768 cells
+[Level 9 step 33] ADVANCE with time = 0.1 dt = 0.003125 speed = 139.8285775 units/h
+[Level 9 step 33] Advanced 22876160 cells
+[Level 9 step 34] ADVANCE with time = 0.103125 dt = 0.003125 speed = 141.4742427 units/h
+[Level 9 step 34] Advanced 22876160 cells
+[Level 8 step 18] ADVANCE with time = 0.10625 dt = 0.00625 speed = 142.9338781 units/h
+[Level 8 step 18] Advanced 15904768 cells
+[Level 9 step 35] ADVANCE with time = 0.10625 dt = 0.003125 speed = 141.6220234 units/h
+[Level 9 step 35] Advanced 22876160 cells
+[Level 9 step 36] ADVANCE with time = 0.109375 dt = 0.003125 speed = 143.1433014 units/h
+[Level 9 step 36] Advanced 22876160 cells
+[Level 7 step 10] ADVANCE with time = 0.1125 dt = 0.0125 speed = 144.4408319 units/h
+[Level 7 step 10] Advanced 11350016 cells
+[Level 8 step 19] ADVANCE with time = 0.1125 dt = 0.00625 speed = 143.4773002 units/h
+[Level 8 step 19] Advanced 15904768 cells
+[Level 9 step 37] ADVANCE with time = 0.1125 dt = 0.003125 speed = 142.2154959 units/h
+[Level 9 step 37] Advanced 22876160 cells
+[Level 9 step 38] ADVANCE with time = 0.115625 dt = 0.003125 speed = 143.6564682 units/h
+[Level 9 step 38] Advanced 22876160 cells
+[Level 8 step 20] ADVANCE with time = 0.11875 dt = 0.00625 speed = 144.9614168 units/h
+[Level 8 step 20] Advanced 15904768 cells
+[Level 9 step 39] ADVANCE with time = 0.11875 dt = 0.003125 speed = 143.7570261 units/h
+[Level 9 step 39] Advanced 22876160 cells
+[Level 9 step 40] ADVANCE with time = 0.121875 dt = 0.003125 speed = 145.1124892 units/h
+[Level 9 step 40] Advanced 22876160 cells
+[Level 6 step 6] ADVANCE with time = 0.125 dt = 0.025 speed = 146.2211719 units/h
+[Level 6 step 6] Advanced 12386304 cells
+[Level 7 step 11] ADVANCE with time = 0.125 dt = 0.0125 speed = 145.3075918 units/h
+[Level 7 step 11] Advanced 11350016 cells
+[Level 8 step 21] ADVANCE with time = 0.125 dt = 0.00625 speed = 144.4444191 units/h
+[Level 8 step 21] Advanced 15904768 cells
+[Level 9 step 41] ADVANCE with time = 0.125 dt = 0.003125 speed = 143.2883765 units/h
+[Level 9 step 41] Advanced 22876160 cells
+[Level 9 step 42] ADVANCE with time = 0.128125 dt = 0.003125 speed = 144.5879044 units/h
+[Level 9 step 42] Advanced 22876160 cells
+[Level 8 step 22] ADVANCE with time = 0.13125 dt = 0.00625 speed = 145.7423164 units/h
+[Level 8 step 22] Advanced 15904768 cells
+[Level 9 step 43] ADVANCE with time = 0.13125 dt = 0.003125 speed = 144.6484574 units/h
+[Level 9 step 43] Advanced 22876160 cells
+[Level 9 step 44] ADVANCE with time = 0.134375 dt = 0.003125 speed = 145.8649067 units/h
+[Level 9 step 44] Advanced 22876160 cells
+[Level 7 step 12] ADVANCE with time = 0.1375 dt = 0.0125 speed = 146.9212755 units/h
+[Level 7 step 12] Advanced 11350016 cells
+[Level 8 step 23] ADVANCE with time = 0.1375 dt = 0.00625 speed = 146.1087646 units/h
+[Level 8 step 23] Advanced 15904768 cells
+[Level 9 step 45] ADVANCE with time = 0.1375 dt = 0.003125 speed = 145.0491748 units/h
+[Level 9 step 45] Advanced 22876160 cells
+[Level 9 step 46] ADVANCE with time = 0.140625 dt = 0.003125 speed = 146.2135494 units/h
+[Level 9 step 46] Advanced 22876160 cells
+[Level 8 step 24] ADVANCE with time = 0.14375 dt = 0.00625 speed = 147.268193 units/h
+[Level 8 step 24] Advanced 15904768 cells
+[Level 9 step 47] ADVANCE with time = 0.14375 dt = 0.003125 speed = 146.2450006 units/h
+[Level 9 step 47] Advanced 22876160 cells
+[Level 9 step 48] ADVANCE with time = 0.146875 dt = 0.003125 speed = 147.3570314 units/h
+[Level 9 step 48] Advanced 22876160 cells
+[Level 5 step 4] ADVANCE with time = 0.15 dt = 0.05 speed = 148.2324299 units/h
+[Level 5 step 4] Advanced 16777216 cells
+[Level 6 step 7] ADVANCE with time = 0.15 dt = 0.025 speed = 147.3941395 units/h
+[Level 6 step 7] Advanced 12386304 cells
+[Level 7 step 13] ADVANCE with time = 0.15 dt = 0.0125 speed = 146.6546272 units/h
+[Level 7 step 13] Advanced 11350016 cells
+[Level 8 step 25] ADVANCE with time = 0.15 dt = 0.00625 speed = 145.9224193 units/h
+[Level 8 step 25] Advanced 15904768 cells
+[Level 9 step 49] ADVANCE with time = 0.15 dt = 0.003125 speed = 144.9484069 units/h
+[Level 9 step 49] Advanced 22876160 cells
+[Level 9 step 50] ADVANCE with time = 0.153125 dt = 0.003125 speed = 146.0179293 units/h
+[Level 9 step 50] Advanced 22876160 cells
+[Level 8 step 26] ADVANCE with time = 0.15625 dt = 0.00625 speed = 146.9868953 units/h
+[Level 8 step 26] Advanced 15904768 cells
+[Level 9 step 51] ADVANCE with time = 0.15625 dt = 0.003125 speed = 146.0323011 units/h
+[Level 9 step 51] Advanced 22876160 cells
+[Level 9 step 52] ADVANCE with time = 0.159375 dt = 0.003125 speed = 147.0483652 units/h
+[Level 9 step 52] Advanced 22876160 cells
+[Level 7 step 14] ADVANCE with time = 0.1625 dt = 0.0125 speed = 147.923541 units/h
+[Level 7 step 14] Advanced 11350016 cells
+[Level 8 step 27] ADVANCE with time = 0.1625 dt = 0.00625 speed = 147.2192356 units/h
+[Level 8 step 27] Advanced 15904768 cells
+[Level 9 step 53] ADVANCE with time = 0.1625 dt = 0.003125 speed = 146.297333 units/h
+[Level 9 step 53] Advanced 22876160 cells
+[Level 9 step 54] ADVANCE with time = 0.165625 dt = 0.003125 speed = 147.2675261 units/h
+[Level 9 step 54] Advanced 22876160 cells
+[Level 8 step 28] ADVANCE with time = 0.16875 dt = 0.00625 speed = 148.1677432 units/h
+[Level 8 step 28] Advanced 15904768 cells
+[Level 9 step 55] ADVANCE with time = 0.16875 dt = 0.003125 speed = 147.2706898 units/h
+[Level 9 step 55] Advanced 22876160 cells
+[Level 9 step 56] ADVANCE with time = 0.171875 dt = 0.003125 speed = 148.1917582 units/h
+[Level 9 step 56] Advanced 22876160 cells
+[Level 6 step 8] ADVANCE with time = 0.175 dt = 0.025 speed = 148.9720348 units/h
+[Level 6 step 8] Advanced 12386304 cells
+[Level 7 step 15] ADVANCE with time = 0.175 dt = 0.0125 speed = 148.285936 units/h
+[Level 7 step 15] Advanced 11350016 cells
+[Level 8 step 29] ADVANCE with time = 0.175 dt = 0.00625 speed = 147.6467324 units/h
+[Level 8 step 29] Advanced 15904768 cells
+[Level 9 step 57] ADVANCE with time = 0.175 dt = 0.003125 speed = 146.7981249 units/h
+[Level 9 step 57] Advanced 22876160 cells
+[Level 9 step 58] ADVANCE with time = 0.178125 dt = 0.003125 speed = 147.7040377 units/h
+[Level 9 step 58] Advanced 22876160 cells
+[Level 8 step 30] ADVANCE with time = 0.18125 dt = 0.00625 speed = 148.5329633 units/h
+[Level 8 step 30] Advanced 15904768 cells
+[Level 9 step 59] ADVANCE with time = 0.18125 dt = 0.003125 speed = 147.6992545 units/h
+[Level 9 step 59] Advanced 22876160 cells
+[Level 9 step 60] ADVANCE with time = 0.184375 dt = 0.003125 speed = 148.572381 units/h
+[Level 9 step 60] Advanced 22876160 cells
+[Level 7 step 16] ADVANCE with time = 0.1875 dt = 0.0125 speed = 149.3147815 units/h
+[Level 7 step 16] Advanced 11350016 cells
+[Level 8 step 31] ADVANCE with time = 0.1875 dt = 0.00625 speed = 148.6935814 units/h
+[Level 8 step 31] Advanced 15904768 cells
+[Level 9 step 61] ADVANCE with time = 0.1875 dt = 0.003125 speed = 147.8868168 units/h
+[Level 9 step 61] Advanced 22876160 cells
+[Level 9 step 62] ADVANCE with time = 0.190625 dt = 0.003125 speed = 148.7271683 units/h
+[Level 9 step 62] Advanced 22876160 cells
+[Level 8 step 32] ADVANCE with time = 0.19375 dt = 0.00625 speed = 149.493259 units/h
+[Level 8 step 32] Advanced 15904768 cells
+[Level 9 step 63] ADVANCE with time = 0.19375 dt = 0.003125 speed = 148.7008275 units/h
+[Level 9 step 63] Advanced 22876160 cells
+[Level 9 step 64] ADVANCE with time = 0.196875 dt = 0.003125 speed = 149.5172837 units/h
+[Level 9 step 64] Advanced 22876160 cells
+[Level 3 step 2] ADVANCE with time = 0.2 dt = 0.2 speed = 150.0204194 units/h
+[Level 3 step 2] Advanced 16777216 cells
+[Level 4 step 3] ADVANCE with time = 0.2 dt = 0.1 speed = 149.4172667 units/h
+[Level 4 step 3] Advanced 16777216 cells
+[Level 5 step 5] ADVANCE with time = 0.2 dt = 0.05 speed = 148.847544 units/h
+[Level 5 step 5] Advanced 16777216 cells
+[Level 6 step 9] ADVANCE with time = 0.2 dt = 0.025 speed = 148.2820878 units/h
+[Level 6 step 9] Advanced 12386304 cells
+[Level 7 step 17] ADVANCE with time = 0.2 dt = 0.0125 speed = 147.6828209 units/h
+[Level 7 step 17] Advanced 11350016 cells
+[Level 8 step 33] ADVANCE with time = 0.2 dt = 0.00625 speed = 145.9842684 units/h
+[Level 8 step 33] Advanced 15904768 cells
+[Level 9 step 65] ADVANCE with time = 0.2 dt = 0.003125 speed = 144.9865993 units/h
+[Level 9 step 65] Advanced 22745088 cells
+[Level 9 step 66] ADVANCE with time = 0.203125 dt = 0.003125 speed = 144.9770442 units/h
+[Level 9 step 66] Advanced 22745088 cells
+[Level 8 step 34] ADVANCE with time = 0.20625 dt = 0.00625 speed = 145.6089095 units/h
+[Level 8 step 34] Advanced 15904768 cells
+[Level 9 step 67] ADVANCE with time = 0.20625 dt = 0.003125 speed = 144.8761259 units/h
+[Level 9 step 67] Advanced 22745088 cells
+[Level 9 step 68] ADVANCE with time = 0.209375 dt = 0.003125 speed = 145.6218694 units/h
+[Level 9 step 68] Advanced 22745088 cells
+[Level 7 step 18] ADVANCE with time = 0.2125 dt = 0.0125 speed = 146.1743324 units/h
+[Level 7 step 18] Advanced 11350016 cells
+[Level 8 step 35] ADVANCE with time = 0.2125 dt = 0.00625 speed = 145.6585954 units/h
+[Level 8 step 35] Advanced 15904768 cells
+[Level 9 step 69] ADVANCE with time = 0.2125 dt = 0.003125 speed = 144.978085 units/h
+[Level 9 step 69] Advanced 22745088 cells
+[Level 9 step 70] ADVANCE with time = 0.215625 dt = 0.003125 speed = 145.6996146 units/h
+[Level 9 step 70] Advanced 22745088 cells
+[Level 8 step 36] ADVANCE with time = 0.21875 dt = 0.00625 speed = 146.2875576 units/h
+[Level 8 step 36] Advanced 15904768 cells
+[Level 9 step 71] ADVANCE with time = 0.21875 dt = 0.003125 speed = 145.6014667 units/h
+[Level 9 step 71] Advanced 22745088 cells
+[Level 9 step 72] ADVANCE with time = 0.221875 dt = 0.003125 speed = 146.2937732 units/h
+[Level 9 step 72] Advanced 22745088 cells
+[Level 6 step 10] ADVANCE with time = 0.225 dt = 0.025 speed = 146.7809413 units/h
+[Level 6 step 10] Advanced 12386304 cells
+[Level 7 step 19] ADVANCE with time = 0.225 dt = 0.0125 speed = 146.2662565 units/h
+[Level 7 step 19] Advanced 11350016 cells
+[Level 8 step 37] ADVANCE with time = 0.225 dt = 0.00625 speed = 145.7801658 units/h
+[Level 8 step 37] Advanced 15904768 cells
+[Level 9 step 73] ADVANCE with time = 0.225 dt = 0.003125 speed = 145.1274474 units/h
+[Level 9 step 73] Advanced 22745088 cells
+[Level 9 step 74] ADVANCE with time = 0.228125 dt = 0.003125 speed = 145.8063841 units/h
+[Level 9 step 74] Advanced 22745088 cells
+[Level 8 step 38] ADVANCE with time = 0.23125 dt = 0.00625 speed = 146.3670269 units/h
+[Level 8 step 38] Advanced 15904768 cells
+[Level 9 step 75] ADVANCE with time = 0.23125 dt = 0.003125 speed = 145.7246229 units/h
+[Level 9 step 75] Advanced 22745088 cells
+[Level 9 step 76] ADVANCE with time = 0.234375 dt = 0.003125 speed = 146.3882929 units/h
+[Level 9 step 76] Advanced 22745088 cells
+[Level 7 step 20] ADVANCE with time = 0.2375 dt = 0.0125 speed = 146.8924591 units/h
+[Level 7 step 20] Advanced 11350016 cells
+[Level 8 step 39] ADVANCE with time = 0.2375 dt = 0.00625 speed = 146.4113894 units/h
+[Level 8 step 39] Advanced 15904768 cells
+[Level 9 step 77] ADVANCE with time = 0.2375 dt = 0.003125 speed = 145.7913551 units/h
+[Level 9 step 77] Advanced 22745088 cells
+[Level 9 step 78] ADVANCE with time = 0.240625 dt = 0.003125 speed = 146.4356999 units/h
+[Level 9 step 78] Advanced 22745088 cells
+[Level 8 step 40] ADVANCE with time = 0.24375 dt = 0.00625 speed = 146.9489801 units/h
+[Level 8 step 40] Advanced 15904768 cells
+[Level 9 step 79] ADVANCE with time = 0.24375 dt = 0.003125 speed = 146.3339553 units/h
+[Level 9 step 79] Advanced 22745088 cells
+[Level 9 step 80] ADVANCE with time = 0.246875 dt = 0.003125 speed = 146.9583084 units/h
+[Level 9 step 80] Advanced 22745088 cells
+[Level 5 step 6] ADVANCE with time = 0.25 dt = 0.05 speed = 147.3902544 units/h
+[Level 5 step 6] Advanced 16777216 cells
+[Level 6 step 11] ADVANCE with time = 0.25 dt = 0.025 speed = 146.8932506 units/h
+[Level 6 step 11] Advanced 12386304 cells
+[Level 7 step 21] ADVANCE with time = 0.25 dt = 0.0125 speed = 146.4513769 units/h
+[Level 7 step 21] Advanced 11350016 cells
+[Level 8 step 41] ADVANCE with time = 0.25 dt = 0.00625 speed = 146.0115091 units/h
+[Level 8 step 41] Advanced 15904768 cells
+[Level 9 step 81] ADVANCE with time = 0.25 dt = 0.003125 speed = 145.4220318 units/h
+[Level 9 step 81] Advanced 22745088 cells
+[Level 9 step 82] ADVANCE with time = 0.253125 dt = 0.003125 speed = 146.0380912 units/h
+[Level 9 step 82] Advanced 22745088 cells
+[Level 8 step 42] ADVANCE with time = 0.25625 dt = 0.00625 speed = 146.5420681 units/h
+[Level 8 step 42] Advanced 15904768 cells
+[Level 9 step 83] ADVANCE with time = 0.25625 dt = 0.003125 speed = 145.9563579 units/h
+[Level 9 step 83] Advanced 22745088 cells
+[Level 9 step 84] ADVANCE with time = 0.259375 dt = 0.003125 speed = 146.5495213 units/h
+[Level 9 step 84] Advanced 22745088 cells
+[Level 7 step 22] ADVANCE with time = 0.2625 dt = 0.0125 speed = 146.9944656 units/h
+[Level 7 step 22] Advanced 11350016 cells
+[Level 8 step 43] ADVANCE with time = 0.2625 dt = 0.00625 speed = 146.5507663 units/h
+[Level 8 step 43] Advanced 15904768 cells
+[Level 9 step 85] ADVANCE with time = 0.2625 dt = 0.003125 speed = 145.9856766 units/h
+[Level 9 step 85] Advanced 22745088 cells
+[Level 9 step 86] ADVANCE with time = 0.265625 dt = 0.003125 speed = 146.5648505 units/h
+[Level 9 step 86] Advanced 22745088 cells
+[Level 8 step 44] ADVANCE with time = 0.26875 dt = 0.00625 speed = 147.0455286 units/h
+[Level 8 step 44] Advanced 15904768 cells
+[Level 9 step 87] ADVANCE with time = 0.26875 dt = 0.003125 speed = 146.47638 units/h
+[Level 9 step 87] Advanced 22745088 cells
+[Level 9 step 88] ADVANCE with time = 0.271875 dt = 0.003125 speed = 147.0470593 units/h
+[Level 9 step 88] Advanced 22745088 cells
+[Level 6 step 12] ADVANCE with time = 0.275 dt = 0.025 speed = 147.4551376 units/h
+[Level 6 step 12] Advanced 12386304 cells
+[Level 7 step 23] ADVANCE with time = 0.275 dt = 0.0125 speed = 147.0283263 units/h
+[Level 7 step 23] Advanced 11350016 cells
+[Level 8 step 45] ADVANCE with time = 0.275 dt = 0.00625 speed = 146.6266154 units/h
+[Level 8 step 45] Advanced 15904768 cells
+[Level 9 step 89] ADVANCE with time = 0.275 dt = 0.003125 speed = 146.0899114 units/h
+[Level 9 step 89] Advanced 22745088 cells
+[Level 9 step 90] ADVANCE with time = 0.278125 dt = 0.003125 speed = 146.6458731 units/h
+[Level 9 step 90] Advanced 22745088 cells
+[Level 8 step 46] ADVANCE with time = 0.28125 dt = 0.00625 speed = 147.091013 units/h
+[Level 8 step 46] Advanced 15904768 cells
+[Level 9 step 91] ADVANCE with time = 0.28125 dt = 0.003125 speed = 146.5528101 units/h
+[Level 9 step 91] Advanced 22745088 cells
+[Level 9 step 92] ADVANCE with time = 0.284375 dt = 0.003125 speed = 147.0852295 units/h
+[Level 9 step 92] Advanced 22745088 cells
+[Level 7 step 24] ADVANCE with time = 0.2875 dt = 0.0125 speed = 147.4895055 units/h
+[Level 7 step 24] Advanced 11350016 cells
+[Level 8 step 47] ADVANCE with time = 0.2875 dt = 0.00625 speed = 147.0931291 units/h
+[Level 8 step 47] Advanced 15904768 cells
+[Level 9 step 93] ADVANCE with time = 0.2875 dt = 0.003125 speed = 146.5740857 units/h
+[Level 9 step 93] Advanced 22745088 cells
+[Level 9 step 94] ADVANCE with time = 0.290625 dt = 0.003125 speed = 147.1055654 units/h
+[Level 9 step 94] Advanced 22745088 cells
+[Level 8 step 48] ADVANCE with time = 0.29375 dt = 0.00625 speed = 147.5387783 units/h
+[Level 8 step 48] Advanced 15904768 cells
+[Level 9 step 95] ADVANCE with time = 0.29375 dt = 0.003125 speed = 147.0249381 units/h
+[Level 9 step 95] Advanced 22745088 cells
+[Level 9 step 96] ADVANCE with time = 0.296875 dt = 0.003125 speed = 147.5412257 units/h
+[Level 9 step 96] Advanced 22745088 cells
+[Level 4 step 4] ADVANCE with time = 0.3 dt = 0.1 speed = 147.8440919 units/h
+[Level 4 step 4] Advanced 16777216 cells
+[Level 5 step 7] ADVANCE with time = 0.3 dt = 0.05 speed = 147.4393578 units/h
+[Level 5 step 7] Advanced 16777216 cells
+[Level 6 step 13] ADVANCE with time = 0.3 dt = 0.025 speed = 147.0681833 units/h
+[Level 6 step 13] Advanced 12386304 cells
+[Level 7 step 25] ADVANCE with time = 0.3 dt = 0.0125 speed = 146.6987878 units/h
+[Level 7 step 25] Advanced 11350016 cells
+[Level 8 step 49] ADVANCE with time = 0.3 dt = 0.00625 speed = 146.3293417 units/h
+[Level 8 step 49] Advanced 15904768 cells
+[Level 9 step 97] ADVANCE with time = 0.3 dt = 0.003125 speed = 145.834293 units/h
+[Level 9 step 97] Advanced 22745088 cells
+[Level 9 step 98] ADVANCE with time = 0.303125 dt = 0.003125 speed = 146.3419474 units/h
+[Level 9 step 98] Advanced 22745088 cells
+[Level 8 step 50] ADVANCE with time = 0.30625 dt = 0.00625 speed = 146.760695 units/h
+[Level 8 step 50] Advanced 15904768 cells
+[Level 9 step 99] ADVANCE with time = 0.30625 dt = 0.003125 speed = 146.2696318 units/h
+[Level 9 step 99] Advanced 22745088 cells
+[Level 9 step 100] ADVANCE with time = 0.309375 dt = 0.003125 speed = 146.7742731 units/h
+[Level 9 step 100] Advanced 22745088 cells
+[Level 7 step 26] ADVANCE with time = 0.3125 dt = 0.0125 speed = 147.1491374 units/h
+[Level 7 step 26] Advanced 11350016 cells
+[Level 8 step 51] ADVANCE with time = 0.3125 dt = 0.00625 speed = 146.7865569 units/h
+[Level 8 step 51] Advanced 15904768 cells
+[Level 9 step 101] ADVANCE with time = 0.3125 dt = 0.003125 speed = 146.3118354 units/h
+[Level 9 step 101] Advanced 22745088 cells
+[Level 9 step 102] ADVANCE with time = 0.315625 dt = 0.003125 speed = 146.7999642 units/h
+[Level 9 step 102] Advanced 22745088 cells
+[Level 8 step 52] ADVANCE with time = 0.31875 dt = 0.00625 speed = 147.2009621 units/h
+[Level 8 step 52] Advanced 15904768 cells
+[Level 9 step 103] ADVANCE with time = 0.31875 dt = 0.003125 speed = 146.7237788 units/h
+[Level 9 step 103] Advanced 22745088 cells
+[Level 9 step 104] ADVANCE with time = 0.321875 dt = 0.003125 speed = 147.1970858 units/h
+[Level 9 step 104] Advanced 22745088 cells
+[Level 6 step 14] ADVANCE with time = 0.325 dt = 0.025 speed = 147.5368815 units/h
+[Level 6 step 14] Advanced 12386304 cells
+[Level 7 step 27] ADVANCE with time = 0.325 dt = 0.0125 speed = 147.177411 units/h
+[Level 7 step 27] Advanced 11350016 cells
+[Level 8 step 53] ADVANCE with time = 0.325 dt = 0.00625 speed = 146.8306832 units/h
+[Level 8 step 53] Advanced 15904768 cells
+[Level 9 step 105] ADVANCE with time = 0.325 dt = 0.003125 speed = 146.3728667 units/h
+[Level 9 step 105] Advanced 22745088 cells
+[Level 9 step 106] ADVANCE with time = 0.328125 dt = 0.003125 speed = 146.847046 units/h
+[Level 9 step 106] Advanced 22745088 cells
+[Level 8 step 54] ADVANCE with time = 0.33125 dt = 0.00625 speed = 147.2307065 units/h
+[Level 8 step 54] Advanced 15904768 cells
+[Level 9 step 107] ADVANCE with time = 0.33125 dt = 0.003125 speed = 146.7764864 units/h
+[Level 9 step 107] Advanced 22745088 cells
+[Level 9 step 108] ADVANCE with time = 0.334375 dt = 0.003125 speed = 147.2360371 units/h
+[Level 9 step 108] Advanced 22745088 cells
+[Level 7 step 28] ADVANCE with time = 0.3375 dt = 0.0125 speed = 147.578319 units/h
+[Level 7 step 28] Advanced 11350016 cells
+[Level 8 step 55] ADVANCE with time = 0.3375 dt = 0.00625 speed = 147.2384008 units/h
+[Level 8 step 55] Advanced 15904768 cells
+[Level 9 step 109] ADVANCE with time = 0.3375 dt = 0.003125 speed = 146.7916418 units/h
+[Level 9 step 109] Advanced 22745088 cells
+[Level 9 step 110] ADVANCE with time = 0.340625 dt = 0.003125 speed = 147.2420366 units/h
+[Level 9 step 110] Advanced 22745088 cells
+[Level 8 step 56] ADVANCE with time = 0.34375 dt = 0.00625 speed = 147.6027491 units/h
+[Level 8 step 56] Advanced 15904768 cells
+[Level 9 step 111] ADVANCE with time = 0.34375 dt = 0.003125 speed = 147.1604307 units/h
+[Level 9 step 111] Advanced 22745088 cells
+[Level 9 step 112] ADVANCE with time = 0.346875 dt = 0.003125 speed = 147.5986476 units/h
+[Level 9 step 112] Advanced 22745088 cells
+[Level 5 step 8] ADVANCE with time = 0.35 dt = 0.05 speed = 147.9057075 units/h
+[Level 5 step 8] Advanced 16777216 cells
+[Level 6 step 15] ADVANCE with time = 0.35 dt = 0.025 speed = 147.5461171 units/h
+[Level 6 step 15] Advanced 12386304 cells
+[Level 7 step 29] ADVANCE with time = 0.35 dt = 0.0125 speed = 147.2285972 units/h
+[Level 7 step 29] Advanced 11350016 cells
+[Level 8 step 57] ADVANCE with time = 0.35 dt = 0.00625 speed = 146.9107477 units/h
+[Level 8 step 57] Advanced 15904768 cells
+[Level 9 step 113] ADVANCE with time = 0.35 dt = 0.003125 speed = 146.4900415 units/h
+[Level 9 step 113] Advanced 22745088 cells
+[Level 9 step 114] ADVANCE with time = 0.353125 dt = 0.003125 speed = 146.923747 units/h
+[Level 9 step 114] Advanced 22745088 cells
+[Level 8 step 58] ADVANCE with time = 0.35625 dt = 0.00625 speed = 147.2750991 units/h
+[Level 8 step 58] Advanced 15904768 cells
+[Level 9 step 115] ADVANCE with time = 0.35625 dt = 0.003125 speed = 146.8448959 units/h
+[Level 9 step 115] Advanced 22745088 cells
+[Level 9 step 116] ADVANCE with time = 0.359375 dt = 0.003125 speed = 147.2687939 units/h
+[Level 9 step 116] Advanced 22745088 cells
+[Level 7 step 30] ADVANCE with time = 0.3625 dt = 0.0125 speed = 147.5892745 units/h
+[Level 7 step 30] Advanced 11350016 cells
+[Level 8 step 59] ADVANCE with time = 0.3625 dt = 0.00625 speed = 147.2720377 units/h
+[Level 8 step 59] Advanced 15904768 cells
+[Level 9 step 117] ADVANCE with time = 0.3625 dt = 0.003125 speed = 146.855449 units/h
+[Level 9 step 117] Advanced 22745088 cells
+[Level 9 step 118] ADVANCE with time = 0.365625 dt = 0.003125 speed = 147.2808077 units/h
+[Level 9 step 118] Advanced 22745088 cells
+[Level 8 step 60] ADVANCE with time = 0.36875 dt = 0.00625 speed = 147.6251042 units/h
+[Level 8 step 60] Advanced 15904768 cells
+[Level 9 step 119] ADVANCE with time = 0.36875 dt = 0.003125 speed = 147.2123111 units/h
+[Level 9 step 119] Advanced 22745088 cells
+[Level 9 step 120] ADVANCE with time = 0.371875 dt = 0.003125 speed = 147.625283 units/h
+[Level 9 step 120] Advanced 22745088 cells
+[Level 6 step 16] ADVANCE with time = 0.375 dt = 0.025 speed = 147.9204021 units/h
+[Level 6 step 16] Advanced 12386304 cells
+[Level 7 step 31] ADVANCE with time = 0.375 dt = 0.0125 speed = 147.6056434 units/h
+[Level 7 step 31] Advanced 11350016 cells
+[Level 8 step 61] ADVANCE with time = 0.375 dt = 0.00625 speed = 147.3041285 units/h
+[Level 8 step 61] Advanced 15904768 cells
+[Level 9 step 121] ADVANCE with time = 0.375 dt = 0.003125 speed = 146.9061369 units/h
+[Level 9 step 121] Advanced 22745088 cells
+[Level 9 step 122] ADVANCE with time = 0.378125 dt = 0.003125 speed = 147.3119465 units/h
+[Level 9 step 122] Advanced 22745088 cells
+[Level 8 step 62] ADVANCE with time = 0.38125 dt = 0.00625 speed = 147.6380458 units/h
+[Level 8 step 62] Advanced 15904768 cells
+[Level 9 step 123] ADVANCE with time = 0.38125 dt = 0.003125 speed = 147.2397453 units/h
+[Level 9 step 123] Advanced 22745088 cells
+[Level 9 step 124] ADVANCE with time = 0.384375 dt = 0.003125 speed = 147.6324025 units/h
+[Level 9 step 124] Advanced 22745088 cells
+[Level 7 step 32] ADVANCE with time = 0.3875 dt = 0.0125 speed = 147.9349982 units/h
+[Level 7 step 32] Advanced 11350016 cells
+[Level 8 step 63] ADVANCE with time = 0.3875 dt = 0.00625 speed = 147.6385815 units/h
+[Level 8 step 63] Advanced 15904768 cells
+[Level 9 step 125] ADVANCE with time = 0.3875 dt = 0.003125 speed = 147.2470412 units/h
+[Level 9 step 125] Advanced 22745088 cells
+[Level 9 step 126] ADVANCE with time = 0.390625 dt = 0.003125 speed = 147.6393716 units/h
+[Level 9 step 126] Advanced 22745088 cells
+[Level 8 step 64] ADVANCE with time = 0.39375 dt = 0.00625 speed = 147.9617302 units/h
+[Level 8 step 64] Advanced 15904768 cells
+[Level 9 step 127] ADVANCE with time = 0.39375 dt = 0.003125 speed = 147.572651 units/h
+[Level 9 step 127] Advanced 22745088 cells
+[Level 9 step 128] ADVANCE with time = 0.396875 dt = 0.003125 speed = 147.9570549 units/h
+[Level 9 step 128] Advanced 22745088 cells
+[Level 2 step 2] ADVANCE with time = 0.4 dt = 0.4 speed = 148.1217526 units/h
+[Level 2 step 2] Advanced 16777216 cells
+[Level 3 step 3] ADVANCE with time = 0.4 dt = 0.2 speed = 147.8297531 units/h
+[Level 3 step 3] Advanced 16777216 cells
+[Level 4 step 5] ADVANCE with time = 0.4 dt = 0.1 speed = 147.5480263 units/h
+[Level 4 step 5] Advanced 16777216 cells
+[Level 5 step 9] ADVANCE with time = 0.4 dt = 0.05 speed = 147.2692463 units/h
+[Level 5 step 9] Advanced 16777216 cells
+[Level 6 step 17] ADVANCE with time = 0.4 dt = 0.025 speed = 146.9926007 units/h
+[Level 6 step 17] Advanced 12386304 cells
+[Level 7 step 33] ADVANCE with time = 0.4 dt = 0.0125 speed = 146.233513 units/h
+[Level 7 step 33] Advanced 11350016 cells
+[Level 8 step 65] ADVANCE with time = 0.4 dt = 0.00625 speed = 145.8323786 units/h
+[Level 8 step 65] Advanced 15904768 cells
+[Level 9 step 129] ADVANCE with time = 0.4 dt = 0.003125 speed = 145.4295916 units/h
+[Level 9 step 129] Advanced 22765568 cells
+[Level 9 step 130] ADVANCE with time = 0.403125 dt = 0.003125 speed = 145.7461431 units/h
+[Level 9 step 130] Advanced 22765568 cells
+[Level 8 step 66] ADVANCE with time = 0.40625 dt = 0.00625 speed = 146.1243021 units/h
+[Level 8 step 66] Advanced 15904768 cells
+[Level 9 step 131] ADVANCE with time = 0.40625 dt = 0.003125 speed = 145.7629503 units/h
+[Level 9 step 131] Advanced 22765568 cells
+[Level 9 step 132] ADVANCE with time = 0.409375 dt = 0.003125 speed = 146.1618655 units/h
+[Level 9 step 132] Advanced 22765568 cells
+[Level 7 step 34] ADVANCE with time = 0.4125 dt = 0.0125 speed = 146.5199498 units/h
+[Level 7 step 34] Advanced 11350016 cells
+[Level 8 step 67] ADVANCE with time = 0.4125 dt = 0.00625 speed = 146.2498959 units/h
+[Level 8 step 67] Advanced 15904768 cells
+[Level 9 step 133] ADVANCE with time = 0.4125 dt = 0.003125 speed = 145.8920054 units/h
+[Level 9 step 133] Advanced 22765568 cells
+[Level 9 step 134] ADVANCE with time = 0.415625 dt = 0.003125 speed = 146.2891773 units/h
+[Level 9 step 134] Advanced 22765568 cells
+[Level 8 step 68] ADVANCE with time = 0.41875 dt = 0.00625 speed = 146.6624783 units/h
+[Level 8 step 68] Advanced 15904768 cells
+[Level 9 step 135] ADVANCE with time = 0.41875 dt = 0.003125 speed = 146.3078585 units/h
+[Level 9 step 135] Advanced 22765568 cells
+[Level 9 step 136] ADVANCE with time = 0.421875 dt = 0.003125 speed = 146.6979535 units/h
+[Level 9 step 136] Advanced 22765568 cells
+[Level 6 step 18] ADVANCE with time = 0.425 dt = 0.025 speed = 147.0367727 units/h
+[Level 6 step 18] Advanced 12386304 cells
+[Level 7 step 35] ADVANCE with time = 0.425 dt = 0.0125 speed = 146.7425601 units/h
+[Level 7 step 35] Advanced 11350016 cells
+[Level 8 step 69] ADVANCE with time = 0.425 dt = 0.00625 speed = 146.4826155 units/h
+[Level 8 step 69] Advanced 15904768 cells
+[Level 9 step 137] ADVANCE with time = 0.425 dt = 0.003125 speed = 146.1292852 units/h
+[Level 9 step 137] Advanced 22765568 cells
+[Level 9 step 138] ADVANCE with time = 0.428125 dt = 0.003125 speed = 146.5123993 units/h
+[Level 9 step 138] Advanced 22765568 cells
+[Level 8 step 70] ADVANCE with time = 0.43125 dt = 0.00625 speed = 146.8702019 units/h
+[Level 8 step 70] Advanced 15904768 cells
+[Level 9 step 139] ADVANCE with time = 0.43125 dt = 0.003125 speed = 146.5272293 units/h
+[Level 9 step 139] Advanced 22765568 cells
+[Level 9 step 140] ADVANCE with time = 0.434375 dt = 0.003125 speed = 146.9030497 units/h
+[Level 9 step 140] Advanced 22765568 cells
+[Level 7 step 36] ADVANCE with time = 0.4375 dt = 0.0125 speed = 147.2396506 units/h
+[Level 7 step 36] Advanced 11350016 cells
+[Level 8 step 71] ADVANCE with time = 0.4375 dt = 0.00625 speed = 146.9813746 units/h
+[Level 8 step 71] Advanced 15904768 cells
+[Level 9 step 141] ADVANCE with time = 0.4375 dt = 0.003125 speed = 146.6419837 units/h
+[Level 9 step 141] Advanced 22765568 cells
+[Level 9 step 142] ADVANCE with time = 0.440625 dt = 0.003125 speed = 147.0154503 units/h
+[Level 9 step 142] Advanced 22765568 cells
+[Level 8 step 72] ADVANCE with time = 0.44375 dt = 0.00625 speed = 147.3576236 units/h
+[Level 8 step 72] Advanced 15904768 cells
+[Level 9 step 143] ADVANCE with time = 0.44375 dt = 0.003125 speed = 147.0226614 units/h
+[Level 9 step 143] Advanced 22765568 cells
+[Level 9 step 144] ADVANCE with time = 0.446875 dt = 0.003125 speed = 147.3855376 units/h
+[Level 9 step 144] Advanced 22765568 cells
+[Level 5 step 10] ADVANCE with time = 0.45 dt = 0.05 speed = 147.6955735 units/h
+[Level 5 step 10] Advanced 16777216 cells
+[Level 6 step 19] ADVANCE with time = 0.45 dt = 0.025 speed = 147.393667 units/h
+[Level 6 step 19] Advanced 12386304 cells
+[Level 7 step 37] ADVANCE with time = 0.45 dt = 0.0125 speed = 147.1448933 units/h
+[Level 7 step 37] Advanced 11350016 cells
+[Level 8 step 73] ADVANCE with time = 0.45 dt = 0.00625 speed = 146.8996984 units/h
+[Level 8 step 73] Advanced 15904768 cells
+[Level 9 step 145] ADVANCE with time = 0.45 dt = 0.003125 speed = 146.5657058 units/h
+[Level 9 step 145] Advanced 22765568 cells
+[Level 9 step 146] ADVANCE with time = 0.453125 dt = 0.003125 speed = 146.9262972 units/h
+[Level 9 step 146] Advanced 22765568 cells
+[Level 8 step 74] ADVANCE with time = 0.45625 dt = 0.00625 speed = 147.2587191 units/h
+[Level 8 step 74] Advanced 15904768 cells
+[Level 9 step 147] ADVANCE with time = 0.45625 dt = 0.003125 speed = 146.9351975 units/h
+[Level 9 step 147] Advanced 22765568 cells
+[Level 9 step 148] ADVANCE with time = 0.459375 dt = 0.003125 speed = 147.2855955 units/h
+[Level 9 step 148] Advanced 22765568 cells
+[Level 7 step 38] ADVANCE with time = 0.4625 dt = 0.0125 speed = 147.6027298 units/h
+[Level 7 step 38] Advanced 11350016 cells
+[Level 8 step 75] ADVANCE with time = 0.4625 dt = 0.00625 speed = 147.3580111 units/h
+[Level 8 step 75] Advanced 15904768 cells
+[Level 9 step 149] ADVANCE with time = 0.4625 dt = 0.003125 speed = 147.0359915 units/h
+[Level 9 step 149] Advanced 22765568 cells
+[Level 9 step 150] ADVANCE with time = 0.465625 dt = 0.003125 speed = 147.3839584 units/h
+[Level 9 step 150] Advanced 22765568 cells
+[Level 8 step 76] ADVANCE with time = 0.46875 dt = 0.00625 speed = 147.711154 units/h
+[Level 8 step 76] Advanced 15904768 cells
+[Level 9 step 151] ADVANCE with time = 0.46875 dt = 0.003125 speed = 147.3898453 units/h
+[Level 9 step 151] Advanced 22765568 cells
+[Level 9 step 152] ADVANCE with time = 0.471875 dt = 0.003125 speed = 147.7263826 units/h
+[Level 9 step 152] Advanced 22765568 cells
+[Level 6 step 20] ADVANCE with time = 0.475 dt = 0.025 speed = 148.0306739 units/h
+[Level 6 step 20] Advanced 12386304 cells
+[Level 7 step 39] ADVANCE with time = 0.475 dt = 0.0125 speed = 147.7841244 units/h
+[Level 7 step 39] Advanced 11350016 cells
+[Level 8 step 77] ADVANCE with time = 0.475 dt = 0.00625 speed = 147.5489687 units/h
+[Level 8 step 77] Advanced 15904768 cells
+[Level 9 step 153] ADVANCE with time = 0.475 dt = 0.003125 speed = 147.2322477 units/h
+[Level 9 step 153] Advanced 22765568 cells
+[Level 9 step 154] ADVANCE with time = 0.478125 dt = 0.003125 speed = 147.5717 units/h
+[Level 9 step 154] Advanced 22765568 cells
+[Level 8 step 78] ADVANCE with time = 0.48125 dt = 0.00625 speed = 147.889603 units/h
+[Level 8 step 78] Advanced 15904768 cells
+[Level 9 step 155] ADVANCE with time = 0.48125 dt = 0.003125 speed = 147.5775282 units/h
+[Level 9 step 155] Advanced 22765568 cells
+[Level 9 step 156] ADVANCE with time = 0.484375 dt = 0.003125 speed = 147.9140484 units/h
+[Level 9 step 156] Advanced 22765568 cells
+[Level 7 step 40] ADVANCE with time = 0.4875 dt = 0.0125 speed = 148.2157092 units/h
+[Level 7 step 40] Advanced 11350016 cells
+[Level 8 step 79] ADVANCE with time = 0.4875 dt = 0.00625 speed = 147.9784854 units/h
+[Level 8 step 79] Advanced 15904768 cells
+[Level 9 step 157] ADVANCE with time = 0.4875 dt = 0.003125 speed = 147.6687894 units/h
+[Level 9 step 157] Advanced 22765568 cells
+[Level 9 step 158] ADVANCE with time = 0.490625 dt = 0.003125 speed = 147.9980982 units/h
+[Level 9 step 158] Advanced 22765568 cells
+[Level 8 step 80] ADVANCE with time = 0.49375 dt = 0.00625 speed = 148.3060914 units/h
+[Level 8 step 80] Advanced 15904768 cells
+[Level 9 step 159] ADVANCE with time = 0.49375 dt = 0.003125 speed = 148.0005495 units/h
+[Level 9 step 159] Advanced 22765568 cells
+[Level 9 step 160] ADVANCE with time = 0.496875 dt = 0.003125 speed = 148.3268033 units/h
+[Level 9 step 160] Advanced 22765568 cells
+[Level 4 step 6] ADVANCE with time = 0.5 dt = 0.1 speed = 148.5687231 units/h
+[Level 4 step 6] Advanced 16777216 cells
+[Level 5 step 11] ADVANCE with time = 0.5 dt = 0.05 speed = 148.3273015 units/h
+[Level 5 step 11] Advanced 16777216 cells
+[Level 6 step 21] ADVANCE with time = 0.5 dt = 0.025 speed = 148.1015705 units/h
+[Level 6 step 21] Advanced 12386304 cells
+[Level 7 step 41] ADVANCE with time = 0.5 dt = 0.0125 speed = 147.8731692 units/h
+[Level 7 step 41] Advanced 11350016 cells
+[Level 8 step 81] ADVANCE with time = 0.5 dt = 0.00625 speed = 147.6497761 units/h
+[Level 8 step 81] Advanced 15904768 cells
+[Level 9 step 161] ADVANCE with time = 0.5 dt = 0.003125 speed = 147.3512699 units/h
+[Level 9 step 161] Advanced 22765568 cells
+[Level 9 step 162] ADVANCE with time = 0.503125 dt = 0.003125 speed = 147.6738048 units/h
+[Level 9 step 162] Advanced 22765568 cells
+[Level 8 step 82] ADVANCE with time = 0.50625 dt = 0.00625 speed = 147.974755 units/h
+[Level 8 step 82] Advanced 15904768 cells
+[Level 9 step 163] ADVANCE with time = 0.50625 dt = 0.003125 speed = 147.6778945 units/h
+[Level 9 step 163] Advanced 22765568 cells
+[Level 9 step 164] ADVANCE with time = 0.509375 dt = 0.003125 speed = 147.9982312 units/h
+[Level 9 step 164] Advanced 22765568 cells
+[Level 7 step 42] ADVANCE with time = 0.5125 dt = 0.0125 speed = 148.2849612 units/h
+[Level 7 step 42] Advanced 11350016 cells
+[Level 8 step 83] ADVANCE with time = 0.5125 dt = 0.00625 speed = 148.0617574 units/h
+[Level 8 step 83] Advanced 15904768 cells
+[Level 9 step 165] ADVANCE with time = 0.5125 dt = 0.003125 speed = 147.766959 units/h
+[Level 9 step 165] Advanced 22765568 cells
+[Level 9 step 166] ADVANCE with time = 0.515625 dt = 0.003125 speed = 148.0799208 units/h
+[Level 9 step 166] Advanced 22765568 cells
+[Level 8 step 84] ADVANCE with time = 0.51875 dt = 0.00625 speed = 148.3769582 units/h
+[Level 8 step 84] Advanced 15904768 cells
+[Level 9 step 167] ADVANCE with time = 0.51875 dt = 0.003125 speed = 148.0855556 units/h
+[Level 9 step 167] Advanced 22765568 cells
+[Level 9 step 168] ADVANCE with time = 0.521875 dt = 0.003125 speed = 148.3953708 units/h
+[Level 9 step 168] Advanced 22765568 cells
+[Level 6 step 22] ADVANCE with time = 0.525 dt = 0.025 speed = 148.6625826 units/h
+[Level 6 step 22] Advanced 12386304 cells
+[Level 7 step 43] ADVANCE with time = 0.525 dt = 0.0125 speed = 148.4382484 units/h
+[Level 7 step 43] Advanced 11350016 cells
+[Level 8 step 85] ADVANCE with time = 0.525 dt = 0.00625 speed = 148.2209123 units/h
+[Level 8 step 85] Advanced 15904768 cells
+[Level 9 step 169] ADVANCE with time = 0.525 dt = 0.003125 speed = 147.9311716 units/h
+[Level 9 step 169] Advanced 22765568 cells
+[Level 9 step 170] ADVANCE with time = 0.528125 dt = 0.003125 speed = 148.2315831 units/h
+[Level 9 step 170] Advanced 22765568 cells
+[Level 8 step 86] ADVANCE with time = 0.53125 dt = 0.00625 speed = 148.5215977 units/h
+[Level 8 step 86] Advanced 15904768 cells
+[Level 9 step 171] ADVANCE with time = 0.53125 dt = 0.003125 speed = 148.2348083 units/h
+[Level 9 step 171] Advanced 22765568 cells
+[Level 9 step 172] ADVANCE with time = 0.534375 dt = 0.003125 speed = 148.5381845 units/h
+[Level 9 step 172] Advanced 22765568 cells
+[Level 7 step 44] ADVANCE with time = 0.5375 dt = 0.0125 speed = 148.8093933 units/h
+[Level 7 step 44] Advanced 11350016 cells
+[Level 8 step 87] ADVANCE with time = 0.5375 dt = 0.00625 speed = 148.5929918 units/h
+[Level 8 step 87] Advanced 15904768 cells
+[Level 9 step 173] ADVANCE with time = 0.5375 dt = 0.003125 speed = 148.3071586 units/h
+[Level 9 step 173] Advanced 22765568 cells
+[Level 9 step 174] ADVANCE with time = 0.540625 dt = 0.003125 speed = 148.6015069 units/h
+[Level 9 step 174] Advanced 22765568 cells
+[Level 8 step 88] ADVANCE with time = 0.54375 dt = 0.00625 speed = 148.887619 units/h
+[Level 8 step 88] Advanced 15904768 cells
+[Level 9 step 175] ADVANCE with time = 0.54375 dt = 0.003125 speed = 148.6063302 units/h
+[Level 9 step 175] Advanced 22765568 cells
+[Level 9 step 176] ADVANCE with time = 0.546875 dt = 0.003125 speed = 148.902117 units/h
+[Level 9 step 176] Advanced 22765568 cells
+[Level 5 step 12] ADVANCE with time = 0.55 dt = 0.05 speed = 149.1521427 units/h
+[Level 5 step 12] Advanced 16777216 cells
+[Level 6 step 23] ADVANCE with time = 0.55 dt = 0.025 speed = 148.917052 units/h
+[Level 6 step 23] Advanced 12386304 cells
+[Level 7 step 45] ADVANCE with time = 0.55 dt = 0.0125 speed = 148.7076964 units/h
+[Level 7 step 45] Advanced 11350016 cells
+[Level 8 step 89] ADVANCE with time = 0.55 dt = 0.00625 speed = 148.5005812 units/h
+[Level 8 step 89] Advanced 15904768 cells
+[Level 9 step 177] ADVANCE with time = 0.55 dt = 0.003125 speed = 148.2242587 units/h
+[Level 9 step 177] Advanced 22765568 cells
+[Level 9 step 178] ADVANCE with time = 0.553125 dt = 0.003125 speed = 148.5171784 units/h
+[Level 9 step 178] Advanced 22765568 cells
+[Level 8 step 90] ADVANCE with time = 0.55625 dt = 0.00625 speed = 148.7889176 units/h
+[Level 8 step 90] Advanced 15904768 cells
+[Level 9 step 179] ADVANCE with time = 0.55625 dt = 0.003125 speed = 148.513825 units/h
+[Level 9 step 179] Advanced 22765568 cells
+[Level 9 step 180] ADVANCE with time = 0.559375 dt = 0.003125 speed = 148.8027123 units/h
+[Level 9 step 180] Advanced 22765568 cells
+[Level 7 step 46] ADVANCE with time = 0.5625 dt = 0.0125 speed = 149.0619725 units/h
+[Level 7 step 46] Advanced 11350016 cells
+[Level 8 step 91] ADVANCE with time = 0.5625 dt = 0.00625 speed = 148.8566195 units/h
+[Level 8 step 91] Advanced 15904768 cells
+[Level 9 step 181] ADVANCE with time = 0.5625 dt = 0.003125 speed = 148.5870097 units/h
+[Level 9 step 181] Advanced 22765568 cells
+[Level 9 step 182] ADVANCE with time = 0.565625 dt = 0.003125 speed = 148.8720167 units/h
+[Level 9 step 182] Advanced 22765568 cells
+[Level 8 step 92] ADVANCE with time = 0.56875 dt = 0.00625 speed = 149.1356009 units/h
+[Level 8 step 92] Advanced 15904768 cells
+[Level 9 step 183] ADVANCE with time = 0.56875 dt = 0.003125 speed = 148.8682784 units/h
+[Level 9 step 183] Advanced 22765568 cells
+[Level 9 step 184] ADVANCE with time = 0.571875 dt = 0.003125 speed = 149.1445947 units/h
+[Level 9 step 184] Advanced 22765568 cells
+[Level 6 step 24] ADVANCE with time = 0.575 dt = 0.025 speed = 149.3873914 units/h
+[Level 6 step 24] Advanced 12386304 cells
+[Level 7 step 47] ADVANCE with time = 0.575 dt = 0.0125 speed = 149.1800682 units/h
+[Level 7 step 47] Advanced 11350016 cells
+[Level 8 step 93] ADVANCE with time = 0.575 dt = 0.00625 speed = 148.98113 units/h
+[Level 8 step 93] Advanced 15904768 cells
+[Level 9 step 185] ADVANCE with time = 0.575 dt = 0.003125 speed = 148.7148903 units/h
+[Level 9 step 185] Advanced 22765568 cells
+[Level 9 step 186] ADVANCE with time = 0.578125 dt = 0.003125 speed = 148.9957686 units/h
+[Level 9 step 186] Advanced 22765568 cells
+[Level 8 step 94] ADVANCE with time = 0.58125 dt = 0.00625 speed = 149.2597114 units/h
+[Level 8 step 94] Advanced 15904768 cells
+[Level 9 step 187] ADVANCE with time = 0.58125 dt = 0.003125 speed = 148.994821 units/h
+[Level 9 step 187] Advanced 22765568 cells
+[Level 9 step 188] ADVANCE with time = 0.584375 dt = 0.003125 speed = 149.267351 units/h
+[Level 9 step 188] Advanced 22765568 cells
+[Level 7 step 48] ADVANCE with time = 0.5875 dt = 0.0125 speed = 149.5172645 units/h
+[Level 7 step 48] Advanced 11350016 cells
+[Level 8 step 95] ADVANCE with time = 0.5875 dt = 0.00625 speed = 149.319159 units/h
+[Level 8 step 95] Advanced 15904768 cells
+[Level 9 step 189] ADVANCE with time = 0.5875 dt = 0.003125 speed = 149.0580673 units/h
+[Level 9 step 189] Advanced 22765568 cells
+[Level 9 step 190] ADVANCE with time = 0.590625 dt = 0.003125 speed = 149.3298687 units/h
+[Level 9 step 190] Advanced 22765568 cells
+[Level 8 step 96] ADVANCE with time = 0.59375 dt = 0.00625 speed = 149.5889871 units/h
+[Level 8 step 96] Advanced 15904768 cells
+[Level 9 step 191] ADVANCE with time = 0.59375 dt = 0.003125 speed = 149.3292716 units/h
+[Level 9 step 191] Advanced 22765568 cells
+[Level 9 step 192] ADVANCE with time = 0.596875 dt = 0.003125 speed = 149.5990574 units/h
+[Level 9 step 192] Advanced 22765568 cells
+[Level 3 step 4] ADVANCE with time = 0.6 dt = 0.2 speed = 149.771257 units/h
+[Level 3 step 4] Advanced 16777216 cells
+[Level 4 step 7] ADVANCE with time = 0.6 dt = 0.1 speed = 149.5675133 units/h
+[Level 4 step 7] Advanced 16777216 cells
+[Level 5 step 13] ADVANCE with time = 0.6 dt = 0.05 speed = 149.3763345 units/h
+[Level 5 step 13] Advanced 16777216 cells
+[Level 6 step 25] ADVANCE with time = 0.6 dt = 0.025 speed = 149.1865886 units/h
+[Level 6 step 25] Advanced 12386304 cells
+[Level 7 step 49] ADVANCE with time = 0.6 dt = 0.0125 speed = 148.9954714 units/h
+[Level 7 step 49] Advanced 11350016 cells
+[Level 8 step 97] ADVANCE with time = 0.6 dt = 0.00625 speed = 148.5125772 units/h
+[Level 8 step 97] Advanced 15904768 cells
+[Level 9 step 193] ADVANCE with time = 0.6 dt = 0.003125 speed = 148.1469043 units/h
+[Level 9 step 193] Advanced 22781952 cells
+[Level 9 step 194] ADVANCE with time = 0.603125 dt = 0.003125 speed = 148.2914768 units/h
+[Level 9 step 194] Advanced 22781952 cells
+[Level 8 step 98] ADVANCE with time = 0.60625 dt = 0.00625 speed = 148.5181337 units/h
+[Level 8 step 98] Advanced 15904768 cells
+[Level 9 step 195] ADVANCE with time = 0.60625 dt = 0.003125 speed = 148.2613487 units/h
+[Level 9 step 195] Advanced 22781952 cells
+[Level 9 step 196] ADVANCE with time = 0.609375 dt = 0.003125 speed = 148.5293727 units/h
+[Level 9 step 196] Advanced 22781952 cells
+[Level 7 step 50] ADVANCE with time = 0.6125 dt = 0.0125 speed = 148.7444691 units/h
+[Level 7 step 50] Advanced 11350016 cells
+[Level 8 step 99] ADVANCE with time = 0.6125 dt = 0.00625 speed = 148.5298053 units/h
+[Level 8 step 99] Advanced 15904768 cells
+[Level 9 step 197] ADVANCE with time = 0.6125 dt = 0.003125 speed = 148.2823778 units/h
+[Level 9 step 197] Advanced 22781952 cells
+[Level 9 step 198] ADVANCE with time = 0.615625 dt = 0.003125 speed = 148.5462737 units/h
+[Level 9 step 198] Advanced 22781952 cells
+[Level 8 step 100] ADVANCE with time = 0.61875 dt = 0.00625 speed = 148.7634696 units/h
+[Level 8 step 100] Advanced 15904768 cells
+[Level 9 step 199] ADVANCE with time = 0.61875 dt = 0.003125 speed = 148.5168751 units/h
+[Level 9 step 199] Advanced 22781952 cells
+[Level 9 step 200] ADVANCE with time = 0.621875 dt = 0.003125 speed = 148.7772505 units/h
+[Level 9 step 200] Advanced 22781952 cells
+[Level 6 step 26] ADVANCE with time = 0.625 dt = 0.025 speed = 148.9777326 units/h
+[Level 6 step 26] Advanced 12386304 cells
+[Level 7 step 51] ADVANCE with time = 0.625 dt = 0.0125 speed = 148.7609223 units/h
+[Level 7 step 51] Advanced 11350016 cells
+[Level 8 step 101] ADVANCE with time = 0.625 dt = 0.00625 speed = 148.5789933 units/h
+[Level 8 step 101] Advanced 15904768 cells
+[Level 9 step 201] ADVANCE with time = 0.625 dt = 0.003125 speed = 148.3365413 units/h
+[Level 9 step 201] Advanced 22781952 cells
+[Level 9 step 202] ADVANCE with time = 0.628125 dt = 0.003125 speed = 148.597491 units/h
+[Level 9 step 202] Advanced 22781952 cells
+[Level 8 step 102] ADVANCE with time = 0.63125 dt = 0.00625 speed = 148.8169953 units/h
+[Level 8 step 102] Advanced 15904768 cells
+[Level 9 step 203] ADVANCE with time = 0.63125 dt = 0.003125 speed = 148.568364 units/h
+[Level 9 step 203] Advanced 22781952 cells
+[Level 9 step 204] ADVANCE with time = 0.634375 dt = 0.003125 speed = 148.8232229 units/h
+[Level 9 step 204] Advanced 22781952 cells
+[Level 7 step 52] ADVANCE with time = 0.6375 dt = 0.0125 speed = 149.0280041 units/h
+[Level 7 step 52] Advanced 11350016 cells
+[Level 8 step 103] ADVANCE with time = 0.6375 dt = 0.00625 speed = 148.8429674 units/h
+[Level 8 step 103] Advanced 15904768 cells
+[Level 9 step 205] ADVANCE with time = 0.6375 dt = 0.003125 speed = 148.602612 units/h
+[Level 9 step 205] Advanced 22781952 cells
+[Level 9 step 206] ADVANCE with time = 0.640625 dt = 0.003125 speed = 148.85661 units/h
+[Level 9 step 206] Advanced 22781952 cells
+[Level 8 step 104] ADVANCE with time = 0.64375 dt = 0.00625 speed = 149.062103 units/h
+[Level 8 step 104] Advanced 15904768 cells
+[Level 9 step 207] ADVANCE with time = 0.64375 dt = 0.003125 speed = 148.8244141 units/h
+[Level 9 step 207] Advanced 22781952 cells
+[Level 9 step 208] ADVANCE with time = 0.646875 dt = 0.003125 speed = 149.0731271 units/h
+[Level 9 step 208] Advanced 22781952 cells
+[Level 5 step 14] ADVANCE with time = 0.65 dt = 0.05 speed = 149.2617677 units/h
+[Level 5 step 14] Advanced 16777216 cells
+[Level 6 step 27] ADVANCE with time = 0.65 dt = 0.025 speed = 149.0232717 units/h
+[Level 6 step 27] Advanced 12386304 cells
+[Level 7 step 53] ADVANCE with time = 0.65 dt = 0.0125 speed = 148.8472625 units/h
+[Level 7 step 53] Advanced 11350016 cells
+[Level 8 step 105] ADVANCE with time = 0.65 dt = 0.00625 speed = 148.6730826 units/h
+[Level 8 step 105] Advanced 15904768 cells
+[Level 9 step 209] ADVANCE with time = 0.65 dt = 0.003125 speed = 148.4367546 units/h
+[Level 9 step 209] Advanced 22781952 cells
+[Level 9 step 210] ADVANCE with time = 0.653125 dt = 0.003125 speed = 148.6854302 units/h
+[Level 9 step 210] Advanced 22781952 cells
+[Level 8 step 106] ADVANCE with time = 0.65625 dt = 0.00625 speed = 148.9000737 units/h
+[Level 8 step 106] Advanced 15904768 cells
+[Level 9 step 211] ADVANCE with time = 0.65625 dt = 0.003125 speed = 148.6596297 units/h
+[Level 9 step 211] Advanced 22781952 cells
+[Level 9 step 212] ADVANCE with time = 0.659375 dt = 0.003125 speed = 148.9078817 units/h
+[Level 9 step 212] Advanced 22781952 cells
+[Level 7 step 54] ADVANCE with time = 0.6625 dt = 0.0125 speed = 149.1027394 units/h
+[Level 7 step 54] Advanced 11350016 cells
+[Level 8 step 107] ADVANCE with time = 0.6625 dt = 0.00625 speed = 148.9260349 units/h
+[Level 8 step 107] Advanced 15904768 cells
+[Level 9 step 213] ADVANCE with time = 0.6625 dt = 0.003125 speed = 148.6967086 units/h
+[Level 9 step 213] Advanced 22781952 cells
+[Level 9 step 214] ADVANCE with time = 0.665625 dt = 0.003125 speed = 148.9395222 units/h
+[Level 9 step 214] Advanced 22781952 cells
+[Level 8 step 108] ADVANCE with time = 0.66875 dt = 0.00625 speed = 149.1433007 units/h
+[Level 8 step 108] Advanced 15904768 cells
+[Level 9 step 215] ADVANCE with time = 0.66875 dt = 0.003125 speed = 148.9075077 units/h
+[Level 9 step 215] Advanced 22781952 cells
+[Level 9 step 216] ADVANCE with time = 0.671875 dt = 0.003125 speed = 149.1501627 units/h
+[Level 9 step 216] Advanced 22781952 cells
+[Level 6 step 28] ADVANCE with time = 0.675 dt = 0.025 speed = 149.3343328 units/h
+[Level 6 step 28] Advanced 12386304 cells
+[Level 7 step 55] ADVANCE with time = 0.675 dt = 0.0125 speed = 149.1569731 units/h
+[Level 7 step 55] Advanced 11350016 cells
+[Level 8 step 109] ADVANCE with time = 0.675 dt = 0.00625 speed = 148.9873461 units/h
+[Level 8 step 109] Advanced 15904768 cells
+[Level 9 step 217] ADVANCE with time = 0.675 dt = 0.003125 speed = 148.7612657 units/h
+[Level 9 step 217] Advanced 22781952 cells
+[Level 9 step 218] ADVANCE with time = 0.678125 dt = 0.003125 speed = 148.9982941 units/h
+[Level 9 step 218] Advanced 22781952 cells
+[Level 8 step 110] ADVANCE with time = 0.68125 dt = 0.00625 speed = 149.2009157 units/h
+[Level 8 step 110] Advanced 15904768 cells
+[Level 9 step 219] ADVANCE with time = 0.68125 dt = 0.003125 speed = 148.9703411 units/h
+[Level 9 step 219] Advanced 22781952 cells
+[Level 9 step 220] ADVANCE with time = 0.684375 dt = 0.003125 speed = 149.2067787 units/h
+[Level 9 step 220] Advanced 22781952 cells
+[Level 7 step 56] ADVANCE with time = 0.6875 dt = 0.0125 speed = 149.3939396 units/h
+[Level 7 step 56] Advanced 11350016 cells
+[Level 8 step 111] ADVANCE with time = 0.6875 dt = 0.00625 speed = 149.221625 units/h
+[Level 8 step 111] Advanced 15904768 cells
+[Level 9 step 221] ADVANCE with time = 0.6875 dt = 0.003125 speed = 148.9970307 units/h
+[Level 9 step 221] Advanced 22781952 cells
+[Level 9 step 222] ADVANCE with time = 0.690625 dt = 0.003125 speed = 149.2322815 units/h
+[Level 9 step 222] Advanced 22781952 cells
+[Level 8 step 112] ADVANCE with time = 0.69375 dt = 0.00625 speed = 149.4268782 units/h
+[Level 8 step 112] Advanced 15904768 cells
+[Level 9 step 223] ADVANCE with time = 0.69375 dt = 0.003125 speed = 149.2010868 units/h
+[Level 9 step 223] Advanced 22781952 cells
+[Level 9 step 224] ADVANCE with time = 0.696875 dt = 0.003125 speed = 149.4329918 units/h
+[Level 9 step 224] Advanced 22781952 cells
+[Level 4 step 8] ADVANCE with time = 0.7 dt = 0.1 speed = 149.5831042 units/h
+[Level 4 step 8] Advanced 16777216 cells
+[Level 5 step 15] ADVANCE with time = 0.7 dt = 0.05 speed = 149.4108657 units/h
+[Level 5 step 15] Advanced 16777216 cells
+[Level 6 step 29] ADVANCE with time = 0.7 dt = 0.025 speed = 149.2461688 units/h
+[Level 6 step 29] Advanced 12386304 cells
+[Level 7 step 57] ADVANCE with time = 0.7 dt = 0.0125 speed = 149.0827456 units/h
+[Level 7 step 57] Advanced 11350016 cells
+[Level 8 step 113] ADVANCE with time = 0.7 dt = 0.00625 speed = 148.9188954 units/h
+[Level 8 step 113] Advanced 15904768 cells
+[Level 9 step 225] ADVANCE with time = 0.7 dt = 0.003125 speed = 148.6999076 units/h
+[Level 9 step 225] Advanced 22781952 cells
+[Level 9 step 226] ADVANCE with time = 0.703125 dt = 0.003125 speed = 148.9301046 units/h
+[Level 9 step 226] Advanced 22781952 cells
+[Level 8 step 114] ADVANCE with time = 0.70625 dt = 0.00625 speed = 149.1256151 units/h
+[Level 8 step 114] Advanced 15904768 cells
+[Level 9 step 227] ADVANCE with time = 0.70625 dt = 0.003125 speed = 148.9032682 units/h
+[Level 9 step 227] Advanced 22781952 cells
+[Level 9 step 228] ADVANCE with time = 0.709375 dt = 0.003125 speed = 149.1306305 units/h
+[Level 9 step 228] Advanced 22781952 cells
+[Level 7 step 58] ADVANCE with time = 0.7125 dt = 0.0125 speed = 149.3152581 units/h
+[Level 7 step 58] Advanced 11350016 cells
+[Level 8 step 115] ADVANCE with time = 0.7125 dt = 0.00625 speed = 149.147153 units/h
+[Level 8 step 115] Advanced 15904768 cells
+[Level 9 step 229] ADVANCE with time = 0.7125 dt = 0.003125 speed = 148.9332885 units/h
+[Level 9 step 229] Advanced 22781952 cells
+[Level 9 step 230] ADVANCE with time = 0.715625 dt = 0.003125 speed = 149.1578723 units/h
+[Level 9 step 230] Advanced 22781952 cells
+[Level 8 step 116] ADVANCE with time = 0.71875 dt = 0.00625 speed = 149.3454994 units/h
+[Level 8 step 116] Advanced 15904768 cells
+[Level 9 step 231] ADVANCE with time = 0.71875 dt = 0.003125 speed = 149.1292013 units/h
+[Level 9 step 231] Advanced 22781952 cells
+[Level 9 step 232] ADVANCE with time = 0.721875 dt = 0.003125 speed = 149.3528776 units/h
+[Level 9 step 232] Advanced 22781952 cells
+[Level 6 step 30] ADVANCE with time = 0.725 dt = 0.025 speed = 149.5292462 units/h
+[Level 6 step 30] Advanced 12386304 cells
+[Level 7 step 59] ADVANCE with time = 0.725 dt = 0.0125 speed = 149.3615485 units/h
+[Level 7 step 59] Advanced 11350016 cells
+[Level 8 step 117] ADVANCE with time = 0.725 dt = 0.00625 speed = 149.2026294 units/h
+[Level 8 step 117] Advanced 15904768 cells
+[Level 9 step 233] ADVANCE with time = 0.725 dt = 0.003125 speed = 148.990108 units/h
+[Level 9 step 233] Advanced 22781952 cells
+[Level 9 step 234] ADVANCE with time = 0.728125 dt = 0.003125 speed = 149.2137703 units/h
+[Level 9 step 234] Advanced 22781952 cells
+[Level 8 step 118] ADVANCE with time = 0.73125 dt = 0.00625 speed = 149.3987504 units/h
+[Level 8 step 118] Advanced 15904768 cells
+[Level 9 step 235] ADVANCE with time = 0.73125 dt = 0.003125 speed = 149.1845103 units/h
+[Level 9 step 235] Advanced 22781952 cells
+[Level 9 step 236] ADVANCE with time = 0.734375 dt = 0.003125 speed = 149.4041933 units/h
+[Level 9 step 236] Advanced 22781952 cells
+[Level 7 step 60] ADVANCE with time = 0.7375 dt = 0.0125 speed = 149.5805438 units/h
+[Level 7 step 60] Advanced 11350016 cells
+[Level 8 step 119] ADVANCE with time = 0.7375 dt = 0.00625 speed = 149.4165078 units/h
+[Level 8 step 119] Advanced 15904768 cells
+[Level 9 step 237] ADVANCE with time = 0.7375 dt = 0.003125 speed = 149.2085497 units/h
+[Level 9 step 237] Advanced 22781952 cells
+[Level 9 step 238] ADVANCE with time = 0.740625 dt = 0.003125 speed = 149.4263761 units/h
+[Level 9 step 238] Advanced 22781952 cells
+[Level 8 step 120] ADVANCE with time = 0.74375 dt = 0.00625 speed = 149.6077042 units/h
+[Level 8 step 120] Advanced 15904768 cells
+[Level 9 step 239] ADVANCE with time = 0.74375 dt = 0.003125 speed = 149.3999965 units/h
+[Level 9 step 239] Advanced 22781952 cells
+[Level 9 step 240] ADVANCE with time = 0.746875 dt = 0.003125 speed = 149.6168086 units/h
+[Level 9 step 240] Advanced 22781952 cells
+[Level 5 step 16] ADVANCE with time = 0.75 dt = 0.05 speed = 149.7761078 units/h
+[Level 5 step 16] Advanced 16777216 cells
+[Level 6 step 31] ADVANCE with time = 0.75 dt = 0.025 speed = 149.6112189 units/h
+[Level 6 step 31] Advanced 12386304 cells
+[Level 7 step 61] ADVANCE with time = 0.75 dt = 0.0125 speed = 149.4566961 units/h
+[Level 7 step 61] Advanced 11350016 cells
+[Level 8 step 121] ADVANCE with time = 0.75 dt = 0.00625 speed = 149.3017658 units/h
+[Level 8 step 121] Advanced 15904768 cells
+[Level 9 step 241] ADVANCE with time = 0.75 dt = 0.003125 speed = 149.0969898 units/h
+[Level 9 step 241] Advanced 22781952 cells
+[Level 9 step 242] ADVANCE with time = 0.753125 dt = 0.003125 speed = 149.310989 units/h
+[Level 9 step 242] Advanced 22781952 cells
+[Level 8 step 122] ADVANCE with time = 0.75625 dt = 0.00625 speed = 149.4870352 units/h
+[Level 8 step 122] Advanced 15904768 cells
+[Level 9 step 243] ADVANCE with time = 0.75625 dt = 0.003125 speed = 149.2812832 units/h
+[Level 9 step 243] Advanced 22781952 cells
+[Level 9 step 244] ADVANCE with time = 0.759375 dt = 0.003125 speed = 149.4931386 units/h
+[Level 9 step 244] Advanced 22781952 cells
+[Level 7 step 62] ADVANCE with time = 0.7625 dt = 0.0125 speed = 149.6644193 units/h
+[Level 7 step 62] Advanced 11350016 cells
+[Level 8 step 123] ADVANCE with time = 0.7625 dt = 0.00625 speed = 149.5069967 units/h
+[Level 8 step 123] Advanced 15904768 cells
+[Level 9 step 245] ADVANCE with time = 0.7625 dt = 0.003125 speed = 149.3046123 units/h
+[Level 9 step 245] Advanced 22781952 cells
+[Level 9 step 246] ADVANCE with time = 0.765625 dt = 0.003125 speed = 149.5175378 units/h
+[Level 9 step 246] Advanced 22781952 cells
+[Level 8 step 124] ADVANCE with time = 0.76875 dt = 0.00625 speed = 149.6961313 units/h
+[Level 8 step 124] Advanced 15904768 cells
+[Level 9 step 247] ADVANCE with time = 0.76875 dt = 0.003125 speed = 149.4903269 units/h
+[Level 9 step 247] Advanced 22781952 cells
+[Level 9 step 248] ADVANCE with time = 0.771875 dt = 0.003125 speed = 149.6986695 units/h
+[Level 9 step 248] Advanced 22781952 cells
+[Level 6 step 32] ADVANCE with time = 0.775 dt = 0.025 speed = 149.8566851 units/h
+[Level 6 step 32] Advanced 12386304 cells
+[Level 7 step 63] ADVANCE with time = 0.775 dt = 0.0125 speed = 149.7039898 units/h
+[Level 7 step 63] Advanced 11350016 cells
+[Level 8 step 125] ADVANCE with time = 0.775 dt = 0.00625 speed = 149.5551357 units/h
+[Level 8 step 125] Advanced 15904768 cells
+[Level 9 step 249] ADVANCE with time = 0.775 dt = 0.003125 speed = 149.3573252 units/h
+[Level 9 step 249] Advanced 22781952 cells
+[Level 9 step 250] ADVANCE with time = 0.778125 dt = 0.003125 speed = 149.5657294 units/h
+[Level 9 step 250] Advanced 22781952 cells
+[Level 8 step 126] ADVANCE with time = 0.78125 dt = 0.00625 speed = 149.7431313 units/h
+[Level 8 step 126] Advanced 15904768 cells
+[Level 9 step 251] ADVANCE with time = 0.78125 dt = 0.003125 speed = 149.5380945 units/h
+[Level 9 step 251] Advanced 22781952 cells
+[Level 9 step 252] ADVANCE with time = 0.784375 dt = 0.003125 speed = 149.743947 units/h
+[Level 9 step 252] Advanced 22781952 cells
+[Level 7 step 64] ADVANCE with time = 0.7875 dt = 0.0125 speed = 149.908857 units/h
+[Level 7 step 64] Advanced 11350016 cells
+[Level 8 step 127] ADVANCE with time = 0.7875 dt = 0.00625 speed = 149.7562015 units/h
+[Level 8 step 127] Advanced 15904768 cells
+[Level 9 step 253] ADVANCE with time = 0.7875 dt = 0.003125 speed = 149.5601155 units/h
+[Level 9 step 253] Advanced 22781952 cells
+[Level 9 step 254] ADVANCE with time = 0.790625 dt = 0.003125 speed = 149.7640342 units/h
+[Level 9 step 254] Advanced 22781952 cells
+[Level 8 step 128] ADVANCE with time = 0.79375 dt = 0.00625 speed = 149.9343939 units/h
+[Level 8 step 128] Advanced 15904768 cells
+[Level 9 step 255] ADVANCE with time = 0.79375 dt = 0.003125 speed = 149.7300593 units/h
+[Level 9 step 255] Advanced 22781952 cells
+[Level 9 step 256] ADVANCE with time = 0.796875 dt = 0.003125 speed = 149.9328333 units/h
+[Level 9 step 256] Advanced 22781952 cells
+[Level 1 step 2] ADVANCE with time = 0.8 dt = 0.8 speed = 150.0231098 units/h
+[Level 1 step 2] Advanced 16777216 cells
+[Level 2 step 3] ADVANCE with time = 0.8 dt = 0.4 speed = 149.8715768 units/h
+[Level 2 step 3] Advanced 16777216 cells
+[Level 3 step 5] ADVANCE with time = 0.8 dt = 0.2 speed = 149.7240485 units/h
+[Level 3 step 5] Advanced 16777216 cells
+[Level 4 step 9] ADVANCE with time = 0.8 dt = 0.1 speed = 149.5807885 units/h
+[Level 4 step 9] Advanced 16777216 cells
+[Level 5 step 17] ADVANCE with time = 0.8 dt = 0.05 speed = 149.4384497 units/h
+[Level 5 step 17] Advanced 16777216 cells
+[Level 6 step 33] ADVANCE with time = 0.8 dt = 0.025 speed = 148.9131035 units/h
+[Level 6 step 33] Advanced 12386304 cells
+[Level 7 step 65] ADVANCE with time = 0.8 dt = 0.0125 speed = 148.6946673 units/h
+[Level 7 step 65] Advanced 11350016 cells
+[Level 8 step 129] ADVANCE with time = 0.8 dt = 0.00625 speed = 148.544855 units/h
+[Level 8 step 129] Advanced 15904768 cells
+[Level 9 step 257] ADVANCE with time = 0.8 dt = 0.003125 speed = 148.3272528 units/h
+[Level 9 step 257] Advanced 22921216 cells
+[Level 9 step 258] ADVANCE with time = 0.803125 dt = 0.003125 speed = 148.4862345 units/h
+[Level 9 step 258] Advanced 22921216 cells
+[Level 8 step 130] ADVANCE with time = 0.80625 dt = 0.00625 speed = 148.7426229 units/h
+[Level 8 step 130] Advanced 15904768 cells
+[Level 9 step 259] ADVANCE with time = 0.80625 dt = 0.003125 speed = 148.5551829 units/h
+[Level 9 step 259] Advanced 22921216 cells
+[Level 9 step 260] ADVANCE with time = 0.809375 dt = 0.003125 speed = 148.8268144 units/h
+[Level 9 step 260] Advanced 22921216 cells
+[Level 7 step 66] ADVANCE with time = 0.8125 dt = 0.0125 speed = 149.0769814 units/h
+[Level 7 step 66] Advanced 11350016 cells
+[Level 8 step 131] ADVANCE with time = 0.8125 dt = 0.00625 speed = 148.9315668 units/h
+[Level 8 step 131] Advanced 15904768 cells
+[Level 9 step 261] ADVANCE with time = 0.8125 dt = 0.003125 speed = 148.7480164 units/h
+[Level 9 step 261] Advanced 22921216 cells
+[Level 9 step 262] ADVANCE with time = 0.815625 dt = 0.003125 speed = 149.0182334 units/h
+[Level 9 step 262] Advanced 22921216 cells
+[Level 8 step 132] ADVANCE with time = 0.81875 dt = 0.00625 speed = 149.2693795 units/h
+[Level 8 step 132] Advanced 15904768 cells
+[Level 9 step 263] ADVANCE with time = 0.81875 dt = 0.003125 speed = 149.0828711 units/h
+[Level 9 step 263] Advanced 22921216 cells
+[Level 9 step 264] ADVANCE with time = 0.821875 dt = 0.003125 speed = 149.3526004 units/h
+[Level 9 step 264] Advanced 22921216 cells
+[Level 6 step 34] ADVANCE with time = 0.825 dt = 0.025 speed = 149.5900026 units/h
+[Level 6 step 34] Advanced 12386304 cells
+[Level 7 step 67] ADVANCE with time = 0.825 dt = 0.0125 speed = 149.4494105 units/h
+[Level 7 step 67] Advanced 11350016 cells
+[Level 8 step 133] ADVANCE with time = 0.825 dt = 0.00625 speed = 149.3096546 units/h
+[Level 8 step 133] Advanced 15904768 cells
+[Level 9 step 265] ADVANCE with time = 0.825 dt = 0.003125 speed = 149.1271275 units/h
+[Level 9 step 265] Advanced 22921216 cells
+[Level 9 step 266] ADVANCE with time = 0.828125 dt = 0.003125 speed = 149.3945157 units/h
+[Level 9 step 266] Advanced 22921216 cells
+[Level 8 step 134] ADVANCE with time = 0.83125 dt = 0.00625 speed = 149.6434918 units/h
+[Level 8 step 134] Advanced 15904768 cells
+[Level 9 step 267] ADVANCE with time = 0.83125 dt = 0.003125 speed = 149.4597594 units/h
+[Level 9 step 267] Advanced 22921216 cells
+[Level 9 step 268] ADVANCE with time = 0.834375 dt = 0.003125 speed = 149.7244946 units/h
+[Level 9 step 268] Advanced 22921216 cells
+[Level 7 step 68] ADVANCE with time = 0.8375 dt = 0.0125 speed = 149.9671168 units/h
+[Level 7 step 68] Advanced 11350016 cells
+[Level 8 step 135] ADVANCE with time = 0.8375 dt = 0.00625 speed = 149.8228701 units/h
+[Level 8 step 135] Advanced 15904768 cells
+[Level 9 step 269] ADVANCE with time = 0.8375 dt = 0.003125 speed = 149.6424232 units/h
+[Level 9 step 269] Advanced 22921216 cells
+[Level 9 step 270] ADVANCE with time = 0.840625 dt = 0.003125 speed = 149.9045832 units/h
+[Level 9 step 270] Advanced 22921216 cells
+[Level 8 step 136] ADVANCE with time = 0.84375 dt = 0.00625 speed = 150.1456699 units/h
+[Level 8 step 136] Advanced 15904768 cells
+[Level 9 step 271] ADVANCE with time = 0.84375 dt = 0.003125 speed = 149.9633106 units/h
+[Level 9 step 271] Advanced 22921216 cells
+[Level 9 step 272] ADVANCE with time = 0.846875 dt = 0.003125 speed = 150.22359 units/h
+[Level 9 step 272] Advanced 22921216 cells
+[Level 5 step 18] ADVANCE with time = 0.85 dt = 0.05 speed = 150.4493179 units/h
+[Level 5 step 18] Advanced 16777216 cells
+[Level 6 step 35] ADVANCE with time = 0.85 dt = 0.025 speed = 150.2720919 units/h
+[Level 6 step 35] Advanced 12386304 cells
+[Level 7 step 69] ADVANCE with time = 0.85 dt = 0.0125 speed = 150.1345452 units/h
+[Level 7 step 69] Advanced 11350016 cells
+[Level 8 step 137] ADVANCE with time = 0.85 dt = 0.00625 speed = 149.9982125 units/h
+[Level 8 step 137] Advanced 15904768 cells
+[Level 9 step 273] ADVANCE with time = 0.85 dt = 0.003125 speed = 149.8207035 units/h
+[Level 9 step 273] Advanced 22921216 cells
+[Level 9 step 274] ADVANCE with time = 0.853125 dt = 0.003125 speed = 150.0785683 units/h
+[Level 9 step 274] Advanced 22921216 cells
+[Level 8 step 138] ADVANCE with time = 0.85625 dt = 0.00625 speed = 150.3190784 units/h
+[Level 8 step 138] Advanced 15904768 cells
+[Level 9 step 275] ADVANCE with time = 0.85625 dt = 0.003125 speed = 150.1399666 units/h
+[Level 9 step 275] Advanced 22921216 cells
+[Level 9 step 276] ADVANCE with time = 0.859375 dt = 0.003125 speed = 150.3945052 units/h
+[Level 9 step 276] Advanced 22921216 cells
+[Level 7 step 70] ADVANCE with time = 0.8625 dt = 0.0125 speed = 150.6281117 units/h
+[Level 7 step 70] Advanced 11350016 cells
+[Level 8 step 139] ADVANCE with time = 0.8625 dt = 0.00625 speed = 150.4863269 units/h
+[Level 8 step 139] Advanced 15904768 cells
+[Level 9 step 277] ADVANCE with time = 0.8625 dt = 0.003125 speed = 150.3091342 units/h
+[Level 9 step 277] Advanced 22921216 cells
+[Level 9 step 278] ADVANCE with time = 0.865625 dt = 0.003125 speed = 150.5642614 units/h
+[Level 9 step 278] Advanced 22921216 cells
+[Level 8 step 140] ADVANCE with time = 0.86875 dt = 0.00625 speed = 150.801044 units/h
+[Level 8 step 140] Advanced 15904768 cells
+[Level 9 step 279] ADVANCE with time = 0.86875 dt = 0.003125 speed = 150.62218 units/h
+[Level 9 step 279] Advanced 22921216 cells
+[Level 9 step 280] ADVANCE with time = 0.871875 dt = 0.003125 speed = 150.8754872 units/h
+[Level 9 step 280] Advanced 22921216 cells
+[Level 6 step 36] ADVANCE with time = 0.875 dt = 0.025 speed = 151.0967255 units/h
+[Level 6 step 36] Advanced 12386304 cells
+[Level 7 step 71] ADVANCE with time = 0.875 dt = 0.0125 speed = 150.9616545 units/h
+[Level 7 step 71] Advanced 11350016 cells
+[Level 8 step 141] ADVANCE with time = 0.875 dt = 0.00625 speed = 150.8282622 units/h
+[Level 8 step 141] Advanced 15904768 cells
+[Level 9 step 281] ADVANCE with time = 0.875 dt = 0.003125 speed = 150.6532206 units/h
+[Level 9 step 281] Advanced 22921216 cells
+[Level 9 step 282] ADVANCE with time = 0.878125 dt = 0.003125 speed = 150.9033375 units/h
+[Level 9 step 282] Advanced 22921216 cells
+[Level 8 step 142] ADVANCE with time = 0.88125 dt = 0.00625 speed = 151.1365929 units/h
+[Level 8 step 142] Advanced 15904768 cells
+[Level 9 step 283] ADVANCE with time = 0.88125 dt = 0.003125 speed = 150.9595026 units/h
+[Level 9 step 283] Advanced 22921216 cells
+[Level 9 step 284] ADVANCE with time = 0.884375 dt = 0.003125 speed = 151.2079986 units/h
+[Level 9 step 284] Advanced 22921216 cells
+[Level 7 step 72] ADVANCE with time = 0.8875 dt = 0.0125 speed = 151.4348295 units/h
+[Level 7 step 72] Advanced 11350016 cells
+[Level 8 step 143] ADVANCE with time = 0.8875 dt = 0.00625 speed = 151.2976942 units/h
+[Level 8 step 143] Advanced 15904768 cells
+[Level 9 step 285] ADVANCE with time = 0.8875 dt = 0.003125 speed = 151.1234751 units/h
+[Level 9 step 285] Advanced 22921216 cells
+[Level 9 step 286] ADVANCE with time = 0.890625 dt = 0.003125 speed = 151.3707131 units/h
+[Level 9 step 286] Advanced 22921216 cells
+[Level 8 step 144] ADVANCE with time = 0.89375 dt = 0.00625 speed = 151.6007767 units/h
+[Level 8 step 144] Advanced 15904768 cells
+[Level 9 step 287] ADVANCE with time = 0.89375 dt = 0.003125 speed = 151.4254452 units/h
+[Level 9 step 287] Advanced 22921216 cells
+[Level 9 step 288] ADVANCE with time = 0.896875 dt = 0.003125 speed = 151.6717878 units/h
+[Level 9 step 288] Advanced 22921216 cells
+[Level 4 step 10] ADVANCE with time = 0.9 dt = 0.1 speed = 151.8590821 units/h
+[Level 4 step 10] Advanced 16777216 cells
+[Level 5 step 19] ADVANCE with time = 0.9 dt = 0.05 speed = 151.7212833 units/h
+[Level 5 step 19] Advanced 16777216 cells
+[Level 6 step 37] ADVANCE with time = 0.9 dt = 0.025 speed = 151.5839223 units/h
+[Level 6 step 37] Advanced 12386304 cells
+[Level 7 step 73] ADVANCE with time = 0.9 dt = 0.0125 speed = 151.4517489 units/h
+[Level 7 step 73] Advanced 11350016 cells
+[Level 8 step 145] ADVANCE with time = 0.9 dt = 0.00625 speed = 151.3215235 units/h
+[Level 8 step 145] Advanced 15904768 cells
+[Level 9 step 289] ADVANCE with time = 0.9 dt = 0.003125 speed = 151.1496114 units/h
+[Level 9 step 289] Advanced 22921216 cells
+[Level 9 step 290] ADVANCE with time = 0.903125 dt = 0.003125 speed = 151.3914244 units/h
+[Level 9 step 290] Advanced 22921216 cells
+[Level 8 step 146] ADVANCE with time = 0.90625 dt = 0.00625 speed = 151.6150914 units/h
+[Level 8 step 146] Advanced 15904768 cells
+[Level 9 step 291] ADVANCE with time = 0.90625 dt = 0.003125 speed = 151.4417931 units/h
+[Level 9 step 291] Advanced 22921216 cells
+[Level 9 step 292] ADVANCE with time = 0.909375 dt = 0.003125 speed = 151.6839874 units/h
+[Level 9 step 292] Advanced 22921216 cells
+[Level 7 step 74] ADVANCE with time = 0.9125 dt = 0.0125 speed = 151.90592 units/h
+[Level 7 step 74] Advanced 11350016 cells
+[Level 8 step 147] ADVANCE with time = 0.9125 dt = 0.00625 speed = 151.770253 units/h
+[Level 8 step 147] Advanced 15904768 cells
+[Level 9 step 293] ADVANCE with time = 0.9125 dt = 0.003125 speed = 151.6001975 units/h
+[Level 9 step 293] Advanced 22921216 cells
+[Level 9 step 294] ADVANCE with time = 0.915625 dt = 0.003125 speed = 151.8408389 units/h
+[Level 9 step 294] Advanced 22921216 cells
+[Level 8 step 148] ADVANCE with time = 0.91875 dt = 0.00625 speed = 152.063988 units/h
+[Level 8 step 148] Advanced 15904768 cells
+[Level 9 step 295] ADVANCE with time = 0.91875 dt = 0.003125 speed = 151.8910653 units/h
+[Level 9 step 295] Advanced 22921216 cells
+[Level 9 step 296] ADVANCE with time = 0.921875 dt = 0.003125 speed = 152.1294352 units/h
+[Level 9 step 296] Advanced 22921216 cells
+[Level 6 step 38] ADVANCE with time = 0.925 dt = 0.025 speed = 152.3378945 units/h
+[Level 6 step 38] Advanced 12386304 cells
+[Level 7 step 75] ADVANCE with time = 0.925 dt = 0.0125 speed = 152.2082372 units/h
+[Level 7 step 75] Advanced 11350016 cells
+[Level 8 step 149] ADVANCE with time = 0.925 dt = 0.00625 speed = 152.0801123 units/h
+[Level 8 step 149] Advanced 15904768 cells
+[Level 9 step 297] ADVANCE with time = 0.925 dt = 0.003125 speed = 151.9117248 units/h
+[Level 9 step 297] Advanced 22921216 cells
+[Level 9 step 298] ADVANCE with time = 0.928125 dt = 0.003125 speed = 152.1492447 units/h
+[Level 9 step 298] Advanced 22921216 cells
+[Level 8 step 150] ADVANCE with time = 0.93125 dt = 0.00625 speed = 152.3690048 units/h
+[Level 8 step 150] Advanced 15904768 cells
+[Level 9 step 299] ADVANCE with time = 0.93125 dt = 0.003125 speed = 152.2000928 units/h
+[Level 9 step 299] Advanced 22921216 cells
+[Level 9 step 300] ADVANCE with time = 0.934375 dt = 0.003125 speed = 152.4337956 units/h
+[Level 9 step 300] Advanced 22921216 cells
+[Level 7 step 76] ADVANCE with time = 0.9375 dt = 0.0125 speed = 152.6488386 units/h
+[Level 7 step 76] Advanced 11350016 cells
+[Level 8 step 151] ADVANCE with time = 0.9375 dt = 0.00625 speed = 152.5147731 units/h
+[Level 8 step 151] Advanced 15904768 cells
+[Level 9 step 301] ADVANCE with time = 0.9375 dt = 0.003125 speed = 152.3475686 units/h
+[Level 9 step 301] Advanced 22921216 cells
+[Level 9 step 302] ADVANCE with time = 0.940625 dt = 0.003125 speed = 152.5813729 units/h
+[Level 9 step 302] Advanced 22921216 cells
+[Level 8 step 152] ADVANCE with time = 0.94375 dt = 0.00625 speed = 152.7986034 units/h
+[Level 8 step 152] Advanced 15904768 cells
+[Level 9 step 303] ADVANCE with time = 0.94375 dt = 0.003125 speed = 152.6294272 units/h
+[Level 9 step 303] Advanced 22921216 cells
+[Level 9 step 304] ADVANCE with time = 0.946875 dt = 0.003125 speed = 152.8600396 units/h
+[Level 9 step 304] Advanced 22921216 cells
+[Level 5 step 20] ADVANCE with time = 0.95 dt = 0.05 speed = 153.0569969 units/h
+[Level 5 step 20] Advanced 16777216 cells
+[Level 6 step 39] ADVANCE with time = 0.95 dt = 0.025 speed = 152.9209581 units/h
+[Level 6 step 39] Advanced 12386304 cells
+[Level 7 step 77] ADVANCE with time = 0.95 dt = 0.0125 speed = 152.793526 units/h
+[Level 7 step 77] Advanced 11350016 cells
+[Level 8 step 153] ADVANCE with time = 0.95 dt = 0.00625 speed = 152.6662313 units/h
+[Level 8 step 153] Advanced 15904768 cells
+[Level 9 step 305] ADVANCE with time = 0.95 dt = 0.003125 speed = 152.4998333 units/h
+[Level 9 step 305] Advanced 22921216 cells
+[Level 9 step 306] ADVANCE with time = 0.953125 dt = 0.003125 speed = 152.7308163 units/h
+[Level 9 step 306] Advanced 22921216 cells
+[Level 8 step 154] ADVANCE with time = 0.95625 dt = 0.00625 speed = 152.9452407 units/h
+[Level 8 step 154] Advanced 15904768 cells
+[Level 9 step 307] ADVANCE with time = 0.95625 dt = 0.003125 speed = 152.7789111 units/h
+[Level 9 step 307] Advanced 22921216 cells
+[Level 9 step 308] ADVANCE with time = 0.959375 dt = 0.003125 speed = 153.0052836 units/h
+[Level 9 step 308] Advanced 22921216 cells
+[Level 7 step 78] ADVANCE with time = 0.9625 dt = 0.0125 speed = 153.2151284 units/h
+[Level 7 step 78] Advanced 11350016 cells
+[Level 8 step 155] ADVANCE with time = 0.9625 dt = 0.00625 speed = 153.0833748 units/h
+[Level 8 step 155] Advanced 15904768 cells
+[Level 9 step 309] ADVANCE with time = 0.9625 dt = 0.003125 speed = 152.9200781 units/h
+[Level 9 step 309] Advanced 22921216 cells
+[Level 9 step 310] ADVANCE with time = 0.965625 dt = 0.003125 speed = 153.1474508 units/h
+[Level 9 step 310] Advanced 22921216 cells
+[Level 8 step 156] ADVANCE with time = 0.96875 dt = 0.00625 speed = 153.3587065 units/h
+[Level 8 step 156] Advanced 15904768 cells
+[Level 9 step 311] ADVANCE with time = 0.96875 dt = 0.003125 speed = 153.1933186 units/h
+[Level 9 step 311] Advanced 22921216 cells
+[Level 9 step 312] ADVANCE with time = 0.971875 dt = 0.003125 speed = 153.4182799 units/h
+[Level 9 step 312] Advanced 22921216 cells
+[Level 6 step 40] ADVANCE with time = 0.975 dt = 0.025 speed = 153.6163315 units/h
+[Level 6 step 40] Advanced 12386304 cells
+[Level 7 step 79] ADVANCE with time = 0.975 dt = 0.0125 speed = 153.4848848 units/h
+[Level 7 step 79] Advanced 11350016 cells
+[Level 8 step 157] ADVANCE with time = 0.975 dt = 0.00625 speed = 153.3607453 units/h
+[Level 8 step 157] Advanced 15904768 cells
+[Level 9 step 313] ADVANCE with time = 0.975 dt = 0.003125 speed = 153.1974775 units/h
+[Level 9 step 313] Advanced 22921216 cells
+[Level 9 step 314] ADVANCE with time = 0.978125 dt = 0.003125 speed = 153.4224958 units/h
+[Level 9 step 314] Advanced 22921216 cells
+[Level 8 step 158] ADVANCE with time = 0.98125 dt = 0.00625 speed = 153.628913 units/h
+[Level 8 step 158] Advanced 15904768 cells
+[Level 9 step 315] ADVANCE with time = 0.98125 dt = 0.003125 speed = 153.4645363 units/h
+[Level 9 step 315] Advanced 22921216 cells
+[Level 9 step 316] ADVANCE with time = 0.984375 dt = 0.003125 speed = 153.6890586 units/h
+[Level 9 step 316] Advanced 22921216 cells
+[Level 7 step 80] ADVANCE with time = 0.9875 dt = 0.0125 speed = 153.8942141 units/h
+[Level 7 step 80] Advanced 11350016 cells
+[Level 8 step 159] ADVANCE with time = 0.9875 dt = 0.00625 speed = 153.7639993 units/h
+[Level 8 step 159] Advanced 15904768 cells
+[Level 9 step 317] ADVANCE with time = 0.9875 dt = 0.003125 speed = 153.6027541 units/h
+[Level 9 step 317] Advanced 22921216 cells
+[Level 9 step 318] ADVANCE with time = 0.990625 dt = 0.003125 speed = 153.8228227 units/h
+[Level 9 step 318] Advanced 22921216 cells
+[Level 8 step 160] ADVANCE with time = 0.99375 dt = 0.00625 speed = 154.0254911 units/h
+[Level 8 step 160] Advanced 15904768 cells
+[Level 9 step 319] ADVANCE with time = 0.99375 dt = 0.003125 speed = 153.8609855 units/h
+[Level 9 step 319] Advanced 22921216 cells
+[Level 9 step 320] ADVANCE with time = 0.996875 dt = 0.003125 speed = 154.0815576 units/h
+[Level 9 step 320] Advanced 22921216 cells
+[Level 3 step 6] ADVANCE with time = 1 dt = 0.2 speed = 154.2469976 units/h
+[Level 3 step 6] Advanced 16777216 cells
+[Level 4 step 11] ADVANCE with time = 1 dt = 0.1 speed = 154.1194819 units/h
+[Level 4 step 11] Advanced 16777216 cells
+[Level 5 step 21] ADVANCE with time = 1 dt = 0.05 speed = 153.9973393 units/h
+[Level 5 step 21] Advanced 16777216 cells
+[Level 6 step 41] ADVANCE with time = 1 dt = 0.025 speed = 153.8754767 units/h
+[Level 6 step 41] Advanced 12386304 cells
+[Level 7 step 81] ADVANCE with time = 1 dt = 0.0125 speed = 153.7522161 units/h
+[Level 7 step 81] Advanced 11350016 cells
+[Level 8 step 161] ADVANCE with time = 1 dt = 0.00625 speed = 153.4660974 units/h
+[Level 8 step 161] Advanced 15904768 cells
+[Level 9 step 321] ADVANCE with time = 1 dt = 0.003125 speed = 153.26223 units/h
+[Level 9 step 321] Advanced 23724032 cells
+[Level 9 step 322] ADVANCE with time = 1.003125 dt = 0.003125 speed = 153.4621201 units/h
+[Level 9 step 322] Advanced 23724032 cells
+[Level 8 step 162] ADVANCE with time = 1.00625 dt = 0.00625 speed = 153.7150241 units/h
+[Level 8 step 162] Advanced 15904768 cells
+[Level 9 step 323] ADVANCE with time = 1.00625 dt = 0.003125 speed = 153.5548556 units/h
+[Level 9 step 323] Advanced 23724032 cells
+[Level 9 step 324] ADVANCE with time = 1.009375 dt = 0.003125 speed = 153.8153044 units/h
+[Level 9 step 324] Advanced 23724032 cells
+[Level 7 step 82] ADVANCE with time = 1.0125 dt = 0.0125 speed = 154.0614967 units/h
+[Level 7 step 82] Advanced 11350016 cells
+[Level 8 step 163] ADVANCE with time = 1.0125 dt = 0.00625 speed = 153.9190208 units/h
+[Level 8 step 163] Advanced 15904768 cells
+[Level 9 step 325] ADVANCE with time = 1.0125 dt = 0.003125 speed = 153.7611422 units/h
+[Level 9 step 325] Advanced 23724032 cells
+[Level 9 step 326] ADVANCE with time = 1.015625 dt = 0.003125 speed = 154.0210501 units/h
+[Level 9 step 326] Advanced 23724032 cells
+[Level 8 step 164] ADVANCE with time = 1.01875 dt = 0.00625 speed = 154.2694196 units/h
+[Level 8 step 164] Advanced 15904768 cells
+[Level 9 step 327] ADVANCE with time = 1.01875 dt = 0.003125 speed = 154.1093691 units/h
+[Level 9 step 327] Advanced 23724032 cells
+[Level 9 step 328] ADVANCE with time = 1.021875 dt = 0.003125 speed = 154.3673029 units/h
+[Level 9 step 328] Advanced 23724032 cells
+[Level 6 step 42] ADVANCE with time = 1.025 dt = 0.025 speed = 154.5995835 units/h
+[Level 6 step 42] Advanced 12386304 cells
+[Level 7 step 83] ADVANCE with time = 1.025 dt = 0.0125 speed = 154.4635801 units/h
+[Level 7 step 83] Advanced 11350016 cells
+[Level 8 step 165] ADVANCE with time = 1.025 dt = 0.00625 speed = 154.3440569 units/h
+[Level 8 step 165] Advanced 15904768 cells
+[Level 9 step 329] ADVANCE with time = 1.025 dt = 0.003125 speed = 154.1870796 units/h
+[Level 9 step 329] Advanced 23724032 cells
+[Level 9 step 330] ADVANCE with time = 1.028125 dt = 0.003125 speed = 154.4419276 units/h
+[Level 9 step 330] Advanced 23724032 cells
+[Level 8 step 166] ADVANCE with time = 1.03125 dt = 0.00625 speed = 154.6878122 units/h
+[Level 8 step 166] Advanced 15904768 cells
+[Level 9 step 331] ADVANCE with time = 1.03125 dt = 0.003125 speed = 154.5285831 units/h
+[Level 9 step 331] Advanced 23724032 cells
+[Level 9 step 332] ADVANCE with time = 1.034375 dt = 0.003125 speed = 154.7814267 units/h
+[Level 9 step 332] Advanced 23724032 cells
+[Level 7 step 84] ADVANCE with time = 1.0375 dt = 0.0125 speed = 155.0214459 units/h
+[Level 7 step 84] Advanced 11350016 cells
+[Level 8 step 167] ADVANCE with time = 1.0375 dt = 0.00625 speed = 154.8953514 units/h
+[Level 8 step 167] Advanced 15904768 cells
+[Level 9 step 333] ADVANCE with time = 1.0375 dt = 0.003125 speed = 154.7381672 units/h
+[Level 9 step 333] Advanced 23724032 cells
+[Level 9 step 334] ADVANCE with time = 1.040625 dt = 0.003125 speed = 154.9927947 units/h
+[Level 9 step 334] Advanced 23724032 cells
+[Level 8 step 168] ADVANCE with time = 1.04375 dt = 0.00625 speed = 155.2352325 units/h
+[Level 8 step 168] Advanced 15904768 cells
+[Level 9 step 335] ADVANCE with time = 1.04375 dt = 0.003125 speed = 155.0777731 units/h
+[Level 9 step 335] Advanced 23724032 cells
+[Level 9 step 336] ADVANCE with time = 1.046875 dt = 0.003125 speed = 155.3295701 units/h
+[Level 9 step 336] Advanced 23724032 cells
+[Level 5 step 22] ADVANCE with time = 1.05 dt = 0.05 speed = 155.5542287 units/h
+[Level 5 step 22] Advanced 16777216 cells
+[Level 6 step 43] ADVANCE with time = 1.05 dt = 0.025 speed = 155.4133773 units/h
+[Level 6 step 43] Advanced 12386304 cells
+[Level 7 step 85] ADVANCE with time = 1.05 dt = 0.0125 speed = 155.2956485 units/h
+[Level 7 step 85] Advanced 11350016 cells
+[Level 8 step 169] ADVANCE with time = 1.05 dt = 0.00625 speed = 155.177937 units/h
+[Level 8 step 169] Advanced 15904768 cells
+[Level 9 step 337] ADVANCE with time = 1.05 dt = 0.003125 speed = 155.0232392 units/h
+[Level 9 step 337] Advanced 23724032 cells
+[Level 9 step 338] ADVANCE with time = 1.053125 dt = 0.003125 speed = 155.273432 units/h
+[Level 9 step 338] Advanced 23724032 cells
+[Level 8 step 170] ADVANCE with time = 1.05625 dt = 0.00625 speed = 155.5135839 units/h
+[Level 8 step 170] Advanced 15904768 cells
+[Level 9 step 339] ADVANCE with time = 1.05625 dt = 0.003125 speed = 155.3592455 units/h
+[Level 9 step 339] Advanced 23724032 cells
+[Level 9 step 340] ADVANCE with time = 1.059375 dt = 0.003125 speed = 155.605952 units/h
+[Level 9 step 340] Advanced 23724032 cells
+[Level 7 step 86] ADVANCE with time = 1.0625 dt = 0.0125 speed = 155.8413955 units/h
+[Level 7 step 86] Advanced 11350016 cells
+[Level 8 step 171] ADVANCE with time = 1.0625 dt = 0.00625 speed = 155.7168949 units/h
+[Level 8 step 171] Advanced 15904768 cells
+[Level 9 step 341] ADVANCE with time = 1.0625 dt = 0.003125 speed = 155.5634898 units/h
+[Level 9 step 341] Advanced 23724032 cells
+[Level 9 step 342] ADVANCE with time = 1.065625 dt = 0.003125 speed = 155.8078179 units/h
+[Level 9 step 342] Advanced 23724032 cells
+[Level 8 step 172] ADVANCE with time = 1.06875 dt = 0.00625 speed = 156.0452843 units/h
+[Level 8 step 172] Advanced 15904768 cells
+[Level 9 step 343] ADVANCE with time = 1.06875 dt = 0.003125 speed = 155.8888364 units/h
+[Level 9 step 343] Advanced 23724032 cells
+[Level 9 step 344] ADVANCE with time = 1.071875 dt = 0.003125 speed = 156.1360041 units/h
+[Level 9 step 344] Advanced 23724032 cells
+[Level 6 step 44] ADVANCE with time = 1.075 dt = 0.025 speed = 156.3584906 units/h
+[Level 6 step 44] Advanced 12386304 cells
+[Level 7 step 87] ADVANCE with time = 1.075 dt = 0.0125 speed = 156.2402002 units/h
+[Level 7 step 87] Advanced 11350016 cells
+[Level 8 step 173] ADVANCE with time = 1.075 dt = 0.00625 speed = 156.1241224 units/h
+[Level 8 step 173] Advanced 15904768 cells
+[Level 9 step 345] ADVANCE with time = 1.075 dt = 0.003125 speed = 155.9716341 units/h
+[Level 9 step 345] Advanced 23724032 cells
+[Level 9 step 346] ADVANCE with time = 1.078125 dt = 0.003125 speed = 156.2163123 units/h
+[Level 9 step 346] Advanced 23724032 cells
+[Level 8 step 174] ADVANCE with time = 1.08125 dt = 0.00625 speed = 156.4508171 units/h
+[Level 8 step 174] Advanced 15904768 cells
+[Level 9 step 347] ADVANCE with time = 1.08125 dt = 0.003125 speed = 156.2972946 units/h
+[Level 9 step 347] Advanced 23724032 cells
+[Level 9 step 348] ADVANCE with time = 1.084375 dt = 0.003125 speed = 156.5404826 units/h
+[Level 9 step 348] Advanced 23724032 cells
+[Level 7 step 88] ADVANCE with time = 1.0875 dt = 0.0125 speed = 156.7689143 units/h
+[Level 7 step 88] Advanced 11350016 cells
+[Level 8 step 175] ADVANCE with time = 1.0875 dt = 0.00625 speed = 156.6432821 units/h
+[Level 8 step 175] Advanced 15904768 cells
+[Level 9 step 349] ADVANCE with time = 1.0875 dt = 0.003125 speed = 156.4911141 units/h
+[Level 9 step 349] Advanced 23724032 cells
+[Level 9 step 350] ADVANCE with time = 1.090625 dt = 0.003125 speed = 156.7326366 units/h
+[Level 9 step 350] Advanced 23724032 cells
+[Level 8 step 176] ADVANCE with time = 1.09375 dt = 0.00625 speed = 156.9629499 units/h
+[Level 8 step 176] Advanced 15904768 cells
+[Level 9 step 351] ADVANCE with time = 1.09375 dt = 0.003125 speed = 156.8095225 units/h
+[Level 9 step 351] Advanced 23724032 cells
+[Level 9 step 352] ADVANCE with time = 1.096875 dt = 0.003125 speed = 157.0502464 units/h
+[Level 9 step 352] Advanced 23724032 cells
+[Level 4 step 12] ADVANCE with time = 1.1 dt = 0.1 speed = 157.2503384 units/h
+[Level 4 step 12] Advanced 16777216 cells
+[Level 5 step 23] ADVANCE with time = 1.1 dt = 0.05 speed = 157.1256054 units/h
+[Level 5 step 23] Advanced 16777216 cells
+[Level 6 step 45] ADVANCE with time = 1.1 dt = 0.025 speed = 157.0101439 units/h
+[Level 6 step 45] Advanced 12386304 cells
+[Level 7 step 89] ADVANCE with time = 1.1 dt = 0.0125 speed = 156.8934627 units/h
+[Level 7 step 89] Advanced 11350016 cells
+[Level 8 step 177] ADVANCE with time = 1.1 dt = 0.00625 speed = 156.7787797 units/h
+[Level 8 step 177] Advanced 15904768 cells
+[Level 9 step 353] ADVANCE with time = 1.1 dt = 0.003125 speed = 156.6279857 units/h
+[Level 9 step 353] Advanced 23724032 cells
+[Level 9 step 354] ADVANCE with time = 1.103125 dt = 0.003125 speed = 156.8672028 units/h
+[Level 9 step 354] Advanced 23724032 cells
+[Level 8 step 178] ADVANCE with time = 1.10625 dt = 0.00625 speed = 157.0960599 units/h
+[Level 8 step 178] Advanced 15904768 cells
+[Level 9 step 355] ADVANCE with time = 1.10625 dt = 0.003125 speed = 156.9422305 units/h
+[Level 9 step 355] Advanced 23724032 cells
+[Level 9 step 356] ADVANCE with time = 1.109375 dt = 0.003125 speed = 157.1811779 units/h
+[Level 9 step 356] Advanced 23724032 cells
+[Level 7 step 90] ADVANCE with time = 1.1125 dt = 0.0125 speed = 157.4052175 units/h
+[Level 7 step 90] Advanced 11350016 cells
+[Level 8 step 179] ADVANCE with time = 1.1125 dt = 0.00625 speed = 157.2830508 units/h
+[Level 8 step 179] Advanced 15904768 cells
+[Level 9 step 357] ADVANCE with time = 1.1125 dt = 0.003125 speed = 157.1333165 units/h
+[Level 9 step 357] Advanced 23724032 cells
+[Level 9 step 358] ADVANCE with time = 1.115625 dt = 0.003125 speed = 157.3668156 units/h
+[Level 9 step 358] Advanced 23724032 cells
+[Level 8 step 180] ADVANCE with time = 1.11875 dt = 0.00625 speed = 157.5933646 units/h
+[Level 8 step 180] Advanced 15904768 cells
+[Level 9 step 359] ADVANCE with time = 1.11875 dt = 0.003125 speed = 157.4423988 units/h
+[Level 9 step 359] Advanced 23724032 cells
+[Level 9 step 360] ADVANCE with time = 1.121875 dt = 0.003125 speed = 157.6786626 units/h
+[Level 9 step 360] Advanced 23724032 cells
+[Level 6 step 46] ADVANCE with time = 1.125 dt = 0.025 speed = 157.8902173 units/h
+[Level 6 step 46] Advanced 12386304 cells
+[Level 7 step 91] ADVANCE with time = 1.125 dt = 0.0125 speed = 157.7758351 units/h
+[Level 7 step 91] Advanced 11350016 cells
+[Level 8 step 181] ADVANCE with time = 1.125 dt = 0.00625 speed = 157.662964 units/h
+[Level 8 step 181] Advanced 15904768 cells
+[Level 9 step 361] ADVANCE with time = 1.125 dt = 0.003125 speed = 157.5145284 units/h
+[Level 9 step 361] Advanced 23724032 cells
+[Level 9 step 362] ADVANCE with time = 1.128125 dt = 0.003125 speed = 157.7496392 units/h
+[Level 9 step 362] Advanced 23724032 cells
+[Level 8 step 182] ADVANCE with time = 1.13125 dt = 0.00625 speed = 157.9763591 units/h
+[Level 8 step 182] Advanced 15904768 cells
+[Level 9 step 363] ADVANCE with time = 1.13125 dt = 0.003125 speed = 157.8250355 units/h
+[Level 9 step 363] Advanced 23724032 cells
+[Level 9 step 364] ADVANCE with time = 1.134375 dt = 0.003125 speed = 158.0570189 units/h
+[Level 9 step 364] Advanced 23724032 cells
+[Level 7 step 92] ADVANCE with time = 1.1375 dt = 0.0125 speed = 158.2760142 units/h
+[Level 7 step 92] Advanced 11350016 cells
+[Level 8 step 183] ADVANCE with time = 1.1375 dt = 0.00625 speed = 158.1575108 units/h
+[Level 8 step 183] Advanced 15904768 cells
+[Level 9 step 365] ADVANCE with time = 1.1375 dt = 0.003125 speed = 158.0097527 units/h
+[Level 9 step 365] Advanced 23724032 cells
+[Level 9 step 366] ADVANCE with time = 1.140625 dt = 0.003125 speed = 158.239655 units/h
+[Level 9 step 366] Advanced 23724032 cells
+[Level 8 step 184] ADVANCE with time = 1.14375 dt = 0.00625 speed = 158.463644 units/h
+[Level 8 step 184] Advanced 15904768 cells
+[Level 9 step 367] ADVANCE with time = 1.14375 dt = 0.003125 speed = 158.3121353 units/h
+[Level 9 step 367] Advanced 23724032 cells
+[Level 9 step 368] ADVANCE with time = 1.146875 dt = 0.003125 speed = 158.5438293 units/h
+[Level 9 step 368] Advanced 23724032 cells
+[Level 5 step 24] ADVANCE with time = 1.15 dt = 0.05 speed = 158.7474487 units/h
+[Level 5 step 24] Advanced 16777216 cells
+[Level 6 step 47] ADVANCE with time = 1.15 dt = 0.025 speed = 158.6251656 units/h
+[Level 6 step 47] Advanced 12386304 cells
+[Level 7 step 93] ADVANCE with time = 1.15 dt = 0.0125 speed = 158.5125222 units/h
+[Level 7 step 93] Advanced 11350016 cells
+[Level 8 step 185] ADVANCE with time = 1.15 dt = 0.00625 speed = 158.3998679 units/h
+[Level 8 step 185] Advanced 15904768 cells
+[Level 9 step 369] ADVANCE with time = 1.15 dt = 0.003125 speed = 158.2526151 units/h
+[Level 9 step 369] Advanced 23724032 cells
+[Level 9 step 370] ADVANCE with time = 1.153125 dt = 0.003125 speed = 158.4811011 units/h
+[Level 9 step 370] Advanced 23724032 cells
+[Level 8 step 186] ADVANCE with time = 1.15625 dt = 0.00625 speed = 158.7005481 units/h
+[Level 8 step 186] Advanced 15904768 cells
+[Level 9 step 371] ADVANCE with time = 1.15625 dt = 0.003125 speed = 158.5507138 units/h
+[Level 9 step 371] Advanced 23724032 cells
+[Level 9 step 372] ADVANCE with time = 1.159375 dt = 0.003125 speed = 158.7808805 units/h
+[Level 9 step 372] Advanced 23724032 cells
+[Level 7 step 94] ADVANCE with time = 1.1625 dt = 0.0125 speed = 158.9945227 units/h
+[Level 7 step 94] Advanced 11350016 cells
+[Level 8 step 187] ADVANCE with time = 1.1625 dt = 0.00625 speed = 158.8774293 units/h
+[Level 8 step 187] Advanced 15904768 cells
+[Level 9 step 373] ADVANCE with time = 1.1625 dt = 0.003125 speed = 158.731375 units/h
+[Level 9 step 373] Advanced 23724032 cells
+[Level 9 step 374] ADVANCE with time = 1.165625 dt = 0.003125 speed = 158.9498629 units/h
+[Level 9 step 374] Advanced 23724032 cells
+[Level 8 step 188] ADVANCE with time = 1.16875 dt = 0.00625 speed = 159.1680955 units/h
+[Level 8 step 188] Advanced 15904768 cells
+[Level 9 step 375] ADVANCE with time = 1.16875 dt = 0.003125 speed = 159.0194683 units/h
+[Level 9 step 375] Advanced 23724032 cells
+[Level 9 step 376] ADVANCE with time = 1.171875 dt = 0.003125 speed = 159.2435336 units/h
+[Level 9 step 376] Advanced 23724032 cells
+[Level 6 step 48] ADVANCE with time = 1.175 dt = 0.025 speed = 159.4460514 units/h
+[Level 6 step 48] Advanced 12386304 cells
+[Level 7 step 95] ADVANCE with time = 1.175 dt = 0.0125 speed = 159.3351738 units/h
+[Level 7 step 95] Advanced 11350016 cells
+[Level 8 step 189] ADVANCE with time = 1.175 dt = 0.00625 speed = 159.2244634 units/h
+[Level 8 step 189] Advanced 15904768 cells
+[Level 9 step 377] ADVANCE with time = 1.175 dt = 0.003125 speed = 159.0792949 units/h
+[Level 9 step 377] Advanced 23724032 cells
+[Level 9 step 378] ADVANCE with time = 1.178125 dt = 0.003125 speed = 159.3040886 units/h
+[Level 9 step 378] Advanced 23724032 cells
+[Level 8 step 190] ADVANCE with time = 1.18125 dt = 0.00625 speed = 159.5180639 units/h
+[Level 8 step 190] Advanced 15904768 cells
+[Level 9 step 379] ADVANCE with time = 1.18125 dt = 0.003125 speed = 159.3728973 units/h
+[Level 9 step 379] Advanced 23724032 cells
+[Level 9 step 380] ADVANCE with time = 1.184375 dt = 0.003125 speed = 159.5948822 units/h
+[Level 9 step 380] Advanced 23724032 cells
+[Level 7 step 96] ADVANCE with time = 1.1875 dt = 0.0125 speed = 159.8052809 units/h
+[Level 7 step 96] Advanced 11350016 cells
+[Level 8 step 191] ADVANCE with time = 1.1875 dt = 0.00625 speed = 159.6891918 units/h
+[Level 8 step 191] Advanced 15904768 cells
+[Level 9 step 381] ADVANCE with time = 1.1875 dt = 0.003125 speed = 159.543936 units/h
+[Level 9 step 381] Advanced 23724032 cells
+[Level 9 step 382] ADVANCE with time = 1.190625 dt = 0.003125 speed = 159.7663249 units/h
+[Level 9 step 382] Advanced 23724032 cells
+[Level 8 step 192] ADVANCE with time = 1.19375 dt = 0.00625 speed = 159.9788196 units/h
+[Level 8 step 192] Advanced 15904768 cells
+[Level 9 step 383] ADVANCE with time = 1.19375 dt = 0.003125 speed = 159.8335944 units/h
+[Level 9 step 383] Advanced 23724032 cells
+[Level 9 step 384] ADVANCE with time = 1.196875 dt = 0.003125 speed = 160.0553219 units/h
+[Level 9 step 384] Advanced 23724032 cells
+[Level 2 step 4] ADVANCE with time = 1.2 dt = 0.4 speed = 160.2151542 units/h
+[Level 2 step 4] Advanced 16777216 cells
+[Level 3 step 7] ADVANCE with time = 1.2 dt = 0.2 speed = 160.0998603 units/h
+[Level 3 step 7] Advanced 16777216 cells
+[Level 4 step 13] ADVANCE with time = 1.2 dt = 0.1 speed = 159.9904169 units/h
+[Level 4 step 13] Advanced 16777216 cells
+[Level 5 step 25] ADVANCE with time = 1.2 dt = 0.05 speed = 159.8815945 units/h
+[Level 5 step 25] Advanced 16777216 cells
+[Level 6 step 49] ADVANCE with time = 1.2 dt = 0.025 speed = 159.7724869 units/h
+[Level 6 step 49] Advanced 12386304 cells
+[Level 7 step 97] ADVANCE with time = 1.2 dt = 0.0125 speed = 159.437273 units/h
+[Level 7 step 97] Advanced 11350016 cells
+[Level 8 step 193] ADVANCE with time = 1.2 dt = 0.00625 speed = 159.3050056 units/h
+[Level 8 step 193] Advanced 15777792 cells
+[Level 9 step 385] ADVANCE with time = 1.2 dt = 0.003125 speed = 159.0936652 units/h
+[Level 9 step 385] Advanced 23916544 cells
+[Level 9 step 386] ADVANCE with time = 1.203125 dt = 0.003125 speed = 159.2870469 units/h
+[Level 9 step 386] Advanced 23916544 cells
+[Level 8 step 194] ADVANCE with time = 1.20625 dt = 0.00625 speed = 159.4960923 units/h
+[Level 8 step 194] Advanced 15777792 cells
+[Level 9 step 387] ADVANCE with time = 1.20625 dt = 0.003125 speed = 159.3536642 units/h
+[Level 9 step 387] Advanced 23916544 cells
+[Level 9 step 388] ADVANCE with time = 1.209375 dt = 0.003125 speed = 159.5673706 units/h
+[Level 9 step 388] Advanced 23916544 cells
+[Level 7 step 98] ADVANCE with time = 1.2125 dt = 0.0125 speed = 159.7708002 units/h
+[Level 7 step 98] Advanced 11350016 cells
+[Level 8 step 195] ADVANCE with time = 1.2125 dt = 0.00625 speed = 159.6559179 units/h
+[Level 8 step 195] Advanced 15777792 cells
+[Level 9 step 389] ADVANCE with time = 1.2125 dt = 0.003125 speed = 159.5136066 units/h
+[Level 9 step 389] Advanced 23916544 cells
+[Level 9 step 390] ADVANCE with time = 1.215625 dt = 0.003125 speed = 159.7261171 units/h
+[Level 9 step 390] Advanced 23916544 cells
+[Level 8 step 196] ADVANCE with time = 1.21875 dt = 0.00625 speed = 159.9304443 units/h
+[Level 8 step 196] Advanced 15777792 cells
+[Level 9 step 391] ADVANCE with time = 1.21875 dt = 0.003125 speed = 159.7871154 units/h
+[Level 9 step 391] Advanced 23916544 cells
+[Level 9 step 392] ADVANCE with time = 1.221875 dt = 0.003125 speed = 160.0003743 units/h
+[Level 9 step 392] Advanced 23916544 cells
+[Level 6 step 50] ADVANCE with time = 1.225 dt = 0.025 speed = 160.1957702 units/h
+[Level 6 step 50] Advanced 12386304 cells
+[Level 7 step 99] ADVANCE with time = 1.225 dt = 0.0125 speed = 160.078499 units/h
+[Level 7 step 99] Advanced 11350016 cells
+[Level 8 step 197] ADVANCE with time = 1.225 dt = 0.00625 speed = 159.9691054 units/h
+[Level 8 step 197] Advanced 15777792 cells
+[Level 9 step 393] ADVANCE with time = 1.225 dt = 0.003125 speed = 159.8275996 units/h
+[Level 9 step 393] Advanced 23916544 cells
+[Level 9 step 394] ADVANCE with time = 1.228125 dt = 0.003125 speed = 160.036552 units/h
+[Level 9 step 394] Advanced 23916544 cells
+[Level 8 step 198] ADVANCE with time = 1.23125 dt = 0.00625 speed = 160.2393584 units/h
+[Level 8 step 198] Advanced 15777792 cells
+[Level 9 step 395] ADVANCE with time = 1.23125 dt = 0.003125 speed = 160.0968282 units/h
+[Level 9 step 395] Advanced 23916544 cells
+[Level 9 step 396] ADVANCE with time = 1.234375 dt = 0.003125 speed = 160.3063901 units/h
+[Level 9 step 396] Advanced 23916544 cells
+[Level 7 step 100] ADVANCE with time = 1.2375 dt = 0.0125 speed = 160.5058004 units/h
+[Level 7 step 100] Advanced 11350016 cells
+[Level 8 step 199] ADVANCE with time = 1.2375 dt = 0.00625 speed = 160.3936692 units/h
+[Level 8 step 199] Advanced 15777792 cells
+[Level 9 step 397] ADVANCE with time = 1.2375 dt = 0.003125 speed = 160.2528901 units/h
+[Level 9 step 397] Advanced 23916544 cells
+[Level 9 step 398] ADVANCE with time = 1.240625 dt = 0.003125 speed = 160.4627616 units/h
+[Level 9 step 398] Advanced 23916544 cells
+[Level 8 step 200] ADVANCE with time = 1.24375 dt = 0.00625 speed = 160.6620416 units/h
+[Level 8 step 200] Advanced 15777792 cells
+[Level 9 step 399] ADVANCE with time = 1.24375 dt = 0.003125 speed = 160.521428 units/h
+[Level 9 step 399] Advanced 23916544 cells
+[Level 9 step 400] ADVANCE with time = 1.246875 dt = 0.003125 speed = 160.7264549 units/h
+[Level 9 step 400] Advanced 23916544 cells
+[Level 5 step 26] ADVANCE with time = 1.25 dt = 0.05 speed = 160.9139143 units/h
+[Level 5 step 26] Advanced 16777216 cells
+[Level 6 step 51] ADVANCE with time = 1.25 dt = 0.025 speed = 160.7866102 units/h
+[Level 6 step 51] Advanced 12386304 cells
+[Level 7 step 101] ADVANCE with time = 1.25 dt = 0.0125 speed = 160.680103 units/h
+[Level 7 step 101] Advanced 11350016 cells
+[Level 8 step 201] ADVANCE with time = 1.25 dt = 0.00625 speed = 160.5744449 units/h
+[Level 8 step 201] Advanced 15777792 cells
+[Level 9 step 401] ADVANCE with time = 1.25 dt = 0.003125 speed = 160.4353867 units/h
+[Level 9 step 401] Advanced 23916544 cells
+[Level 9 step 402] ADVANCE with time = 1.253125 dt = 0.003125 speed = 160.6387682 units/h
+[Level 9 step 402] Advanced 23916544 cells
+[Level 8 step 202] ADVANCE with time = 1.25625 dt = 0.00625 speed = 160.8377379 units/h
+[Level 8 step 202] Advanced 15777792 cells
+[Level 9 step 403] ADVANCE with time = 1.25625 dt = 0.003125 speed = 160.6990217 units/h
+[Level 9 step 403] Advanced 23916544 cells
+[Level 9 step 404] ADVANCE with time = 1.259375 dt = 0.003125 speed = 160.9022568 units/h
+[Level 9 step 404] Advanced 23916544 cells
+[Level 7 step 102] ADVANCE with time = 1.2625 dt = 0.0125 speed = 161.0977575 units/h
+[Level 7 step 102] Advanced 11350016 cells
+[Level 8 step 203] ADVANCE with time = 1.2625 dt = 0.00625 speed = 160.9888771 units/h
+[Level 8 step 203] Advanced 15777792 cells
+[Level 9 step 405] ADVANCE with time = 1.2625 dt = 0.003125 speed = 160.8505076 units/h
+[Level 9 step 405] Advanced 23916544 cells
+[Level 9 step 406] ADVANCE with time = 1.265625 dt = 0.003125 speed = 161.0545071 units/h
+[Level 9 step 406] Advanced 23916544 cells
+[Level 8 step 204] ADVANCE with time = 1.26875 dt = 0.00625 speed = 161.2495373 units/h
+[Level 8 step 204] Advanced 15777792 cells
+[Level 9 step 407] ADVANCE with time = 1.26875 dt = 0.003125 speed = 161.1119689 units/h
+[Level 9 step 407] Advanced 23916544 cells
+[Level 9 step 408] ADVANCE with time = 1.271875 dt = 0.003125 speed = 161.3147189 units/h
+[Level 9 step 408] Advanced 23916544 cells
+[Level 6 step 52] ADVANCE with time = 1.275 dt = 0.025 speed = 161.5023047 units/h
+[Level 6 step 52] Advanced 12386304 cells
+[Level 7 step 103] ADVANCE with time = 1.275 dt = 0.0125 speed = 161.3927805 units/h
+[Level 7 step 103] Advanced 11350016 cells
+[Level 8 step 205] ADVANCE with time = 1.275 dt = 0.00625 speed = 161.28816 units/h
+[Level 8 step 205] Advanced 15777792 cells
+[Level 9 step 409] ADVANCE with time = 1.275 dt = 0.003125 speed = 161.1506637 units/h
+[Level 9 step 409] Advanced 23916544 cells
+[Level 9 step 410] ADVANCE with time = 1.278125 dt = 0.003125 speed = 161.3531687 units/h
+[Level 9 step 410] Advanced 23916544 cells
+[Level 8 step 206] ADVANCE with time = 1.28125 dt = 0.00625 speed = 161.5475748 units/h
+[Level 8 step 206] Advanced 15777792 cells
+[Level 9 step 411] ADVANCE with time = 1.28125 dt = 0.003125 speed = 161.4109933 units/h
+[Level 9 step 411] Advanced 23916544 cells
+[Level 9 step 412] ADVANCE with time = 1.284375 dt = 0.003125 speed = 161.6120453 units/h
+[Level 9 step 412] Advanced 23916544 cells
+[Level 7 step 104] ADVANCE with time = 1.2875 dt = 0.0125 speed = 161.8036106 units/h
+[Level 7 step 104] Advanced 11350016 cells
+[Level 8 step 207] ADVANCE with time = 1.2875 dt = 0.00625 speed = 161.6941474 units/h
+[Level 8 step 207] Advanced 15777792 cells
+[Level 9 step 413] ADVANCE with time = 1.2875 dt = 0.003125 speed = 161.5570172 units/h
+[Level 9 step 413] Advanced 23916544 cells
+[Level 9 step 414] ADVANCE with time = 1.290625 dt = 0.003125 speed = 161.7569304 units/h
+[Level 9 step 414] Advanced 23916544 cells
+[Level 8 step 208] ADVANCE with time = 1.29375 dt = 0.00625 speed = 161.9457556 units/h
+[Level 8 step 208] Advanced 15777792 cells
+[Level 9 step 415] ADVANCE with time = 1.29375 dt = 0.003125 speed = 161.8093585 units/h
+[Level 9 step 415] Advanced 23916544 cells
+[Level 9 step 416] ADVANCE with time = 1.296875 dt = 0.003125 speed = 162.0103219 units/h
+[Level 9 step 416] Advanced 23916544 cells
+[Level 4 step 14] ADVANCE with time = 1.3 dt = 0.1 speed = 162.1775603 units/h
+[Level 4 step 14] Advanced 16777216 cells
+[Level 5 step 27] ADVANCE with time = 1.3 dt = 0.05 speed = 162.0638483 units/h
+[Level 5 step 27] Advanced 16777216 cells
+[Level 6 step 53] ADVANCE with time = 1.3 dt = 0.025 speed = 161.9578284 units/h
+[Level 6 step 53] Advanced 12386304 cells
+[Level 7 step 105] ADVANCE with time = 1.3 dt = 0.0125 speed = 161.8520166 units/h
+[Level 7 step 105] Advanced 11350016 cells
+[Level 8 step 209] ADVANCE with time = 1.3 dt = 0.00625 speed = 161.747666 units/h
+[Level 8 step 209] Advanced 15777792 cells
+[Level 9 step 417] ADVANCE with time = 1.3 dt = 0.003125 speed = 161.61254 units/h
+[Level 9 step 417] Advanced 23916544 cells
+[Level 9 step 418] ADVANCE with time = 1.303125 dt = 0.003125 speed = 161.8099279 units/h
+[Level 9 step 418] Advanced 23916544 cells
+[Level 8 step 210] ADVANCE with time = 1.30625 dt = 0.00625 speed = 161.9994952 units/h
+[Level 8 step 210] Advanced 15777792 cells
+[Level 9 step 419] ADVANCE with time = 1.30625 dt = 0.003125 speed = 161.8659768 units/h
+[Level 9 step 419] Advanced 23916544 cells
+[Level 9 step 420] ADVANCE with time = 1.309375 dt = 0.003125 speed = 162.0616563 units/h
+[Level 9 step 420] Advanced 23916544 cells
+[Level 7 step 106] ADVANCE with time = 1.3125 dt = 0.0125 speed = 162.2497877 units/h
+[Level 7 step 106] Advanced 11350016 cells
+[Level 8 step 211] ADVANCE with time = 1.3125 dt = 0.00625 speed = 162.1421483 units/h
+[Level 8 step 211] Advanced 15777792 cells
+[Level 9 step 421] ADVANCE with time = 1.3125 dt = 0.003125 speed = 162.0067855 units/h
+[Level 9 step 421] Advanced 23916544 cells
+[Level 9 step 422] ADVANCE with time = 1.315625 dt = 0.003125 speed = 162.2047829 units/h
+[Level 9 step 422] Advanced 23916544 cells
+[Level 8 step 212] ADVANCE with time = 1.31875 dt = 0.00625 speed = 162.3930677 units/h
+[Level 8 step 212] Advanced 15777792 cells
+[Level 9 step 423] ADVANCE with time = 1.31875 dt = 0.003125 speed = 162.257028 units/h
+[Level 9 step 423] Advanced 23916544 cells
+[Level 9 step 424] ADVANCE with time = 1.321875 dt = 0.003125 speed = 162.4530685 units/h
+[Level 9 step 424] Advanced 23916544 cells
+[Level 6 step 54] ADVANCE with time = 1.325 dt = 0.025 speed = 162.6324906 units/h
+[Level 6 step 54] Advanced 12386304 cells
+[Level 7 step 107] ADVANCE with time = 1.325 dt = 0.0125 speed = 162.5262308 units/h
+[Level 7 step 107] Advanced 11350016 cells
+[Level 8 step 213] ADVANCE with time = 1.325 dt = 0.00625 speed = 162.4245974 units/h
+[Level 8 step 213] Advanced 15777792 cells
+[Level 9 step 425] ADVANCE with time = 1.325 dt = 0.003125 speed = 162.2908452 units/h
+[Level 9 step 425] Advanced 23916544 cells
+[Level 9 step 426] ADVANCE with time = 1.328125 dt = 0.003125 speed = 162.4863541 units/h
+[Level 9 step 426] Advanced 23916544 cells
+[Level 8 step 214] ADVANCE with time = 1.33125 dt = 0.00625 speed = 162.6726666 units/h
+[Level 8 step 214] Advanced 15777792 cells
+[Level 9 step 427] ADVANCE with time = 1.33125 dt = 0.003125 speed = 162.5383851 units/h
+[Level 9 step 427] Advanced 23916544 cells
+[Level 9 step 428] ADVANCE with time = 1.334375 dt = 0.003125 speed = 162.7334209 units/h
+[Level 9 step 428] Advanced 23916544 cells
+[Level 7 step 108] ADVANCE with time = 1.3375 dt = 0.0125 speed = 162.917654 units/h
+[Level 7 step 108] Advanced 11350016 cells
+[Level 8 step 215] ADVANCE with time = 1.3375 dt = 0.00625 speed = 162.8114429 units/h
+[Level 8 step 215] Advanced 15777792 cells
+[Level 9 step 429] ADVANCE with time = 1.3375 dt = 0.003125 speed = 162.677759 units/h
+[Level 9 step 429] Advanced 23916544 cells
+[Level 9 step 430] ADVANCE with time = 1.340625 dt = 0.003125 speed = 162.8692739 units/h
+[Level 9 step 430] Advanced 23916544 cells
+[Level 8 step 216] ADVANCE with time = 1.34375 dt = 0.00625 speed = 163.0552945 units/h
+[Level 8 step 216] Advanced 15777792 cells
+[Level 9 step 431] ADVANCE with time = 1.34375 dt = 0.003125 speed = 162.9211817 units/h
+[Level 9 step 431] Advanced 23916544 cells
+[Level 9 step 432] ADVANCE with time = 1.346875 dt = 0.003125 speed = 163.1124427 units/h
+[Level 9 step 432] Advanced 23916544 cells
+[Level 5 step 28] ADVANCE with time = 1.35 dt = 0.05 speed = 163.2870265 units/h
+[Level 5 step 28] Advanced 16777216 cells
+[Level 6 step 55] ADVANCE with time = 1.35 dt = 0.025 speed = 163.1737559 units/h
+[Level 6 step 55] Advanced 12386304 cells
+[Level 7 step 109] ADVANCE with time = 1.35 dt = 0.0125 speed = 163.0718281 units/h
+[Level 7 step 109] Advanced 11350016 cells
+[Level 8 step 217] ADVANCE with time = 1.35 dt = 0.00625 speed = 162.9708091 units/h
+[Level 8 step 217] Advanced 15777792 cells
+[Level 9 step 433] ADVANCE with time = 1.35 dt = 0.003125 speed = 162.8377939 units/h
+[Level 9 step 433] Advanced 23916544 cells
+[Level 9 step 434] ADVANCE with time = 1.353125 dt = 0.003125 speed = 163.0299717 units/h
+[Level 9 step 434] Advanced 23916544 cells
+[Level 8 step 218] ADVANCE with time = 1.35625 dt = 0.00625 speed = 163.2128154 units/h
+[Level 8 step 218] Advanced 15777792 cells
+[Level 9 step 435] ADVANCE with time = 1.35625 dt = 0.003125 speed = 163.0790083 units/h
+[Level 9 step 435] Advanced 23916544 cells
+[Level 9 step 436] ADVANCE with time = 1.359375 dt = 0.003125 speed = 163.2714511 units/h
+[Level 9 step 436] Advanced 23916544 cells
+[Level 7 step 110] ADVANCE with time = 1.3625 dt = 0.0125 speed = 163.4515652 units/h
+[Level 7 step 110] Advanced 11350016 cells
+[Level 8 step 219] ADVANCE with time = 1.3625 dt = 0.00625 speed = 163.3484077 units/h
+[Level 8 step 219] Advanced 15777792 cells
+[Level 9 step 437] ADVANCE with time = 1.3625 dt = 0.003125 speed = 163.2166069 units/h
+[Level 9 step 437] Advanced 23916544 cells
+[Level 9 step 438] ADVANCE with time = 1.365625 dt = 0.003125 speed = 163.4060176 units/h
+[Level 9 step 438] Advanced 23916544 cells
+[Level 8 step 220] ADVANCE with time = 1.36875 dt = 0.00625 speed = 163.5873486 units/h
+[Level 8 step 220] Advanced 15777792 cells
+[Level 9 step 439] ADVANCE with time = 1.36875 dt = 0.003125 speed = 163.45593 units/h
+[Level 9 step 439] Advanced 23916544 cells
+[Level 9 step 440] ADVANCE with time = 1.371875 dt = 0.003125 speed = 163.6437823 units/h
+[Level 9 step 440] Advanced 23916544 cells
+[Level 6 step 56] ADVANCE with time = 1.375 dt = 0.025 speed = 163.8167747 units/h
+[Level 6 step 56] Advanced 12386304 cells
+[Level 7 step 111] ADVANCE with time = 1.375 dt = 0.0125 speed = 163.7129914 units/h
+[Level 7 step 111] Advanced 11350016 cells
+[Level 8 step 221] ADVANCE with time = 1.375 dt = 0.00625 speed = 163.613418 units/h
+[Level 8 step 221] Advanced 15777792 cells
+[Level 9 step 441] ADVANCE with time = 1.375 dt = 0.003125 speed = 163.4808722 units/h
+[Level 9 step 441] Advanced 23916544 cells
+[Level 9 step 442] ADVANCE with time = 1.378125 dt = 0.003125 speed = 163.6698751 units/h
+[Level 9 step 442] Advanced 23916544 cells
+[Level 8 step 222] ADVANCE with time = 1.38125 dt = 0.00625 speed = 163.8497722 units/h
+[Level 8 step 222] Advanced 15777792 cells
+[Level 9 step 443] ADVANCE with time = 1.38125 dt = 0.003125 speed = 163.7178923 units/h
+[Level 9 step 443] Advanced 23916544 cells
+[Level 9 step 444] ADVANCE with time = 1.384375 dt = 0.003125 speed = 163.9055181 units/h
+[Level 9 step 444] Advanced 23916544 cells
+[Level 7 step 112] ADVANCE with time = 1.3875 dt = 0.0125 speed = 164.0827104 units/h
+[Level 7 step 112] Advanced 11350016 cells
+[Level 8 step 223] ADVANCE with time = 1.3875 dt = 0.00625 speed = 163.981477 units/h
+[Level 8 step 223] Advanced 15777792 cells
+[Level 9 step 445] ADVANCE with time = 1.3875 dt = 0.003125 speed = 163.8510087 units/h
+[Level 9 step 445] Advanced 23916544 cells
+[Level 9 step 446] ADVANCE with time = 1.390625 dt = 0.003125 speed = 164.036858 units/h
+[Level 9 step 446] Advanced 23916544 cells
+[Level 8 step 224] ADVANCE with time = 1.39375 dt = 0.00625 speed = 164.2162466 units/h
+[Level 8 step 224] Advanced 15777792 cells
+[Level 9 step 447] ADVANCE with time = 1.39375 dt = 0.003125 speed = 164.0856082 units/h
+[Level 9 step 447] Advanced 23916544 cells
+[Level 9 step 448] ADVANCE with time = 1.396875 dt = 0.003125 speed = 164.2705406 units/h
+[Level 9 step 448] Advanced 23916544 cells
+[Level 3 step 8] ADVANCE with time = 1.4 dt = 0.2 speed = 164.4135104 units/h
+[Level 3 step 8] Advanced 16777216 cells
+[Level 4 step 15] ADVANCE with time = 1.4 dt = 0.1 speed = 164.3109348 units/h
+[Level 4 step 15] Advanced 16777216 cells
+[Level 5 step 29] ADVANCE with time = 1.4 dt = 0.05 speed = 164.2125612 units/h
+[Level 5 step 29] Advanced 16777216 cells
+[Level 6 step 57] ADVANCE with time = 1.4 dt = 0.025 speed = 164.1141146 units/h
+[Level 6 step 57] Advanced 12386304 cells
+[Level 7 step 113] ADVANCE with time = 1.4 dt = 0.0125 speed = 164.0144889 units/h
+[Level 7 step 113] Advanced 11350016 cells
+[Level 8 step 225] ADVANCE with time = 1.4 dt = 0.00625 speed = 163.8322577 units/h
+[Level 8 step 225] Advanced 15777792 cells
+[Level 9 step 449] ADVANCE with time = 1.4 dt = 0.003125 speed = 163.6818319 units/h
+[Level 9 step 449] Advanced 22179840 cells
+[Level 9 step 450] ADVANCE with time = 1.403125 dt = 0.003125 speed = 163.813865 units/h
+[Level 9 step 450] Advanced 22179840 cells
+[Level 8 step 226] ADVANCE with time = 1.40625 dt = 0.00625 speed = 163.9997606 units/h
+[Level 8 step 226] Advanced 15777792 cells
+[Level 9 step 451] ADVANCE with time = 1.40625 dt = 0.003125 speed = 163.8690391 units/h
+[Level 9 step 451] Advanced 22179840 cells
+[Level 9 step 452] ADVANCE with time = 1.409375 dt = 0.003125 speed = 164.0601798 units/h
+[Level 9 step 452] Advanced 22179840 cells
+[Level 7 step 114] ADVANCE with time = 1.4125 dt = 0.0125 speed = 164.2411648 units/h
+[Level 7 step 114] Advanced 11350016 cells
+[Level 8 step 227] ADVANCE with time = 1.4125 dt = 0.00625 speed = 164.1347734 units/h
+[Level 8 step 227] Advanced 15777792 cells
+[Level 9 step 453] ADVANCE with time = 1.4125 dt = 0.003125 speed = 164.0051079 units/h
+[Level 9 step 453] Advanced 22179840 cells
+[Level 9 step 454] ADVANCE with time = 1.415625 dt = 0.003125 speed = 164.1965076 units/h
+[Level 9 step 454] Advanced 22179840 cells
+[Level 8 step 228] ADVANCE with time = 1.41875 dt = 0.00625 speed = 164.3857091 units/h
+[Level 8 step 228] Advanced 15777792 cells
+[Level 9 step 455] ADVANCE with time = 1.41875 dt = 0.003125 speed = 164.2512312 units/h
+[Level 9 step 455] Advanced 22179840 cells
+[Level 9 step 456] ADVANCE with time = 1.421875 dt = 0.003125 speed = 164.4415783 units/h
+[Level 9 step 456] Advanced 22179840 cells
+[Level 6 step 58] ADVANCE with time = 1.425 dt = 0.025 speed = 164.6172183 units/h
+[Level 6 step 58] Advanced 12386304 cells
+[Level 7 step 115] ADVANCE with time = 1.425 dt = 0.0125 speed = 164.5049687 units/h
+[Level 7 step 115] Advanced 11350016 cells
+[Level 8 step 229] ADVANCE with time = 1.425 dt = 0.00625 speed = 164.4072464 units/h
+[Level 8 step 229] Advanced 15777792 cells
+[Level 9 step 457] ADVANCE with time = 1.425 dt = 0.003125 speed = 164.2799123 units/h
+[Level 9 step 457] Advanced 22179840 cells
+[Level 9 step 458] ADVANCE with time = 1.428125 dt = 0.003125 speed = 164.4695482 units/h
+[Level 9 step 458] Advanced 22179840 cells
+[Level 8 step 230] ADVANCE with time = 1.43125 dt = 0.00625 speed = 164.6523241 units/h
+[Level 8 step 230] Advanced 15777792 cells
+[Level 9 step 459] ADVANCE with time = 1.43125 dt = 0.003125 speed = 164.5228552 units/h
+[Level 9 step 459] Advanced 22179840 cells
+[Level 9 step 460] ADVANCE with time = 1.434375 dt = 0.003125 speed = 164.7115525 units/h
+[Level 9 step 460] Advanced 22179840 cells
+[Level 7 step 116] ADVANCE with time = 1.4375 dt = 0.0125 speed = 164.8871308 units/h
+[Level 7 step 116] Advanced 11350016 cells
+[Level 8 step 231] ADVANCE with time = 1.4375 dt = 0.00625 speed = 164.7892079 units/h
+[Level 8 step 231] Advanced 15777792 cells
+[Level 9 step 461] ADVANCE with time = 1.4375 dt = 0.003125 speed = 164.6613962 units/h
+[Level 9 step 461] Advanced 22179840 cells
+[Level 9 step 462] ADVANCE with time = 1.440625 dt = 0.003125 speed = 164.8501996 units/h
+[Level 9 step 462] Advanced 22179840 cells
+[Level 8 step 232] ADVANCE with time = 1.44375 dt = 0.00625 speed = 165.0344831 units/h
+[Level 8 step 232] Advanced 15777792 cells
+[Level 9 step 463] ADVANCE with time = 1.44375 dt = 0.003125 speed = 164.9004488 units/h
+[Level 9 step 463] Advanced 22179840 cells
+[Level 9 step 464] ADVANCE with time = 1.446875 dt = 0.003125 speed = 165.0880878 units/h
+[Level 9 step 464] Advanced 22179840 cells
+[Level 5 step 30] ADVANCE with time = 1.45 dt = 0.05 speed = 165.258569 units/h
+[Level 5 step 30] Advanced 16777216 cells
+[Level 6 step 59] ADVANCE with time = 1.45 dt = 0.025 speed = 165.1410276 units/h
+[Level 6 step 59] Advanced 12386304 cells
+[Level 7 step 117] ADVANCE with time = 1.45 dt = 0.0125 speed = 165.0443602 units/h
+[Level 7 step 117] Advanced 11350016 cells
+[Level 8 step 233] ADVANCE with time = 1.45 dt = 0.00625 speed = 164.9482359 units/h
+[Level 8 step 233] Advanced 15777792 cells
+[Level 9 step 465] ADVANCE with time = 1.45 dt = 0.003125 speed = 164.8213732 units/h
+[Level 9 step 465] Advanced 22179840 cells
+[Level 9 step 466] ADVANCE with time = 1.453125 dt = 0.003125 speed = 165.0071873 units/h
+[Level 9 step 466] Advanced 22179840 cells
+[Level 8 step 234] ADVANCE with time = 1.45625 dt = 0.00625 speed = 165.189094 units/h
+[Level 8 step 234] Advanced 15777792 cells
+[Level 9 step 467] ADVANCE with time = 1.45625 dt = 0.003125 speed = 165.0592957 units/h
+[Level 9 step 467] Advanced 22179840 cells
+[Level 9 step 468] ADVANCE with time = 1.459375 dt = 0.003125 speed = 165.2432959 units/h
+[Level 9 step 468] Advanced 22179840 cells
+[Level 7 step 118] ADVANCE with time = 1.4625 dt = 0.0125 speed = 165.4178489 units/h
+[Level 7 step 118] Advanced 11350016 cells
+[Level 8 step 235] ADVANCE with time = 1.4625 dt = 0.00625 speed = 165.3185071 units/h
+[Level 8 step 235] Advanced 15777792 cells
+[Level 9 step 469] ADVANCE with time = 1.4625 dt = 0.003125 speed = 165.1905431 units/h
+[Level 9 step 469] Advanced 22179840 cells
+[Level 9 step 470] ADVANCE with time = 1.465625 dt = 0.003125 speed = 165.3766851 units/h
+[Level 9 step 470] Advanced 22179840 cells
+[Level 8 step 236] ADVANCE with time = 1.46875 dt = 0.00625 speed = 165.5553226 units/h
+[Level 8 step 236] Advanced 15777792 cells
+[Level 9 step 471] ADVANCE with time = 1.46875 dt = 0.003125 speed = 165.4270821 units/h
+[Level 9 step 471] Advanced 22179840 cells
+[Level 9 step 472] ADVANCE with time = 1.471875 dt = 0.003125 speed = 165.609486 units/h
+[Level 9 step 472] Advanced 22179840 cells
+[Level 6 step 60] ADVANCE with time = 1.475 dt = 0.025 speed = 165.7799212 units/h
+[Level 6 step 60] Advanced 12386304 cells
+[Level 7 step 119] ADVANCE with time = 1.475 dt = 0.0125 speed = 165.6812926 units/h
+[Level 7 step 119] Advanced 11350016 cells
+[Level 8 step 237] ADVANCE with time = 1.475 dt = 0.00625 speed = 165.5856313 units/h
+[Level 8 step 237] Advanced 15777792 cells
+[Level 9 step 473] ADVANCE with time = 1.475 dt = 0.003125 speed = 165.4599465 units/h
+[Level 9 step 473] Advanced 22179840 cells
+[Level 9 step 474] ADVANCE with time = 1.478125 dt = 0.003125 speed = 165.6440367 units/h
+[Level 9 step 474] Advanced 22179840 cells
+[Level 8 step 238] ADVANCE with time = 1.48125 dt = 0.00625 speed = 165.8206316 units/h
+[Level 8 step 238] Advanced 15777792 cells
+[Level 9 step 475] ADVANCE with time = 1.48125 dt = 0.003125 speed = 165.6926841 units/h
+[Level 9 step 475] Advanced 22179840 cells
+[Level 9 step 476] ADVANCE with time = 1.484375 dt = 0.003125 speed = 165.8732905 units/h
+[Level 9 step 476] Advanced 22179840 cells
+[Level 7 step 120] ADVANCE with time = 1.4875 dt = 0.0125 speed = 166.0438173 units/h
+[Level 7 step 120] Advanced 11350016 cells
+[Level 8 step 239] ADVANCE with time = 1.4875 dt = 0.00625 speed = 165.9478133 units/h
+[Level 8 step 239] Advanced 15777792 cells
+[Level 9 step 477] ADVANCE with time = 1.4875 dt = 0.003125 speed = 165.8225465 units/h
+[Level 9 step 477] Advanced 22179840 cells
+[Level 9 step 478] ADVANCE with time = 1.490625 dt = 0.003125 speed = 166.0041997 units/h
+[Level 9 step 478] Advanced 22179840 cells
+[Level 8 step 240] ADVANCE with time = 1.49375 dt = 0.00625 speed = 166.1822897 units/h
+[Level 8 step 240] Advanced 15777792 cells
+[Level 9 step 479] ADVANCE with time = 1.49375 dt = 0.003125 speed = 166.052685 units/h
+[Level 9 step 479] Advanced 22179840 cells
+[Level 9 step 480] ADVANCE with time = 1.496875 dt = 0.003125 speed = 166.2326619 units/h
+[Level 9 step 480] Advanced 22179840 cells
+[Level 4 step 16] ADVANCE with time = 1.5 dt = 0.1 speed = 166.3842868 units/h
+[Level 4 step 16] Advanced 16777216 cells
+[Level 5 step 31] ADVANCE with time = 1.5 dt = 0.05 speed = 166.2825241 units/h
+[Level 5 step 31] Advanced 16777216 cells
+[Level 6 step 61] ADVANCE with time = 1.5 dt = 0.025 speed = 166.1878377 units/h
+[Level 6 step 61] Advanced 12386304 cells
+[Level 7 step 121] ADVANCE with time = 1.5 dt = 0.0125 speed = 166.0919434 units/h
+[Level 7 step 121] Advanced 11350016 cells
+[Level 8 step 241] ADVANCE with time = 1.5 dt = 0.00625 speed = 165.996579 units/h
+[Level 8 step 241] Advanced 15777792 cells
+[Level 9 step 481] ADVANCE with time = 1.5 dt = 0.003125 speed = 165.8723197 units/h
+[Level 9 step 481] Advanced 22179840 cells
+[Level 9 step 482] ADVANCE with time = 1.503125 dt = 0.003125 speed = 166.0530226 units/h
+[Level 9 step 482] Advanced 22179840 cells
+[Level 8 step 242] ADVANCE with time = 1.50625 dt = 0.00625 speed = 166.2285286 units/h
+[Level 8 step 242] Advanced 15777792 cells
+[Level 9 step 483] ADVANCE with time = 1.50625 dt = 0.003125 speed = 166.1017242 units/h
+[Level 9 step 483] Advanced 22179840 cells
+[Level 9 step 484] ADVANCE with time = 1.509375 dt = 0.003125 speed = 166.2810102 units/h
+[Level 9 step 484] Advanced 22179840 cells
+[Level 7 step 122] ADVANCE with time = 1.5125 dt = 0.0125 speed = 166.4467269 units/h
+[Level 7 step 122] Advanced 11350016 cells
+[Level 8 step 243] ADVANCE with time = 1.5125 dt = 0.00625 speed = 166.3523544 units/h
+[Level 8 step 243] Advanced 15777792 cells
+[Level 9 step 485] ADVANCE with time = 1.5125 dt = 0.003125 speed = 166.2288662 units/h
+[Level 9 step 485] Advanced 22179840 cells
+[Level 9 step 486] ADVANCE with time = 1.515625 dt = 0.003125 speed = 166.4082616 units/h
+[Level 9 step 486] Advanced 22179840 cells
+[Level 8 step 244] ADVANCE with time = 1.51875 dt = 0.00625 speed = 166.5838907 units/h
+[Level 8 step 244] Advanced 15777792 cells
+[Level 9 step 487] ADVANCE with time = 1.51875 dt = 0.003125 speed = 166.456178 units/h
+[Level 9 step 487] Advanced 22179840 cells
+[Level 9 step 488] ADVANCE with time = 1.521875 dt = 0.003125 speed = 166.6333098 units/h
+[Level 9 step 488] Advanced 22179840 cells
+[Level 6 step 62] ADVANCE with time = 1.525 dt = 0.025 speed = 166.7973574 units/h
+[Level 6 step 62] Advanced 12386304 cells
+[Level 7 step 123] ADVANCE with time = 1.525 dt = 0.0125 speed = 166.70102 units/h
+[Level 7 step 123] Advanced 11350016 cells
+[Level 8 step 245] ADVANCE with time = 1.525 dt = 0.00625 speed = 166.607089 units/h
+[Level 8 step 245] Advanced 15777792 cells
+[Level 9 step 489] ADVANCE with time = 1.525 dt = 0.003125 speed = 166.4829872 units/h
+[Level 9 step 489] Advanced 22179840 cells
+[Level 9 step 490] ADVANCE with time = 1.528125 dt = 0.003125 speed = 166.6618706 units/h
+[Level 9 step 490] Advanced 22179840 cells
+[Level 8 step 246] ADVANCE with time = 1.53125 dt = 0.00625 speed = 166.8358556 units/h
+[Level 8 step 246] Advanced 15777792 cells
+[Level 9 step 491] ADVANCE with time = 1.53125 dt = 0.003125 speed = 166.7087325 units/h
+[Level 9 step 491] Advanced 22179840 cells
+[Level 9 step 492] ADVANCE with time = 1.534375 dt = 0.003125 speed = 166.8851042 units/h
+[Level 9 step 492] Advanced 22179840 cells
+[Level 7 step 124] ADVANCE with time = 1.5375 dt = 0.0125 speed = 167.0501702 units/h
+[Level 7 step 124] Advanced 11350016 cells
+[Level 8 step 247] ADVANCE with time = 1.5375 dt = 0.00625 speed = 166.9557817 units/h
+[Level 8 step 247] Advanced 15777792 cells
+[Level 9 step 493] ADVANCE with time = 1.5375 dt = 0.003125 speed = 166.8328406 units/h
+[Level 9 step 493] Advanced 22179840 cells
+[Level 9 step 494] ADVANCE with time = 1.540625 dt = 0.003125 speed = 167.0093167 units/h
+[Level 9 step 494] Advanced 22179840 cells
+[Level 8 step 248] ADVANCE with time = 1.54375 dt = 0.00625 speed = 167.1819891 units/h
+[Level 8 step 248] Advanced 15777792 cells
+[Level 9 step 495] ADVANCE with time = 1.54375 dt = 0.003125 speed = 167.0548593 units/h
+[Level 9 step 495] Advanced 22179840 cells
+[Level 9 step 496] ADVANCE with time = 1.546875 dt = 0.003125 speed = 167.2300459 units/h
+[Level 9 step 496] Advanced 22179840 cells
+[Level 5 step 32] ADVANCE with time = 1.55 dt = 0.05 speed = 167.3886036 units/h
+[Level 5 step 32] Advanced 16777216 cells
+[Level 6 step 63] ADVANCE with time = 1.55 dt = 0.025 speed = 167.2861596 units/h
+[Level 6 step 63] Advanced 12386304 cells
+[Level 7 step 125] ADVANCE with time = 1.55 dt = 0.0125 speed = 167.1923613 units/h
+[Level 7 step 125] Advanced 11350016 cells
+[Level 8 step 249] ADVANCE with time = 1.55 dt = 0.00625 speed = 167.1004101 units/h
+[Level 8 step 249] Advanced 15777792 cells
+[Level 9 step 497] ADVANCE with time = 1.55 dt = 0.003125 speed = 166.9791914 units/h
+[Level 9 step 497] Advanced 22179840 cells
+[Level 9 step 498] ADVANCE with time = 1.553125 dt = 0.003125 speed = 167.151676 units/h
+[Level 9 step 498] Advanced 22179840 cells
+[Level 8 step 250] ADVANCE with time = 1.55625 dt = 0.00625 speed = 167.3216262 units/h
+[Level 8 step 250] Advanced 15777792 cells
+[Level 9 step 499] ADVANCE with time = 1.55625 dt = 0.003125 speed = 167.196954 units/h
+[Level 9 step 499] Advanced 22179840 cells
+[Level 9 step 500] ADVANCE with time = 1.559375 dt = 0.003125 speed = 167.3705557 units/h
+[Level 9 step 500] Advanced 22179840 cells
+[Level 7 step 126] ADVANCE with time = 1.5625 dt = 0.0125 speed = 167.532144 units/h
+[Level 7 step 126] Advanced 11350016 cells
+[Level 8 step 251] ADVANCE with time = 1.5625 dt = 0.00625 speed = 167.4386411 units/h
+[Level 8 step 251] Advanced 15777792 cells
+[Level 9 step 501] ADVANCE with time = 1.5625 dt = 0.003125 speed = 167.3166183 units/h
+[Level 9 step 501] Advanced 22179840 cells
+[Level 9 step 502] ADVANCE with time = 1.565625 dt = 0.003125 speed = 167.4901475 units/h
+[Level 9 step 502] Advanced 22179840 cells
+[Level 8 step 252] ADVANCE with time = 1.56875 dt = 0.00625 speed = 167.660095 units/h
+[Level 8 step 252] Advanced 15777792 cells
+[Level 9 step 503] ADVANCE with time = 1.56875 dt = 0.003125 speed = 167.535523 units/h
+[Level 9 step 503] Advanced 22179840 cells
+[Level 9 step 504] ADVANCE with time = 1.571875 dt = 0.003125 speed = 167.707357 units/h
+[Level 9 step 504] Advanced 22179840 cells
+[Level 6 step 64] ADVANCE with time = 1.575 dt = 0.025 speed = 167.8663374 units/h
+[Level 6 step 64] Advanced 12386304 cells
+[Level 7 step 127] ADVANCE with time = 1.575 dt = 0.0125 speed = 167.7727358 units/h
+[Level 7 step 127] Advanced 11350016 cells
+[Level 8 step 253] ADVANCE with time = 1.575 dt = 0.00625 speed = 167.6798998 units/h
+[Level 8 step 253] Advanced 15777792 cells
+[Level 9 step 505] ADVANCE with time = 1.575 dt = 0.003125 speed = 167.5594509 units/h
+[Level 9 step 505] Advanced 22179840 cells
+[Level 9 step 506] ADVANCE with time = 1.578125 dt = 0.003125 speed = 167.7300725 units/h
+[Level 9 step 506] Advanced 22179840 cells
+[Level 8 step 254] ADVANCE with time = 1.58125 dt = 0.00625 speed = 167.8974423 units/h
+[Level 8 step 254] Advanced 15777792 cells
+[Level 9 step 507] ADVANCE with time = 1.58125 dt = 0.003125 speed = 167.7733758 units/h
+[Level 9 step 507] Advanced 22179840 cells
+[Level 9 step 508] ADVANCE with time = 1.584375 dt = 0.003125 speed = 167.9442389 units/h
+[Level 9 step 508] Advanced 22179840 cells
+[Level 7 step 128] ADVANCE with time = 1.5875 dt = 0.0125 speed = 168.1044517 units/h
+[Level 7 step 128] Advanced 11350016 cells
+[Level 8 step 255] ADVANCE with time = 1.5875 dt = 0.00625 speed = 168.0110549 units/h
+[Level 8 step 255] Advanced 15777792 cells
+[Level 9 step 509] ADVANCE with time = 1.5875 dt = 0.003125 speed = 167.8896141 units/h
+[Level 9 step 509] Advanced 22179840 cells
+[Level 9 step 510] ADVANCE with time = 1.590625 dt = 0.003125 speed = 168.0605756 units/h
+[Level 9 step 510] Advanced 22179840 cells
+[Level 8 step 256] ADVANCE with time = 1.59375 dt = 0.00625 speed = 168.2259838 units/h
+[Level 8 step 256] Advanced 15777792 cells
+[Level 9 step 511] ADVANCE with time = 1.59375 dt = 0.003125 speed = 168.101567 units/h
+[Level 9 step 511] Advanced 22179840 cells
+[Level 9 step 512] ADVANCE with time = 1.596875 dt = 0.003125 speed = 168.2734543 units/h
+[Level 9 step 512] Advanced 22179840 cells
+
+Total Time: 34.60702967
+
+
+TinyProfiler total time across processes [min...avg...max]: 34.61 ... 34.61 ... 34.61
+
+---------------------------------------------------------------------------------------------
+Name                                          NCalls  Excl. Min  Excl. Avg  Excl. Max   Max %
+---------------------------------------------------------------------------------------------
+FabArray::ParallelCopy_finish()                 8779       13.1       15.3      16.83  48.64%
+AmrCoreProblem::AdvanceLevel: RHS               4092      10.71      11.58       13.1  37.86%
+FillBoundary_finish()                           4142      2.677      3.393      4.361  12.60%
+FillPatchInterp(Fab)                            4106      1.783      2.155      2.739   7.92%
+FillPatchSingleLevel                            8266     0.4596      0.527     0.5843   1.69%
+FabArray::ParallelCopy_nowait()                 8779     0.2789     0.3873     0.4995   1.44%
+FillBoundary_nowait()                           4142     0.2961     0.3776     0.4386   1.27%
+AmrCoreProblem::AdvanceLevel: BC                4092     0.2064     0.2216     0.2349   0.68%
+FabArray::setVal()                               128     0.1079     0.1203     0.1418   0.41%
+FPinfo::FPinfo()                                  27     0.0656     0.1131     0.1274   0.37%
+FabArrayBase::CPC::define()                     8259    0.06921    0.09133     0.1176   0.34%
+FillPatchTwoLevels                              4106    0.06852    0.08286     0.1023   0.30%
+DistributionMapping::LeastUsedCPUs()              46    0.02864    0.04173    0.09259   0.27%
+BoxList::pci                                      25   0.007533    0.02811    0.08732   0.25%
+AmrCoreProblem::AverageDownTo(crse_lev)          511    0.02522    0.03255    0.03794   0.11%
+AmrMesh::MakeNewGrids()                           17    0.01884    0.02446    0.02663   0.08%
+AmrCoreProblem::timeStepWithSubcycling()        1023   0.009965    0.01058     0.0192   0.06%
+FabArrayBase::getCPC()                          8779   0.005599   0.006206   0.007044   0.02%
+AmrCoreProblem::FillPatch()                     4160   0.004224   0.004615   0.005012   0.01%
+FabArray::ParallelCopy()                        8779   0.003622   0.004081   0.004532   0.01%
+AmrCoreProblem::AdvanceLevel()                  1023   0.003312   0.003566   0.004028   0.01%
+FabArrayBase::TheFPinfo()                       4106   0.002116   0.002518   0.002916   0.01%
+main()                                             1   0.000435  0.0007068   0.002219   0.01%
+FabArray::FillBoundaryAndSync()                 4142   0.001389   0.001532   0.001801   0.01%
+FillBoundaryAndSync_finish()                    4142   0.001147   0.001421   0.001611   0.00%
+AmrCoreProblem::MakeNewLevelFromScratch()         10   0.001174   0.001309    0.00156   0.00%
+FillBoundaryAndSync_nowait()                    4142   0.000913   0.001024   0.001406   0.00%
+AmrCoreProblem::RemakeLevel()                      9  0.0002862   0.000329   0.000395   0.00%
+AmrCoreProblem::mapDataOnPatch()                  10  0.0002009  0.0002397  0.0002863   0.00%
+DistributionMapping::KnapSackDoIt()               26  0.0002364  0.0002487  0.0002809   0.00%
+AmrCoreProblem::InitFromScratch()                  1  0.0001425  0.0001722  0.0002373   0.00%
+AmrCoreProblem::regrid()                           7  9.273e-05  0.0001074  0.0001257   0.00%
+AmrCoreProblem::Evolve()                           1  2.814e-05   5.34e-05  0.0001129   0.00%
+AmrCoreProblem::InitData()                         1  9.601e-06  1.262e-05  4.965e-05   0.00%
+BoxList::parallelComplementIn()                   46  1.294e-05  2.372e-05  4.455e-05   0.00%
+Other                                          19852    0.05586    0.08336      0.123   0.36%
+---------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------
+Name                                          NCalls  Incl. Min  Incl. Avg  Incl. Max   Max %
+---------------------------------------------------------------------------------------------
+main()                                             1      34.61      34.61      34.61 100.00%
+AmrCoreProblem::Evolve()                           1      34.21      34.21      34.21  98.85%
+AmrCoreProblem::timeStepWithSubcycling()        1023      34.21      34.21      34.21  98.84%
+AmrCoreProblem::AdvanceLevel()                  1023      33.18      33.31      33.42  96.56%
+AmrCoreProblem::FillPatch()                     4160      20.44      21.89      22.76  65.76%
+FillPatchTwoLevels                              4106      20.24      21.69      22.56  65.18%
+FillPatchSingleLevel                            8266      10.46      14.21      17.26  49.86%
+FabArray::ParallelCopy()                        8779      13.55      15.79      17.21  49.74%
+FabArray::ParallelCopy_finish()                 8779       13.1       15.3      16.83  48.64%
+AmrCoreProblem::AdvanceLevel: RHS               4092      10.71      11.58       13.1  37.86%
+FabArray::FillBoundaryAndSync()                 4142      2.979      3.777      4.738  13.69%
+FillBoundaryAndSync_finish()                    4142      2.678      3.394      4.362  12.61%
+FillBoundary_finish()                           4142      2.677      3.393      4.361  12.60%
+FillPatchInterp(Fab)                            4106      1.796      2.181      2.779   8.03%
+AmrCoreProblem::AverageDownTo(crse_lev)          511     0.5366     0.6515     0.7861   2.27%
+FabArray::ParallelCopy_nowait()                 8779     0.3698     0.4848      0.614   1.77%
+FillBoundaryAndSync_nowait()                    4142     0.2995     0.3813     0.4423   1.28%
+FillBoundary_nowait()                           4142     0.2985     0.3802     0.4413   1.28%
+AmrCoreProblem::InitData()                         1     0.3951     0.3968     0.3986   1.15%
+AmrCoreProblem::InitFromScratch()                  1      0.369     0.3691     0.3691   1.07%
+AmrCoreProblem::MakeNewLevelFromScratch()         10     0.2593     0.3147     0.3361   0.97%
+AmrCoreProblem::regrid()                           7     0.2241     0.2351     0.2537   0.73%
+AmrCoreProblem::AdvanceLevel: BC                4092     0.2064     0.2216     0.2349   0.68%
+AmrCoreProblem::RemakeLevel()                      9     0.1891     0.2029     0.2238   0.65%
+FabArrayBase::TheFPinfo()                       4106     0.1447     0.1516     0.1571   0.45%
+FPinfo::FPinfo()                                  27     0.1424     0.1491     0.1545   0.45%
+AmrCoreProblem::mapDataOnPatch()                  10    0.09007     0.1195     0.1491   0.43%
+FabArray::setVal()                               128     0.1079     0.1203     0.1418   0.41%
+AmrMesh::MakeNewGrids()                           17    0.05787    0.07856     0.1373   0.40%
+FabArrayBase::getCPC()                          8779    0.07591    0.09753     0.1239   0.36%
+FabArrayBase::CPC::define()                     8259    0.06921    0.09133     0.1176   0.34%
+DistributionMapping::LeastUsedCPUs()              46    0.02864    0.04173    0.09259   0.27%
+BoxList::parallelComplementIn()                   46   0.007591     0.0282    0.08741   0.25%
+BoxList::pci                                      25   0.007533    0.02811    0.08732   0.25%
+DistributionMapping::KnapSackDoIt()               26      0.022     0.0351    0.08597   0.25%
+Other                                          19852      0.128      0.193     0.2711   0.78%
+---------------------------------------------------------------------------------------------
+
+Unused ParmParse Variables:
+  [TOP]::amr.tag_shadow_time(nvals = 1)  :: [n]
+
+Managed Memory Usage:
+-----------------------------------------------------------------------------------------------------------------------------------
+Name                                        Nalloc    Nfree  AvgMem min  AvgMem avg  AvgMem max  MaxMem min  MaxMem avg  MaxMem max
+-----------------------------------------------------------------------------------------------------------------------------------
+The_Arena::Initialize()                        128      128     330 KiB     384 KiB     482 KiB      59 GiB      59 GiB      59 GiB
+AmrCoreProblem::MakeNewLevelFromScratch()    11624    11624    1647 MiB    1707 MiB    1755 MiB    1793 MiB    2029 MiB    2424 MiB
+AmrCoreProblem::RemakeLevel()                11616    11616     286 MiB     315 MiB     368 MiB     552 MiB     683 MiB     830 MiB
+ResizeRandomSeed                               128      128      40 MiB      40 MiB      40 MiB      40 MiB      40 MiB      40 MiB
+FillPatchSingleLevel                        715776   715776    3927 KiB    6585 KiB      11 MiB      23 MiB      26 MiB      38 MiB
+FillPatchTwoLevels                         2825640  2825640    1290 KiB    1852 KiB    2781 KiB    6110 KiB      10 MiB      16 MiB
+AmrCoreProblem::AverageDownTo(crse_lev)      83168    83168      68 KiB      83 KiB     106 KiB    5684 KiB    9477 KiB      13 MiB
+AmrCoreProblem::AverageDown()                 1325     1325    1289   B    1921   B    2997   B    3181 KiB    5331 KiB      11 MiB
+AmrMesh::MakeNewGrids()                      11327    11327     278   B     312   B     346   B     248 KiB     319 KiB     445 KiB
+FabArray::ParallelCopy_finish()             995901   995901       9   B      14   B      27   B    3632   B    8827   B      19 KiB
+FabArray::ParallelCopy_nowait()             994649   994649       7   B      14   B      26   B    4144   B    7169   B      14 KiB
+FillBoundary_finish()                       499582   499582      11   B      19   B      29   B    3280   B    7944   B      13 KiB
+FillBoundary_nowait()                       610136   610136      14   B      21   B      30   B    5008   B    7808   B      11 KiB
+TagBoxArray::mapPRD                           9280     9280       1   B       1   B       2   B    4800   B    6374   B    8832   B
+FabArray::setVal()                            3268     3268       0   B    2490   B    5821   B       0   B    3866   B    7984   B
+OwnerMask()                                   8303     8303       0   B       0   B       0   B    3104   B    4978   B    6848   B
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Device Memory Usage:
+-------------------------------------------------------------------------------------------------------------------------
+Name                              Nalloc    Nfree  AvgMem min  AvgMem avg  AvgMem max  MaxMem min  MaxMem avg  MaxMem max
+-------------------------------------------------------------------------------------------------------------------------
+FabArray::ParallelCopy_nowait()  1916188  1916188    1734 KiB    2801 KiB    4748 KiB      71 MiB     102 MiB     127 MiB
+FillBoundary_nowait()             999164   999164    1503 KiB    2107 KiB    3316 KiB      20 MiB      33 MiB      53 MiB
+The_Device_Arena::Initialize()       128      128      46   B      84   B     116   B    8192 KiB    8192 KiB    8192 KiB
+TagBoxArray::collate()              5755     5755       0   B       0   B       0   B      32   B    1331   B    3904   B
+-------------------------------------------------------------------------------------------------------------------------
+
+Pinned Memory Usage:
+-----------------------------------------------------------------------------------------------------------------------
+Name                             Nalloc   Nfree  AvgMem min  AvgMem avg  AvgMem max  MaxMem min  MaxMem avg  MaxMem max
+-----------------------------------------------------------------------------------------------------------------------
+The_Pinned_Arena::Initialize()      128     128    1045   B    1118   B    1201   B    8192 KiB    8192 KiB    8192 KiB
+TagBoxArray::collate()            11495   11495       0   B       0   B       6   B      64   B    1738   B      50 KiB
+FabArray::ParallelCopy_finish()  995901  995901       9   B      14   B      27   B    3632   B    8827   B      19 KiB
+FabArray::ParallelCopy_nowait()  994649  994649       7   B      14   B      26   B    4144   B    7169   B      14 KiB
+FillBoundary_finish()            499582  499582      11   B      20   B      29   B    3280   B    7944   B      13 KiB
+FillBoundary_nowait()            610136  610136      14   B      21   B      30   B    5008   B    7808   B      11 KiB
+FabArray::setVal()                 3268    3268       0   B    2490   B    5821   B       0   B    3866   B    7984   B
+OwnerMask()                        3663    3663       0   B       0   B       0   B     704   B    1996   B    3616   B
+AmrMesh::MakeNewGrids()            2047    2047       0   B       0   B       0   B     208   B     834   B    2112   B
+-----------------------------------------------------------------------------------------------------------------------
+
+Total GPU global memory (MB) spread across MPI: [81155 ... 81155]
+Free  GPU global memory (MB) spread across MPI: [76713 ... 77347]
+[The         Arena] space (MB) allocated spread across MPI: [60866 ... 60866]
+[The         Arena] space (MB) used      spread across MPI: [0 ... 0]
+[The  Device Arena] space (MB) allocated spread across MPI: [195 ... 577]
+[The  Device Arena] space (MB) used      spread across MPI: [0 ... 0]
+[The  Pinned Arena] space (MB) allocated spread across MPI: [8 ... 8]
+[The  Pinned Arena] space (MB) used      spread across MPI: [0 ... 0]
+AMReX (24.10) finalized

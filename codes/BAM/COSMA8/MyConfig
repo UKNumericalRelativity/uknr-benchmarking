@@ -1,0 +1,80 @@
+# MyConfig.example
+#
+# The file MyConfig is included verbatim in the Makefile to determine which 
+# special libraries will be included in the build.
+
+# ------------------------------------------------------------------------
+# here are examples for adding projects
+# note that the given project names are also used when checking out
+# projects in "make coprojects"
+
+# black hole evolution
+projects += src/projects/adm
+projects += src/projects/bssn
+projects += src/projects/Gauge
+projects += src/projects/punctures
+#projects += src/projects/punctures_ps
+projects += src/projects/AHF
+projects += src/projects/ADM_mass
+#projects += src/projects/AnsorgID
+projects += src/projects/AHmod
+#projects += src/projects/BrillWave
+#projects += src/projects/Cactus
+projects += src/projects/Invariants
+#projects += src/projects/Teukolsky
+#projects += src/projects/Z42
+
+
+# ------------------------------------------------------------------------
+# override various options in the Makefile
+
+# name and directory for the executable
+EXEC = bamFD6
+# EXECDIR = exe
+
+# pick a C compiler, only gcc and icc have been tested, gcc is the default
+CC = mpicc
+
+# optimization flags, say -O, -O2, -g for debugging, -pg for profiling, ...
+OFLAGS = -g -O3 -x c -fcommon -fPIC -DBOX -DBOXES -DREDUCEORDERTO6 -march=znver2
+# DFLAGS = -DHDF5 -DH5_USE_16_API
+LFLAGS = -g -O3 --shared
+EXFLAGS = -g -O3
+MATHEMATICA = math
+
+REVISION_ID = "9.06"
+
+# ------------------------------------------------------------------------
+# MPI configuration
+# the current default is:
+# on manifold.astro.psu.edu: assumes gcc and uses mpich
+# everywhere else:           assumes gcc and uses lam
+
+# Examples for manifold:
+# ----------------------
+# you could override the default for example as in
+#
+# CC = gcc
+# MPIDIR = /usr/beowulf/mpich-gm.gcc
+# 
+# or
+# 
+# CC = icc
+# MPIDIR = /usr/beowulf/mpich-gm.intel
+#
+# Here are the compiler independent options:
+#MPIDIR = /usr/ibgd/mpi/osu/gcc/mvapich-0.9.5
+#MPIDIR = /home/shusa/Tools/mvapich2
+#MPIDIRL = -L$(MPIDIR)/lib # -L$(HOME)/Tools/MARMOT/LIB
+#MPIDIRI = -I$(MPIDIR)/include
+#MPILIBS = -lmpich
+#MPILIBS = -lmarmot-profile -lmarmot-core  -lmpich
+MPIDIR = 
+MPIDIR = 
+MPIDIRL = 
+MPIDIRI = 
+MPILIBS =
+MPILIBS =
+
+# HDF5DIR  = /cosma/local/hdf5//intel_2025.1.1/1.14.4/
+# HDF5DIRL = -lhdf5

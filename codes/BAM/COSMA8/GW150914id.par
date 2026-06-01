@@ -1,0 +1,74 @@
+# initial data template
+#
+# activate these libraries
+physics = adm punctures_ps HYPRE
+
+# iterate for given ADM puncture mass
+ps_iterate_mass = yes
+ps_M_ADM_tol    = 1e-10
+
+# number of spectral points: x=A, y=B, z=phi
+nx = 60
+ny = 60
+nz = 40
+
+# ps puncture parameters
+ps_physics = TestSevVarPunc2
+ps_Punctures_tol                = 5.e-12
+ps_Punctures_itmax              = 100
+ps_Punctures_bicgstab_itmax     = 10
+ps_Punctures_bicgstab_tolFac    = 0.1
+HYPRE_options = -solver 3 -tol 1e-6
+HYPRE_verbose = no
+
+# grid
+grid = box
+grid_fournplustwo = no
+
+# add BH parameters here
+#$$ PNEndTime = 173207.784230145 #PN Evolution end time
+#$$ PNTotalOrbits = 244.5097296942297 #PN orbits used for initial data
+#$$ PNOrbitsToPNEnd = 11.56469948727795 #PN orbits until end of PN Evolution
+#$$ PNOrbitsTow0.1 = 10.05346170032399 #PN orbits until M w = 0.1
+#$$ PNMergerTime = 2120.226187002088 #PN time until end of PN evolution 
+#$$ PNwInitial   = 0.05094321648448034 #Wave freq. @ start of NR evolution M \[Omega]GW22
+#$$ PNwFinal     = 0.1623390925159955 #Wave freq. @ end of PN evolution M \[Omega]GW22
+
+
+# iterate for given ADM puncture mass
+ps_iterate_mass = no
+ps_M_ADM_tol = 1e-10
+ps_M_ADM_2	 = 0.4461538461538642
+ps_M_ADM_1	 = 0.5538461538461539
+
+targetMBH2	 = 0.4461538461538642
+targetMBH1	 = 0.5538461538461539
+
+bhmass2	 = 0.3919356799785722045
+bhmass1	 = 0.5184199353359408846
+
+bhx2	 = -5.538461538461538325
+bhx1	 = 4.461538461538461675
+
+bhy1	 = 0.0
+bhy2	 = 0.0
+
+bhz1	 = 0.0  #0.
+bhz2	 = 0.0  #0.
+
+bhpx2	 = 0.00084541526517121
+bhpx1	 = -0.00084541526517121
+
+bhpy2	 = -0.09530152296974252
+bhpy1	 = 0.09530152296974252
+
+bhpz1	 = 0.
+bhpz2	 = 0.
+
+bhsx1	 = 0.
+bhsy1	 = 0.
+bhsz2	 = -0.09156449704142013
+
+bhsx2	 = 0.
+bhsy2	 = 0.
+bhsz1	 = 0.09509112426035504

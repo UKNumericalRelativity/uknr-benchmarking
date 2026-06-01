@@ -1,0 +1,296 @@
+
+Timers after top level iteration 0, time 0.000
+ 0 analyze_level                1.35688603       1
+ 1 analyze_level                0.00000000       0
+ 2 analyze_level                0.00000000       0
+ 3 analyze_level                0.00000000       0
+ 4 analyze_level                0.00000000       0
+ 5 analyze_level                0.00000000       0
+ 6 analyze_level                0.00000000       0
+ 7 analyze_level                0.00000000       0
+ 8 analyze_level                0.00000000       0
+ 9 analyze_level                0.00000000       0
+10 analyze_level                0.00000000       0
+11 analyze_level                0.00000000       0
+write_level                0.0  0.00006459      12
+invariants                 0.0  0.00049620       1
+adm_mass                   0.0  0.00115743       1
+admconstraints             0.0  0.00223252      12
+AHmod_local                0.0  0.00274702      15
+syncparent                 0.5  1.12617916      44
+AHmod                      0.6  1.23764331      12
+analyze_level              0.6  1.35688603       1
+restrict_varlist           0.7  1.48277414      22
+synchronize                1.6  3.42432631     117
+prolong_varlist            2.5  5.22154906      22
+restrict_prolong           3.2  6.70433840      22
+initialize_grid           99.9  209.02155649       1
+main                     100.0  209.16637349       1
+
+Timers after top level iteration 1, time 0.054
+ 0 advance_level                0.39745065       1
+ 1 advance_level                0.41515214       1
+ 2 advance_level                0.40830209       1
+ 3 advance_level                0.42011045       1
+ 4 advance_level                0.83139105       1
+ 5 advance_level                2.34708764       1
+ 6 advance_level                6.28188691       1
+ 7 advance_level                0.50516438       2
+ 8 advance_level                1.19870550       4
+ 9 advance_level                2.92047485       8
+10 advance_level                5.83756910      16
+11 advance_level                11.04236272      32
+ 0 advance_levelandsublevels        43.07144520       1
+ 1 advance_levelandsublevels        42.64929383       1
+ 2 advance_levelandsublevels        41.88526949       1
+ 3 advance_levelandsublevels        41.22172563       1
+ 4 advance_levelandsublevels        40.56122335       1
+ 5 advance_levelandsublevels        39.37527562       1
+ 6 advance_levelandsublevels        36.54071361       1
+ 7 advance_levelandsublevels        29.44417074       2
+ 8 advance_levelandsublevels        28.31454032       4
+ 9 advance_levelandsublevels        26.52004422       8
+10 advance_levelandsublevels        22.36159451      16
+11 advance_levelandsublevels        14.58292107      32
+ 0 analyze_level                0.01143741       1
+ 1 analyze_level                0.00000000       0
+ 2 analyze_level                0.00000000       0
+ 3 analyze_level                0.00000000       0
+ 4 analyze_level                0.00000000       0
+ 5 analyze_level                0.00000000       0
+ 6 analyze_level                0.00000000       0
+ 7 analyze_level                0.00582867       1
+ 8 analyze_level                0.01397061       2
+ 9 analyze_level                0.02198279       4
+10 analyze_level                0.05066673       8
+11 analyze_level                0.06999037      16
+ 0 bssn_rhs                     0.15243801       4
+ 1 bssn_rhs                     0.13465727       4
+ 2 bssn_rhs                     0.13049165       4
+ 3 bssn_rhs                     0.12755496       4
+ 4 bssn_rhs                     0.29589493       4
+ 5 bssn_rhs                     0.98713283       4
+ 6 bssn_rhs                     2.90869977       4
+ 7 bssn_rhs                     0.10777408       8
+ 8 bssn_rhs                     0.30864266      16
+ 9 bssn_rhs                     0.63874420      32
+10 bssn_rhs                     1.25375291      64
+11 bssn_rhs                     2.53365763     128
+ 0 evolve                       0.37429626       1
+ 1 evolve                       0.39219290       1
+ 2 evolve                       0.38489937       1
+ 3 evolve                       0.39662352       1
+ 4 evolve                       0.78910732       1
+ 5 evolve                       2.23185203       1
+ 6 evolve                       6.04371809       1
+ 7 evolve                       0.48702803       2
+ 8 evolve                       1.15127465       4
+ 9 evolve                       2.77723027       8
+10 evolve                       5.55053258      16
+11 evolve                       10.53194856      32
+ 0 evolve_rhs                   0.16248717       4
+ 1 evolve_rhs                   0.13852365       4
+ 2 evolve_rhs                   0.13415168       4
+ 3 evolve_rhs                   0.13124361       4
+ 4 evolve_rhs                   0.30260527       4
+ 5 evolve_rhs                   1.00399047       4
+ 6 evolve_rhs                   2.95871353       4
+ 7 evolve_rhs                   0.11222517       8
+ 8 evolve_rhs                   0.32032347      16
+ 9 evolve_rhs                   0.66749065      32
+10 evolve_rhs                   1.30997166      64
+11 evolve_rhs                   2.64645419     128
+ 0 evolve_rk                    0.36364658       1
+ 1 evolve_rk                    0.37399808       1
+ 2 evolve_rk                    0.36746333       1
+ 3 evolve_rk                    0.37901616       1
+ 4 evolve_rk                    0.75729197       1
+ 5 evolve_rk                    2.16410555       1
+ 6 evolve_rk                    5.87850368       1
+ 7 evolve_rk                    0.46559255       2
+ 8 evolve_rk                    1.09775638       4
+ 9 evolve_rk                    2.64641763       8
+10 evolve_rk                    5.27982122      16
+11 evolve_rk                    10.49091471      32
+ 0 evolve_rk_rk4                0.35690693       1
+ 1 evolve_rk_rk4                0.36437451       1
+ 2 evolve_rk_rk4                0.35770891       1
+ 3 evolve_rk_rk4                0.36984072       1
+ 4 evolve_rk_rk4                0.74667871       1
+ 5 evolve_rk_rk4                2.14854840       1
+ 6 evolve_rk_rk4                5.82442684       1
+ 7 evolve_rk_rk4                0.46105301       2
+ 8 evolve_rk_rk4                1.08118929       4
+ 9 evolve_rk_rk4                2.59243855       8
+10 evolve_rk_rk4                5.17446559      16
+11 evolve_rk_rk4                10.28048867      32
+ 0 set_boundary                 0.00936051       4
+ 1 set_boundary                 0.00340001       4
+ 2 set_boundary                 0.00329186       4
+ 3 set_boundary                 0.00331737       4
+ 4 set_boundary                 0.00595098       4
+ 5 set_boundary                 0.01518694       4
+ 6 set_boundary                 0.04578615       4
+ 7 set_boundary                 0.00398752       8
+ 8 set_boundary                 0.01041424      16
+ 9 set_boundary                 0.02571101      32
+10 set_boundary                 0.05061873      64
+11 set_boundary                 0.10158958     128
+write_level                0.0  0.00035291      81
+move_box                   0.0  0.00118285      16
+adm_mass                   0.0  0.00142564      33
+AHmod_local                0.0  0.00274702      15
+invariants                 0.0  0.01307857      33
+admconstraints             0.0  0.01470289      81
+set_boundary               0.1  0.27861490     276
+AHmod                      0.5  1.23764331      12
+analyze_level              0.6  1.53076261      33
+syncparent                 0.6  1.54080968     180
+restrict_varlist           2.3  5.68834903      90
+bssn_rhs                   3.8  9.57944089     276
+evolve_rhs                 3.9  9.88818052     276
+prolong_varlist            4.2  10.66768779      90
+restrict_prolong           6.5  16.35612790      90
+synchronize               10.5  26.55180031     981
+evolve_rk_rk4             11.8  29.75812012      69
+evolve_rk                 12.0  30.26452785      69
+evolve                    12.3  31.11070358      69
+advance_level             12.9  32.60565748      69
+evolve_grid_iteration     17.1  43.07144761       1
+initialize_grid           82.9  209.02155649       1
+main                     100.0  252.25409307       1
+advance_levelandsublevels 161.2  406.52821758      69
+
+Timers after top level iteration 2, time 0.107
+ 0 advance_level                0.44557085       1
+ 1 advance_level                0.41188575       1
+ 2 advance_level                0.41864547       1
+ 3 advance_level                0.41614050       1
+ 4 advance_level                0.85627356       1
+ 5 advance_level                2.21687126       1
+ 6 advance_level                6.26583881       1
+ 7 advance_level                0.48226851       2
+ 8 advance_level                1.15868773       4
+ 9 advance_level                2.89173319       8
+10 advance_level                5.74264726      16
+11 advance_level                10.80313251      32
+ 0 advance_levelandsublevels        40.28836930       1
+ 1 advance_levelandsublevels        39.82540762       1
+ 2 advance_levelandsublevels        39.31836765       1
+ 3 advance_levelandsublevels        38.79580213       1
+ 4 advance_levelandsublevels        38.28049355       1
+ 5 advance_levelandsublevels        37.26474638       1
+ 6 advance_levelandsublevels        34.73646152       1
+ 7 advance_levelandsublevels        27.76440890       2
+ 8 advance_levelandsublevels        26.87429288       4
+ 9 advance_levelandsublevels        25.38887500       8
+10 advance_levelandsublevels        21.67078642      16
+11 advance_levelandsublevels        14.19533788      32
+ 0 analyze_level                0.01055238       1
+ 1 analyze_level                0.00000000       0
+ 2 analyze_level                0.00000000       0
+ 3 analyze_level                0.00000000       0
+ 4 analyze_level                0.00000000       0
+ 5 analyze_level                0.00000000       0
+ 6 analyze_level                0.00000000       0
+ 7 analyze_level                0.00539689       1
+ 8 analyze_level                0.00812755       2
+ 9 analyze_level                0.02113050       4
+10 analyze_level                0.04622082       8
+11 analyze_level                0.07180407      16
+ 0 bssn_rhs                     0.13890478       4
+ 1 bssn_rhs                     0.12744596       4
+ 2 bssn_rhs                     0.13102546       4
+ 3 bssn_rhs                     0.13127287       4
+ 4 bssn_rhs                     0.30530834       4
+ 5 bssn_rhs                     1.00853260       4
+ 6 bssn_rhs                     2.97337805       4
+ 7 bssn_rhs                     0.11431758       8
+ 8 bssn_rhs                     0.31957441      16
+ 9 bssn_rhs                     0.64022728      32
+10 bssn_rhs                     1.28004551      64
+11 bssn_rhs                     2.56274808     128
+ 0 evolve                       0.41374118       1
+ 1 evolve                       0.39036548       1
+ 2 evolve                       0.39727536       1
+ 3 evolve                       0.39507509       1
+ 4 evolve                       0.80992972       1
+ 5 evolve                       2.14186727       1
+ 6 evolve                       6.00305049       1
+ 7 evolve                       0.46325416       2
+ 8 evolve                       1.11248715       4
+ 9 evolve                       2.75005594       8
+10 evolve                       5.46469862      16
+11 evolve                       10.28932599      32
+ 0 evolve_rhs                   0.14858039       4
+ 1 evolve_rhs                   0.13125221       4
+ 2 evolve_rhs                   0.13488508       4
+ 3 evolve_rhs                   0.13518121       4
+ 4 evolve_rhs                   0.31214679       4
+ 5 evolve_rhs                   1.02632846       4
+ 6 evolve_rhs                   3.02397262       4
+ 7 evolve_rhs                   0.11903120       8
+ 8 evolve_rhs                   0.33127696      16
+ 9 evolve_rhs                   0.66906065      32
+10 evolve_rhs                   1.33688589      64
+11 evolve_rhs                   2.67545904     128
+ 0 evolve_rk                    0.41045780       1
+ 1 evolve_rk                    0.37872169       1
+ 2 evolve_rk                    0.38507228       1
+ 3 evolve_rk                    0.38328197       1
+ 4 evolve_rk                    0.78055814       1
+ 5 evolve_rk                    2.05622737       1
+ 6 evolve_rk                    5.79119783       1
+ 7 evolve_rk                    0.44319818       2
+ 8 evolve_rk                    1.05654015       4
+ 9 evolve_rk                    2.61501839       8
+10 evolve_rk                    5.19249538      16
+11 evolve_rk                    10.25509814      32
+ 0 evolve_rk_rk4                0.40644819       1
+ 1 evolve_rk_rk4                0.37107902       1
+ 2 evolve_rk_rk4                0.37745271       1
+ 3 evolve_rk_rk4                0.37598183       1
+ 4 evolve_rk_rk4                0.76631217       1
+ 5 evolve_rk_rk4                2.02246993       1
+ 6 evolve_rk_rk4                5.73824335       1
+ 7 evolve_rk_rk4                0.43839123       2
+ 8 evolve_rk_rk4                1.04325929       4
+ 9 evolve_rk_rk4                2.56246670       8
+10 evolve_rk_rk4                5.09344102      16
+11 evolve_rk_rk4                10.04865999      32
+ 0 set_boundary                 0.00899368       4
+ 1 set_boundary                 0.00338977       4
+ 2 set_boundary                 0.00347648       4
+ 3 set_boundary                 0.00352151       4
+ 4 set_boundary                 0.00614239       4
+ 5 set_boundary                 0.01600723       4
+ 6 set_boundary                 0.04609058       4
+ 7 set_boundary                 0.00422304       8
+ 8 set_boundary                 0.01049621      16
+ 9 set_boundary                 0.02594749      32
+10 set_boundary                 0.05133807      64
+11 set_boundary                 0.10145258     128
+write_level                0.0  0.00067003     150
+adm_mass                   0.0  0.00170975      65
+move_box                   0.0  0.00236755      32
+AHmod_local                0.0  0.00274702      15
+invariants                 0.0  0.02556727      65
+admconstraints             0.0  0.02730970     150
+set_boundary               0.2  0.55969394     552
+AHmod                      0.4  1.23764331      12
+analyze_level              0.6  1.69399483      65
+syncparent                 0.7  1.94937532     316
+restrict_varlist           3.0  8.81869650     158
+prolong_varlist            5.1  14.89709261     158
+bssn_rhs                   6.6  19.31222180     552
+evolve_rhs                 6.8  19.93224101     552
+restrict_prolong           8.1  23.71597393     158
+synchronize               16.0  46.87109531    1845
+evolve_rk_rk4             20.2  59.00232554     138
+evolve_rk                 20.5  60.01239517     138
+evolve                    21.1  61.74183004     138
+advance_level             22.1  64.71535289     138
+evolve_grid_iteration     28.5  83.35982431       2
+initialize_grid           71.4  209.02155649       1
+main                     100.0  292.56359498       1
+advance_levelandsublevels 270.3  790.93156681     138

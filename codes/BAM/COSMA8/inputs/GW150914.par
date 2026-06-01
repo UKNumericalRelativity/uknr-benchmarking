@@ -1,0 +1,179 @@
+############################################################################
+# Modules
+
+physics = adm bssn multigrid punctures Gauge Invariants ADM_mass AHmod
+
+############################################################################
+# Initial Data
+
+punctures_solver=spectral
+punctures_ps_file=GW150914id.psid
+
+############################################################################
+# Checkpointing
+
+checkpoint                 = no
+checkpoint_variables       = all
+
+checkpoint_dt_hours        = 11
+checkpoint_dt_hours_quit   = 68
+
+############################################################################
+# Evolution
+
+punctures_lapse      = psiBL^(-2)
+bssn_initial_shift   = zero
+
+bssn_lapse           = 1+log withshift
+
+bssn_shift           = gamma0 withGadv withBadv withShiftadv
+bssn_shiftalphapower = 0.0
+#bssn_shiftdriver     = 1.499988100354528
+bssn_shiftdriver     = 1.0
+
+bssn_use_eta = yes
+bssn_shiftdriver_time= 100000000
+bssn_eta_useswitch = 10.
+
+bssn_eta_width  = 50.
+bssn_eta_width1 = 4.
+bssn_eta_width2 = 4.
+bssn_eta_rpower = 2.
+
+bssn_eta_einf    = 1.
+bssn_eta_eta0    = 1.
+bssn_eta_eta1    = 1.
+bssn_eta_rpower0 = 3
+
+############################################################################
+# Moving Punctures
+
+adm_conformal              = no
+bssn_moving_punctures      = yes
+bssn_moving_punctures_type = chi
+chi_div_floor              = 0.00001
+amr_lmax                   = 11
+amr_lmax2                  = 11
+amr_move_lcube             = 6
+amr_nxyz                   = 320 288 288 288 384 576 832 192 192 192 192 192
+
+dxyz                       = 13.75
+amr_bo_dxmax               = 0.3
+
+amr                        = bo newfmr move
+amr_fmr                    = nestedboxes
+grid                       = box bitant 
+
+############################################################################
+# Output
+
+finaltime        = 0.107421875
+
+0doutiter        = -1
+
+# 0doutput         = ADM_mass # ham
+# 0doutputmax      = bssn_eta
+# 0doutputmaxpos   = bssn_eta
+
+1doutiter        = -1
+# 1doutput        = bssn_eta rpsi4 ipsi4 ham momx # alpha betax betay bssn_phi rpsi4 ipsi4
+# 1doutinterpolate = yes
+
+2doutiter        = -1
+#2doutputxy      = # bssn_eta alpha bssn_chi ham rpsi4
+#2doutputxz      = bssn_eta ham rpsi4 ipsi4
+# 2dformat         = vtk binary float
+# 2doutinterpolate = yes
+
+# 2doutputr        = rpsi4 ipsi4
+
+3doutiter        = -1
+#3doutput        = # bssn_eta alpha betax betay betaz bssn_Gx bssn_Gy bssn_Gz bssn_chi
+# 3dformat         = vtk binary float
+
+
+############################################################################
+# Invariants
+
+ntheta = 67
+nphi   = 66
+
+invariants_compute_modes = yes
+invariants_modes_r       = 50 60 70 80 90 100 120 180
+invariants_modes_lmin    = 4
+invariants_modes_lmax    = 7
+invariants_energy_r      = 50 60 70 80 90 100 120 180
+gauss_codacci_mainardi   = standard
+invariants_order         = 4
+
+############################################################################
+# ADM Integrals
+
+ADM_mass_ncircles  = 101
+ADM_mass_npoints   = 80
+ADM_mass_lmin      = 4
+ADM_mass_lmax      = 7
+ADM_mass_r         = 50 60 70 80 90 100 120 180
+
+############################################################################
+# AH Finder
+
+AHmod_nhorizons   = 2
+AHmod_searchMTS   = 1 0 10000 0    1 0 10000 1
+
+AHmod_time        = 0.453359375
+
+AHmod_verbose     = yes
+AHmod_output      = no
+AHmod_output_xyt  = no
+AHmod_output_lm   = no
+
+AHmod_LMAX        = 12
+AHmod_ntheta      = 60
+AHmod_nphi        = 60
+
+AHmod_uselast     = yes
+AHmod_initial_guess_expand = 1
+AHmod_LevelOffset  = 1
+
+AHmod_flow_iter   = 5000
+AHmod_mass_tol    = 1.0e-06
+AHmod_hmean_tol   = 100.0
+AHmod_flow_c_stepsize = 0.0125
+
+############################################################################
+# Basic Setup
+
+order_centered          = 6
+order_advection         = 6
+advection_lopsided6     = 2
+advection_lopsided      = 1
+bampi_timer_on          = yes
+bampi_lowlatency        = yes
+bampi_nghosts           = 4
+order_RP                = 6
+amr_nbuffer             = 16
+
+evolution_method        = rk
+evolution_method_rk     = rk4
+
+# rk 4 needs these settings to control algebraic constraints
+bssn_register_algcon    = yes store
+bssn_normalizedetg      = yes
+bssn_subtractA          = yes
+
+order_dissipation       = 8
+dissipation_factor      = 0.75
+
+# rk4 allows a larger time step
+dtfac = 0.25
+
+############################################################################
+# Boundary
+
+boundary = radiative
+
+############################################################################
+# Gauge
+
+Gauge = moving_puncture new

@@ -1,0 +1,13 @@
+test*
+
+# plots
+*.png
+*.pdf
+
+# Cactus/ETK
+Cactus*
+GetComponents
+
+# Presentation
+*.html
+slides_files/
