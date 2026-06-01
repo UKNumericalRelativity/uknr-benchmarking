@@ -7,3 +7,7 @@ test*
 # Cactus/ETK
 Cactus*
 GetComponents
+
+# Presentation
+*.html
+slides_files/
