@@ -26,3 +26,73 @@ authors:
 
 ---
 # Introduction
+
+## Motivation
+
+## Criteria for assessment
+
+## The codes we investigated
+
+# The codes and their capabilities
+
+## Common features
+
+## BAM
+
+## Einstein Toolkit
+
+## ExaGRyPE
+
+## GRTeclyn
+
+## MHDuet
+
+# HPC resources
+
+## COSMA8
+
+## Tursa
+
+# Qualitative setup and user experience
+
+## BAM
+
+## Einstein Toolkit
+
+## ExaGRyPE
+
+## GRTeclyn
+
+## MHDuet
+
+# Scaling
+
+## Common problem configurations
+
+## BAM problem configuration
+
+## BAM CPU scaling
+
+## ETK Carpet problem configuration
+
+## ETK Carpet CPU scaling
+
+## ETK CarpetX problem configuration
+
+## ETK CarpetX GPU scaling
+
+## GRTeclyn problem configuration
+
+## GRTeclyn CPU scaling
+
+## GRTeclyn GPU scaling
+
+## MHDuet problem configuration
+
+## MHDuet CPU scaling
+
+## MHDuet GPU scaling
+
+# Conclusions
+
+## Summary and future work
