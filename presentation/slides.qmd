@@ -1,0 +1,28 @@
+---
+title: "UKNR Code Assessment"
+subtitle: "Experiences and Performance Analysis of UKNR codes"
+date: "2026-06-09"
+date-format: "dddd DD MMMM YYYY"
+format:
+  clean-revealjs:
+    embed-resources: false
+    transition: slide
+    logo: https://www.cosec.ac.uk/wp-content/uploads/2025/05/Cosec_Logo_RGB_no-text.png
+    footer-logo-link: https://www.cosec.ac.uk/
+    footer: UKNR CCP Abingdon Meeting 2026
+    sc-sb-title: true
+    auto-play-media: true
+    menu:
+      openButton: false
+
+filters:
+ - reveal-header
+
+authors:
+ - name: Miren Radia
+   role: Research Software Engineer
+   affiliations:
+     - name: University of Cambridge
+
+---
+# Introduction
