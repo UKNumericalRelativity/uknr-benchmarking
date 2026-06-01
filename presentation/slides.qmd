@@ -29,7 +29,46 @@ authors:
 
 ## Motivation
 
+* There are many 3+1 NR codes that are being developed and/or used by the UKNR
+  community.
+* There have been some efforts to compare some of these codes but most of these
+  have focused on just two codes and/or their results.
+* If we are provided with funding to form a full UKNR CCP, it's important to
+  understand the current state of the codes that are being used:
+  * What are their methods and capabilities?
+  * How are they like to use/get started with?
+  * For codes that are currently under active development, what is their current
+    development status?
+  * How do they perform?
+
+## Limitations of this assessment
+
+* Given finite time, there are many things we weren't able to investigate.
+  A non-exhaustive list of these include:
+  * Matter (we looked at vacuum BHs only)[^matter]
+  * Testing out every feature and capability
+  * Accuracy of the results
+  * Rigorous performance comparisons between the codes[^perf]
+  * Weak scaling of the codes
+* Assessment is a snapshot in time so subject to change.
+
+[^matter]: Not all codes support the same types of matter hence why we focussed
+on BHs.
+[^perf]: To make performance comparisons fair, it would be necessary to
+determine the configuration for each code to achieve the same accuracy.
+
 ## Criteria for assessment
+
+Although there are many other codes that are used internationally, we have
+chosen to only consider those that met the following criteria:
+
+1. The code has some relevance within the UKNR community. For example,
+there is at least one developer based in the UK or there is a non-trivial
+number of users.
+1. The code is capable of evolving in 3+1 dimensions (i.e. it is not
+dimensionally reduced and does not require the use of symmetries).
+1. The code is capable of evolving a binary-black hole spacetime through
+inspiral, merger and ringdown.
 
 ## The codes we investigated
 
