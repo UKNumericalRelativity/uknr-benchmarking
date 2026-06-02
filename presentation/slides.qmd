@@ -49,7 +49,7 @@ authors:
   * Testing out every feature and capability
   * Accuracy of the results
   * Rigorous performance comparisons between the codes[^perf]
-  * Weak scaling of the codes
+  * Weak scaling
 * Assessment is a snapshot in time so subject to change.
 
 [^matter]: Not all codes support the same types of matter hence why we focussed
@@ -70,27 +70,267 @@ dimensionally reduced and does not require the use of symmetries).
 1. The code is capable of evolving a binary-black hole spacetime through
 inspiral, merger and ringdown.
 
+This criteria is not exhaustive so we didn't include every code meeting this
+criteria.
+
 ## The codes we investigated
+
+Using the criteria described on the previous slide, we identified the following
+codes:
+
+* BAM[^cardiff-version][^cpu-only]
+* The Einstein Toolkit (ETK)
+  * with the Carpet driver (on CPUs)
+  * with the CarpetX driver(on GPUs)
+* ExaGRyPE[^not-benchmarked]
+* GRTeclyn
+* MHDuet (AMReX version only)
+
+[^cardiff-version]: We used the version of BAM used by Mark Hannam's group.
+[^cpu-only]: Only tested on CPUs.
+[^not-benchmarked]: This code was not benchmarked.
 
 # The codes and their capabilities
 
 ## Common features
 
+All of these codes use the following common methods:
+
+* Finite difference methods for spatial discretisation
+* Method of Lines for time integration
+* Mesh refinement
+* 3+1 evolution systems: BSSN, CCZ4 or Z4c with some variant of the moving
+  puncture gauge conditions
+* Kreiss-Oliger dissipation
+* Parallelised using the Message Passing Interface (MPI)
+
 ## BAM
 
-## Einstein Toolkit
+* Written in (old-style) C with pure MPI parallelisation
+* Very few dependencies (just a C compiler, Make, MPI, and optional HDF5)
+* Originally written in the 1990s, it reached its current form
+  in the mid-late 2000s and has not changed much since then.
+* Node/vertex-centred with moving-box-style mesh refinement
+* Berger-Oliger subcycling is used for most of the finer levels but disabled on
+  coarser levels for stability.
+* Sixth-order spatial differencing with eighth order KO dissipation
 
-## ExaGRyPE
+## BAM (continued)
 
-## GRTeclyn
+* BSSN evolution scheme with Sommerfeld BCs.
+* Puncture tracking
+* Apparent Horizon finder
+* Grid symmetries (e.g. bitant, quadrant, octant, etc.)
+* Fourth or sixth order Lagrange polynomial interpolation of grid variables
+* GW extraction via the Newman-Penrose formalism.
 
-## MHDuet
+## Einstein Toolkit (ETK) {.smaller}
+
+* The Einstein Toolkit is built on the Cactus Computational Toolkit (CCTK)
+  software framework.
+* A CCTK code comprises the Cactus _flesh_ with additional _thorns_ that
+  implement a specific problem.
+* The ETK is not really a single code but rather a collection of thorns with the
+  Cactus flesh that can be used for various problems.
+* Thorns can be written in C, C++ or Fortran but they have a standardized
+  interface to the flesh and other thorns.
+* The recommended way to build, manage and run simulations is with the
+  SimFactory2 thorn which provides an abstraction layer over different HPC
+  systems. It requires the local system to be configured in its database.
+* One of the core thorns is the _driver_ which implements the computational
+  grid, mesh refinement (if relevant) and associated infrastructure.
+* The most popular and well-supported driver is _Carpet_ which works on just
+  CPUs.
+  * Carpet supports OpenMP parallelisation.
+* The next generation replacement for Carpet is _CarpetX_ which is built on the
+  AMReX framework for block-structured AMR.
+  * CarpetX supports OpenMP parallelisation and offloading to Nvidia GPUs via
+    CUDA[^cuda-only].
+
+[^cuda-only]: In principle, AMReX supports offloading to AMD and Intel GPUs via
+HIP and SYCL respectively but this is not exposed by CarpetX yet.
+
+## Einstein Toolkit - CPU tests {.smaller}
+
+For our CPU tests, we used:
+
+* A subset of the thorns from the 2025\_05 Kruskal ETK release.
+* The Carpet driver.
+* The McLachlan BSSN evolution thorn with Sommerfeld BCs.
+* Eighth-order spatial differencing.
+* Subcycling using buffer zones with fifth-order spatial prolongation
+  (interpolation from coarse to fine) and second-order temporal prolongation.
+* Moving-box style mesh refinement provided by the CarpetRegrid2 thorn.
+
+This is loosely based on the GW150914 ETK gallery example but with the Llama
+multipatch infrastructure removed (for fairer comparison with other codes).
+
+## Einstein Toolkit - GPU tests {.smaller}
+
+For our GPU tests, we used:
+
+* Recent development versions of the CarpetX and SpacetimeX thorn collections
+  from Liwei Ji with subcycling support.
+* The CarpetX driver.
+* The Z4c evolution thorn from SpacetimeX
+* Fourth-order spatial differencing.
+* Subcycling with fifth-order prolongation.
+* Moving-box style mesh refinement provided by the BoxInBox thorn.
+* Sommerfeld BCs provided by the NewRadX thorn.
+
+CarpetX is still under active development and the software versions used for
+testing were not even merged into the main repositories so observations should
+be interpreted with this caveat.
+
+## Einstein Toolkit - additional capabilities {.smaller}
+
+The ETK has an extensive list of additional capabilities some of which have
+multiple implementations via different thorns. These include[^not-exhaustive]
+
+* Multipatch support with "cubed sphere" outer patches (Llama infrastructure for
+  Carpet and CapyrX infrastructure for CarpetX).
+* Puncture tracking (PunctureTracker thorn).
+* Apparent Horizon finding (AHFinder, AHFinderDirect, ET_BHaHAHA thorns).
+* GW extraction via the NP formalism (WeylScal4, NPScalar and Multipole thorns).
+* Lagrange polynomial interpolation of grid variables (CarpetInterp2 and
+  AEILocalInterp thorns for Carpet and core capability for CarpetX).
+* Reflection and rotational grid symmetries.
+* Output of data that can be used with the SpECTRE Cauchy Characteristic
+  Extraction code provided by the CCE_Export thorn.
+
+Note that many Carpet-compatible thorns have been rewritten to support CarpetX
+and are often renamed by appending with an "X" (e.g. TwoPunctures $\to$
+TwoPuncturesX)
+
+[^not-exhaustive]: This list is far from exhaustive.
+
+## ExaGRyPE {.smaller}
+
+* ExaGRyPE is an NR code built upon ExaHyPE 2 (second generation Exascale
+  Hyperbolic PDE Engine) which in turn is built upon the Peano framework for
+  solvers on dynamical adaptive Cartesian meshes.
+* ExaGRyPE, ExaHyPE 2 and Peano are written in a mix of C++ and Python.
+* To build a simulation executable, a Python script is invoked with simulation
+  parameters passed as arguments (which cannot be changed at runtime).
+* ExaGRyPE uses a mix of domain decomposition and task-based parallelism:
+  * MPI is used for domain decomposition
+  * On CPUs, Peano/ExaHyPE 2 supports task-based parallelism via C++ standard
+    library threading, Intel Threading Building Blocks (TBB), OpenMP and SYCL.
+  * On GPUs, they support offloading via SYCL and OpenMP (vendor-agnostic).
+  * Note that ExaGRyPE support for these programming models is not yet
+  guaranteed.
+* Cell-centred grid with spacetree[^spacetree] AMR.
+* Fourth-order spatial differencing with sixth-order KO dissipation.
+* First-order explicit time integration is generally used but RK4 is also
+  supported.
+* Trilinear spatial prolongation and averaging for restriction (interpolation
+  from fine to coarse).
+
+[^spacetree]: In the case of a refinement ratio of 2, spacetree is often called
+octree. ExaGRyPE uses a ratio of 3.
+
+## ExaGRyPE (continued)
+
+* CCZ4 evolution scheme which is recast as first-order-in-space so there are 58
+  evolved variables. Algebraic constraints are enforced.
+* Sommerfeld BCs.
+* Bowen-York initial data provided by TwoPunctures.
+* Trilinear interpolation from grid variables onto particle tracers
+* GW extraction via the NP formalism using the above particle tracer interpolation.
+* Puncture tracking using the particle tracer interpolation.
+
+## GRTeclyn {.smaller}
+
+* Written in modern C++.
+* Built upon and integrated with the AMReX framework for block-structured AMR.
+* Successor to GRChombo which was built on the Chombo AMR libraries
+* Few dependencies: C++20 compiler (with GPU support if required), GNU Make, MPI
+  and AMReX.
+* MPI+X parallelized with X is OpenMP, CUDA (on Nvidia GPUs), HIP (on AMD GPUs)
+  or SYCL (on Intel GPUs).
+* Cell-centred grid with block-structured AMR.
+* Arbitrary mesh refinement criteria but something emulating moving boxes is
+  typically used on the finest few levels for BH binaries.
+* Fourth-order spatial differencing with sixth-order KO dissipation.
+* Fourth-order spatial prolongation, third-order temporal prolongation and
+  fourth-order restriction.
+
+## GRTeclyn (continued)
+
+* CCZ4 evolution scheme with Sommerfeld BCs and algebraic constraint
+  enforcement
+* Puncture tracking
+* Lagrange polynomial interpolation of grid variables using AMReX particle
+  infrastructure (usually fourth order)
+* GW extraction via the NP formalism using above interpolation
+* Grid symmetries (e.g. bitant, quadrant, etc)
+
+## MHDuet {.smaller}
+
+* MHDuet is a code that is automatically generated using the Simflowny
+  infrastructure.
+* To generate a code using Simflowny, the scientific user needs to provide the
+  following information in MathML format (typically generated using a Maple
+  script):
+  * Evolution equations
+  * Initial conditions
+  * Boundary conditions
+  * Discretisation scheme
+* The generate code is built on either the SAMRAI or AMReX libraries. We focus
+  on the AMReX version from now on.
+* The generated code is written in C++ and parallelized with MPI+X where X is
+  OpenMP, CUDA (on Nvidia GPUs) or HIP (on AMD GPUs).
+* Mainly focused on MHD spacetimes rather than vacuum BHs.
+* Relatively small number of dependencies in the vacuum case (similar to
+  GRTeclyn but also with HDF5) but more in the MHD case (which we don't
+  consider).
+
+## MHDuet (continued) {.smaller}
+
+* Node/vertex-centred grid with block-structured AMR
+* Fixed mesh refinement in the form of concentric boxes is typically used on
+  coarser levels.
+* On finer levels, function-based refinement and shadow-based refinement are
+  supported.
+* Fourth-order spatial differencing with sixth-order KO dissipation
+* Fifth order spatial prolongation and third-order temporal prolongation
+* CCZ4 evolution scheme with algebraic constraint violations damped.
+* Extrapolating BCs are typically used.-
+* Various reductions of grid variables can be computed (e.g. sums, extrema,
+  norms, integrals, etc.)
+* Linear interpolation of grid variables on spheres and planes for diagnostics
+  and GW extraction.
 
 # HPC resources
 
-## COSMA8
+## COSMA8 {.smaller}
 
-## Tursa
+* CPU-based DiRAC system hosted at Durham University.
+* 528 compute nodes in total:
+  * 360 nodes with AMD Rome/Zen 2 CPUs
+  * 168 nodes with AMD Milan/Zen 3 CPUs
+* We used the newer Milan nodes for benchmarking.
+* Milan node specifications:
+  * Dell PowerEdge C6525 server
+  * 2x AMD EPYC 7763 CPUs, 64 cores each (128 total), 2.45 GHz base clock
+  * 1 TB DDR4 RAM
+  * 1x Mellanox ConnectX-6 HDR InfiniBand NIC, 200 Gbps
+* HDR200 InfiniBand network with a non-blocking fat-tree topology.
+
+## Tursa {.smaller}
+
+* GPU-based DiRAC system hosted by EPCC at the University of Edinburgh.
+* 178 compute nodes in total:
+  * 114 nodes with Nvidia A100 40 GB GPUs
+  * 64 nodes with Nvidia A100 80 GB GPUs
+* We used the 80 GB A100 nodes for benchmarking.
+* Node specifications:
+  * Atos BullSequana XH2000 server
+  * 2x AMD EPYC 7413 CPUs, 24 cores each (48 total), 2.65 GHz base clock
+  * 4x Nvidia A100 SXM 80 GB GPUs with NVLink interconnect
+  * 1 TB DDR4 RAM
+  * 4x Mellanox ConnectX-6 HDR InfiniBand NICs, 200 Gbps each
+* HDR200 InfiniBand network with a non-blocking 2-layer fat-tree topology.
 
 # Qualitative setup and user experience
 
