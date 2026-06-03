@@ -443,20 +443,128 @@ Miren Radia
 <h1>Qualitative setup and user experience</h1>
 
 </section>
-<section id="bam-1" class="slide level2">
+<section id="bam-1" class="slide level2 smaller">
 <h2>BAM</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="pros">Pros</h3>
+<ul>
+<li><p>Few dependencies and simple build system so easy to get set up with on a new system.</p></li>
+<li><p>Quick to build.</p></li>
+<li><p>Structure of the code is easy to understand and follow which makes modification straightforward.</p></li>
+<li><p>Familiar workflow:</p>
+<pre><code>mpirun -n &lt;num_procs&gt; ./bam parfile.par</code></pre></li>
+<li><p>Mature code with a long history of production simulations.</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="cons">Cons</h3>
+<ul>
+<li>Private code</li>
+<li>Limited documentation</li>
+<li>Old style C requires some workaround with modern compilers</li>
+<li>No support for GPU offloading</li>
+</ul>
+</div></div>
 </section>
-<section id="einstein-toolkit" class="slide level2">
+<section id="einstein-toolkit" class="slide level2 smaller">
 <h2>Einstein Toolkit</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="pros-1">Pros</h3>
+<ul>
+<li><p>Open source with a large and active community.</p></li>
+<li><p>Extensive collection of thorns that provide lots of capabilities and flexibility.</p></li>
+<li><p>SimFactory2 provides a convenient abstraction layer for building and running simulations on supported HPC systems.</p></li>
+<li><p>Cactus thorn interface means that the process to adding new capabilities is standardised.</p></li>
+<li><p>Tutorials on how to get started.</p></li>
+<li><p>Some thorns have great documentation.</p></li>
+<li><p>Can print information about all parameters by doing</p>
+<pre><code>./cactus_sim --describe-all-parameters</code></pre></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="cons-1">Cons</h3>
+<ul>
+<li>Large number of dependencies and complex build system.</li>
+<li>Slow to build (especially if using default release thornlist used).</li>
+<li>Difficult to set up on a new unsupported system.</li>
+<li>Some thorns have very little documentation.</li>
+<li>SimFactory2 workflow may be unfamiliar for those coming from other codes.</li>
+<li>CarpetX thorns are still under active development and much less mature than equivalent Carpet thorns.</li>
+</ul>
+</div></div>
 </section>
-<section id="exagrype-1" class="slide level2">
+<section id="exagrype-1" class="slide level2 smaller">
 <h2>ExaGRyPE</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="pros-2">Pros</h3>
+<ul>
+<li>Open source</li>
+<li>Abstracted interface so scientific user shouldn’t need to worry about technical details</li>
+<li>Python domain-specific language (DSL)</li>
+<li>Good connections with core developers</li>
+<li>Portability to different architectures</li>
+<li>Good documentation</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="cons-2">Cons</h3>
+<ul>
+<li>Many parameters are hardcoded and not exposed to the user.</li>
+<li>Non-standard workflow: no ability to change parameters at runtime.</li>
+<li>Only uses open GPU programming models (SYCL, OpenMP) which are often not first-party supported by GPU vendors and less performant than vendor-specific models (CUDA, HIP).</li>
+<li>GPU support finicky (development ongoing).</li>
+<li>Slightly difficult to debug build errors due to Python wrapper.</li>
+</ul>
+</div></div>
 </section>
-<section id="grteclyn-1" class="slide level2">
+<section id="grteclyn-1" class="slide level2 smaller">
 <h2>GRTeclyn</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="pros-3">Pros</h3>
+<ul>
+<li><p>Open source</p></li>
+<li><p>Not too many dependencies so relatively straightforward to port to a new system</p></li>
+<li><p>Relatively quick to build</p></li>
+<li><p>Familiar workflow:</p>
+<pre><code>mpirun -n &lt;num_procs&gt; &lt;exe&gt; &lt;param_file&gt;</code></pre></li>
+<li><p>Robust GPU support from AMReX on Nvidia, AMD and Intel GPUs</p></li>
+<li><p>Good and improving documentation</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="cons-3">Cons</h3>
+<ul>
+<li>No standardised interface to add new capabilities like ETK</li>
+<li>Relatively new code so less mature than some others</li>
+<li>Some features are still under development and not yet available (e.g.&nbsp;Apparent Horizon Finder, GW extraction)</li>
+<li>Depends on AMReX which we have less control over.</li>
+</ul>
+</div></div>
 </section>
-<section id="mhduet-1" class="slide level2">
+<section id="mhduet-1" class="slide level2 smaller">
 <h2>MHDuet</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="pros-4">Pros</h3>
+<ul>
+<li><p>Simflowny code generation means it can be quicker for scientific users to get from new equations to code.</p></li>
+<li><p>Simflowny is open source</p></li>
+<li><p>Simple build system (just a single Makefile)</p></li>
+<li><p>Not too many dependencies (especially in the vacuum case)</p></li>
+<li><p>Robust GPU support from AMReX</p></li>
+<li><p>Familiar workflow:</p>
+<pre><code>mpirun -n &lt;num_procs&gt; &lt;exe&gt; &lt;param_file&gt;</code></pre></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="cons-4">Cons</h3>
+<ul>
+<li>Auto-generated code can be very verbose and difficult to read</li>
+<li>Can be slow to compile depending on problem size</li>
+<li>Build system is not very portable</li>
+<li>Non-trivial to add new capabilities that are not supported by Simflowny</li>
+<li>Depends on AMReX which we have less control over</li>
+</ul>
+</div></div>
 </section></section>
 <section>
 <section id="scaling" class="title-slide slide level1 center">
