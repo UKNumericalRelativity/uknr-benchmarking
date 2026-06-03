@@ -334,16 +334,162 @@ octree. ExaGRyPE uses a ratio of 3.
 
 # Qualitative setup and user experience
 
-## BAM
+## BAM {.smaller}
 
-## Einstein Toolkit
+:::: {.columns}
 
-## ExaGRyPE
+::: {.column width="50%"}
+### Pros
 
-## GRTeclyn
+* Few dependencies and simple build system so easy to get set up with on a new
+  system.
+* Quick to build.
+* Structure of the code is easy to understand and follow which makes
+  modification straightforward.
+* Familiar workflow:
+  ```
+  mpirun -n <num_procs> ./bam parfile.par
+  ```
+* Mature code with a long history of production simulations.
+:::
 
-## MHDuet
+::: {.column width="50%"}
+### Cons
 
+* Private code
+* Limited documentation
+* Old style C requires some workaround with modern compilers
+* No support for GPU offloading
+:::
+
+::::
+
+## Einstein Toolkit {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### Pros
+
+* Open source with a large and active community.
+* Extensive collection of thorns that provide lots of capabilities and
+  flexibility.
+* SimFactory2 provides a convenient abstraction layer for building and running
+  simulations on supported HPC systems.
+* Cactus thorn interface means that the process to adding new capabilities is
+  standardised.
+* Tutorials on how to get started.
+* Some thorns have great documentation.
+* Can print information about all parameters by doing
+  ```
+  ./cactus_sim --describe-all-parameters
+  ```
+:::
+
+::: {.column width="50%"}
+### Cons
+
+* Large number of dependencies and complex build system.
+* Slow to build (especially if using default release thornlist used).
+* Difficult to set up on a new unsupported system.
+* Some thorns have very little documentation.
+* SimFactory2 workflow may be unfamiliar for those coming from other codes.
+* CarpetX thorns are still under active development and much less mature than
+  equivalent Carpet thorns.
+:::
+
+::::
+
+## ExaGRyPE {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### Pros
+
+* Open source
+* Abstracted interface so scientific user shouldn't need to worry about
+  technical details
+* Python domain-specific language (DSL)
+* Good connections with core developers
+* Portability to different architectures
+* Good documentation
+:::
+
+::: {.column width="50%"}
+### Cons
+
+* Many parameters are hardcoded and not exposed to the user.
+* Non-standard workflow: no ability to change parameters at runtime.
+* Only uses open GPU programming models (SYCL, OpenMP) which are often not
+  first-party supported by GPU vendors and less performant than vendor-specific
+  models (CUDA, HIP).
+* GPU support finicky (development ongoing).
+* Slightly difficult to debug build errors due to Python wrapper.
+:::
+
+::::
+
+## GRTeclyn {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### Pros
+
+* Open source
+* Not too many dependencies so relatively straightforward to port to a new
+  system
+* Relatively quick to build
+* Familiar workflow:
+  ```
+  mpirun -n <num_procs> <exe> <param_file>
+  ```
+* Robust GPU support from AMReX on Nvidia, AMD and Intel GPUs
+* Good and improving documentation
+:::
+
+::: {.column width="50%"}
+### Cons
+
+* No standardised interface to add new capabilities like ETK
+* Relatively new code so less mature than some others
+* Some features are still under development and not yet available (e.g. Apparent
+  Horizon Finder, GW extraction)
+* Depends on AMReX which we have less control over.
+:::
+
+::::
+## MHDuet {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### Pros
+
+* Simflowny code generation means it can be quicker for scientific users to get
+  from new equations to code.
+* Simflowny is open source
+* Simple build system (just a single Makefile)
+* Not too many dependencies (especially in the vacuum case)
+* Robust GPU support from AMReX
+* Familiar workflow:
+  ```
+  mpirun -n <num_procs> <exe> <param_file>
+  ```
+:::
+
+::: {.column width="50%"}
+### Cons
+
+* Auto-generated code can be very verbose and difficult to read
+* Can be slow to compile depending on problem size
+* Build system is not very portable
+* Non-trivial to add new capabilities that are not supported by Simflowny
+* Depends on AMReX which we have less control over
+:::
+
+::::
 # Scaling
 
 ## Common problem configurations
