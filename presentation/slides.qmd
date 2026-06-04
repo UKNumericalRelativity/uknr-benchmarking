@@ -396,6 +396,8 @@ octree. ExaGRyPE uses a ratio of 3.
 * SimFactory2 workflow may be unfamiliar for those coming from other codes.
 * CarpetX thorns are still under active development and much less mature than
   equivalent Carpet thorns.
+* Had a very difficult time getting CarpetX to run on Tursa due to a bug but
+  cannot be sure if this is a CarpetX or Tursa problem.
 :::
 
 ::::
@@ -419,7 +421,7 @@ octree. ExaGRyPE uses a ratio of 3.
 ::: {.column width="50%"}
 ### Cons
 
-* Many parameters are hardcoded and not exposed to the user.
+* Many parameters are hardcoded and not exposed to the user[^no-scaling].
 * Non-standard workflow: no ability to change parameters at runtime.
 * Only uses open GPU programming models (SYCL, OpenMP) which are often not
   first-party supported by GPU vendors and less performant than vendor-specific
@@ -429,6 +431,8 @@ octree. ExaGRyPE uses a ratio of 3.
 :::
 
 ::::
+
+[^no-scaling]: This prevented us from performing scaling tests with ExaGRyPE.
 
 ## GRTeclyn {.smaller}
 
@@ -492,31 +496,112 @@ octree. ExaGRyPE uses a ratio of 3.
 ::::
 # Scaling
 
-## Common problem configurations
+## Setup and common configuration {.smaller}
+
+* We only considered strong scaling (i.e. increasing the computational resources
+  for a fixed problem size).
+* BH binary simulation with initial data based on the GW150914 event.
+* For an individual code, we used the same problem configuration for both CPU
+  and GPU scaling tests[^etk-carpet-x] to make comparisons between them fairer.
+* For each code, we started with a grid configuration that could be plausibly
+  used in a production simulation and then iterated on the size of this grid
+  until we found a configuration that saturated most of the RAM on a single
+  COSMA8 node or a single Tursa node.
+* Grid configurations therefore differ between codes but they are in a similar
+  ballpark.
+* We only evolved each code for a few timesteps on the coarsest level (with
+  subcycling) and ignored time spent on initialization and finalization.
+* We used each code's internal timing/profiling tools to measure the walltime of
+  the main evolution loop.
+* For all codes, the total mass in the simulation is $M \approx 1$ in code
+  units.
+* Parameter files, build and job submission scripts can be found in the
+  [uknr-benchmarking
+  repository](https://github.com/UKNumericalRelativity/uknr-benchmarking).
+* On COSMA8, we used between 1 and 32 nodes (128 to 4096 cores).
+* On Tursa, we used between 1 and 32 nodes (4 to 128 GPUs).
+
+[^etk-carpet-x]: This is not true in the ETK case because of the change in mesh
+refinement driver between CPU and GPU tests.
 
 ## BAM problem configuration
 
+* 12 levels of mesh refinement (including coarsest level).
+* 6 levels of fixed boxes and 6 levels of moving boxes.
+* $320^2 \times 160 $ points and $4400^2 \times 2200$ (bitant symmetry) length
+  in code units on the coarsest level.
+* $\sim 1/149$ resolution on the finest level.
+* 2 timesteps on the coarsest level with subcycling from level 7 onwards
+  ($t_{\text{end}} = 0.107421875$).
+* Due to BAM's data distribution, we were only able to go up to 16 nodes
+  (2048 cores) on COSMA8 (there was an error with 4096 cores).
+
 ## BAM CPU scaling
+
+![](media/bam_strong_scaling_cosma8_actual.svg){fig-align="center"}
 
 ## ETK Carpet problem configuration
 
+* 10 levels of mesh refinement (including coarsest level).
+* $320^2 \times 160$ points and $1024^2 \times 512$ (bitant symmetry) length in
+  code units on the coarsest level.
+* $1/160$ resolution on the finest level.
+* Subcycling on all but the coarsest two levels.
+* Terminate after 256 iterations (1 timestep on the coarsest level:
+$t_{\text{end}} = 0.4$).
+
 ## ETK Carpet CPU scaling
+
+![](media/etk_strong_scaling_cosma8_actual.svg){fig-align="center"}
 
 ## ETK CarpetX problem configuration
 
+* 10 levels of mesh refinement (including coarsest level).
+* $288^3$ points and $1024^3$ length in code units on the coarsest level.
+* Some issues with bitant symmetry hence not used.
+* $1/144$ resolution on the finest level.
+* Subcycling on all levels.
+* Terminate after 512 iterations (1 timestep on the coarsest level:
+  $t_{\text{end}} \approx 0.889$).
+
 ## ETK CarpetX GPU scaling
+
+![](media/etk_strong_scaling_tursa_actual.svg){fig-align="center"}
 
 ## GRTeclyn problem configuration
 
+* 10 levels of mesh refinement (including coarsest level).
+* $320^2 \times 160$ cells and $1024^2 \times 512$ (bitant symmetry) length in
+  code units on the coarsest level.
+* $1/160$ resolution on the finest level.
+* Subcycling on all levels.
+* 1 timestep on the coarsest level ($t_{\text{end}} = 0.8$).
+
 ## GRTeclyn CPU scaling
+
+![](media/grteclyn_strong_scaling_cosma8_actual.svg){fig-align="center"}
 
 ## GRTeclyn GPU scaling
 
+![](media/grteclyn_strong_scaling_tursa_actual.svg){fig-align="center"}
+
 ## MHDuet problem configuration
+
+* 10 levels of mesh refinement (including coarsest level).
+* $256^3$ cells and $1024^3$ length in code units on the coarsest level.
+* Fixed mesh refinement for the coarsest 6 levels with boxes of lengths: 1024,
+  512, 256, 128, 64, 32
+* $1/128$ resolution on the finest level.
+* Subcycling on all levels.
+* 1 timestep on the coarsest level ($t_{\text{end}} = 1.6$).
 
 ## MHDuet CPU scaling
 
+![](media/mhduet_strong_scaling_cosma8_actual.svg){fig-align="center"}
+
 ## MHDuet GPU scaling
+
+![](media/mhduet_strong_scaling_tursa_actual.svg){fig-align="center"}
 
 # Conclusions
 
