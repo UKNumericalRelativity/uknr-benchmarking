@@ -269,7 +269,7 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     )
     parser.add_argument(
         "--format",
-        choices=["png", "pdf"],
+        choices=["png", "pdf", "svg"],
         default="png",
         help="File format to use when saving figures.",
     )
@@ -330,7 +330,8 @@ def main(argv: Sequence[str] | None = None) -> None:
         output_parts = [args.code.lower(), "strong", "scaling", args.system.lower(), args.scale]
         output_path = REPO_ROOT / "codes" / args.code / ("_".join(output_parts) + f".{args.format}")
         fig.savefig(output_path, dpi=300)
-    plt.show()
+    else:
+        plt.show()
 
 
 if __name__ == "__main__":
