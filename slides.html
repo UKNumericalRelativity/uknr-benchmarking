@@ -490,6 +490,7 @@ Miren Radia
 <li>Some thorns have very little documentation.</li>
 <li>SimFactory2 workflow may be unfamiliar for those coming from other codes.</li>
 <li>CarpetX thorns are still under active development and much less mature than equivalent Carpet thorns.</li>
+<li>Had a very difficult time getting CarpetX to run on Tursa due to a bug but cannot be sure if this is a CarpetX or Tursa problem.</li>
 </ul>
 </div></div>
 </section>
@@ -509,14 +510,14 @@ Miren Radia
 </div><div class="column" style="width:50%;">
 <h3 id="cons-2">Cons</h3>
 <ul>
-<li>Many parameters are hardcoded and not exposed to the user.</li>
+<li>Many parameters are hardcoded and not exposed to the user<sup>1</sup>.</li>
 <li>Non-standard workflow: no ability to change parameters at runtime.</li>
 <li>Only uses open GPU programming models (SYCL, OpenMP) which are often not first-party supported by GPU vendors and less performant than vendor-specific models (CUDA, HIP).</li>
 <li>GPU support finicky (development ongoing).</li>
 <li>Slightly difficult to debug build errors due to Python wrapper.</li>
 </ul>
 </div></div>
-</section>
+<aside><ol class="aside-footnotes"><li id="fn9"><p>This prevented us from performing scaling tests with ExaGRyPE.</p></li></ol></aside></section>
 <section id="grteclyn-1" class="slide level2 smaller">
 <h2>GRTeclyn</h2>
 <div class="columns">
@@ -571,45 +572,103 @@ Miren Radia
 <h1>Scaling</h1>
 
 </section>
-<section id="common-problem-configurations" class="slide level2">
-<h2>Common problem configurations</h2>
-</section>
+<section id="setup-and-common-configuration" class="slide level2 smaller">
+<h2>Setup and common configuration</h2>
+<ul>
+<li>We only considered strong scaling (i.e.&nbsp;increasing the computational resources for a fixed problem size).</li>
+<li>BH binary simulation with initial data based on the GW150914 event.</li>
+<li>For an individual code, we used the same problem configuration for both CPU and GPU scaling tests<sup>1</sup> to make comparisons between them fairer.</li>
+<li>For each code, we started with a grid configuration that could be plausibly used in a production simulation and then iterated on the size of this grid until we found a configuration that saturated most of the RAM on a single COSMA8 node or a single Tursa node.</li>
+<li>Grid configurations therefore differ between codes but they are in a similar ballpark.</li>
+<li>We only evolved each code for a few timesteps on the coarsest level (with subcycling) and ignored time spent on initialization and finalization.</li>
+<li>We used each code’s internal timing/profiling tools to measure the walltime of the main evolution loop.</li>
+<li>For all codes, the total mass in the simulation is <span class="math inline">\(M \approx 1\)</span> in code units.</li>
+<li>Parameter files, build and job submission scripts can be found in the <a href="https://github.com/UKNumericalRelativity/uknr-benchmarking">uknr-benchmarking repository</a>.</li>
+<li>On COSMA8, we used between 1 and 32 nodes (128 to 4096 cores).</li>
+<li>On Tursa, we used between 1 and 32 nodes (4 to 128 GPUs).</li>
+</ul>
+<aside><ol class="aside-footnotes"><li id="fn10"><p>This is not true in the ETK case because of the change in mesh refinement driver between CPU and GPU tests.</p></li></ol></aside></section>
 <section id="bam-problem-configuration" class="slide level2">
 <h2>BAM problem configuration</h2>
+<ul>
+<li>12 levels of mesh refinement (including coarsest level).</li>
+<li>6 levels of fixed boxes and 6 levels of moving boxes.</li>
+<li>$320^2 $ points and <span class="math inline">\(4400^2 \times 2200\)</span> (bitant symmetry) length in code units on the coarsest level.</li>
+<li><span class="math inline">\(\sim 1/149\)</span> resolution on the finest level.</li>
+<li>2 timesteps on the coarsest level with subcycling from level 7 onwards (<span class="math inline">\(t_{\text{end}} = 0.107421875\)</span>).</li>
+<li>Due to BAM’s data distribution, we were only able to go up to 16 nodes (2048 cores) on COSMA8 (there was an error with 4096 cores).</li>
+</ul>
 </section>
 <section id="bam-cpu-scaling" class="slide level2">
 <h2>BAM CPU scaling</h2>
-</section>
+
+<img data-src="media/bam_strong_scaling_cosma8_actual.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="etk-carpet-problem-configuration" class="slide level2">
 <h2>ETK Carpet problem configuration</h2>
+<ul>
+<li>10 levels of mesh refinement (including coarsest level).</li>
+<li><span class="math inline">\(320^2 \times 160\)</span> points and <span class="math inline">\(1024^2 \times 512\)</span> (bitant symmetry) length in code units on the coarsest level.</li>
+<li><span class="math inline">\(1/160\)</span> resolution on the finest level.</li>
+<li>Subcycling on all but the coarsest two levels.</li>
+<li>Terminate after 256 iterations (1 timestep on the coarsest level: <span class="math inline">\(t_{\text{end}} = 0.4\)</span>).</li>
+</ul>
 </section>
 <section id="etk-carpet-cpu-scaling" class="slide level2">
 <h2>ETK Carpet CPU scaling</h2>
-</section>
+
+<img data-src="media/etk_strong_scaling_cosma8_actual.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="etk-carpetx-problem-configuration" class="slide level2">
 <h2>ETK CarpetX problem configuration</h2>
+<ul>
+<li>10 levels of mesh refinement (including coarsest level).</li>
+<li><span class="math inline">\(288^3\)</span> points and <span class="math inline">\(1024^3\)</span> length in code units on the coarsest level.</li>
+<li>Some issues with bitant symmetry hence not used.</li>
+<li><span class="math inline">\(1/144\)</span> resolution on the finest level.</li>
+<li>Subcycling on all levels.</li>
+<li>Terminate after 512 iterations (1 timestep on the coarsest level: <span class="math inline">\(t_{\text{end}} \approx 0.889\)</span>).</li>
+</ul>
 </section>
 <section id="etk-carpetx-gpu-scaling" class="slide level2">
 <h2>ETK CarpetX GPU scaling</h2>
-</section>
+
+<img data-src="media/etk_strong_scaling_tursa_actual.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="grteclyn-problem-configuration" class="slide level2">
 <h2>GRTeclyn problem configuration</h2>
+<ul>
+<li>10 levels of mesh refinement (including coarsest level).</li>
+<li><span class="math inline">\(320^2 \times 160\)</span> cells and <span class="math inline">\(1024^2 \times 512\)</span> (bitant symmetry) length in code units on the coarsest level.</li>
+<li><span class="math inline">\(1/160\)</span> resolution on the finest level.</li>
+<li>Subcycling on all levels.</li>
+<li>1 timestep on the coarsest level (<span class="math inline">\(t_{\text{end}} = 0.8\)</span>).</li>
+</ul>
 </section>
 <section id="grteclyn-cpu-scaling" class="slide level2">
 <h2>GRTeclyn CPU scaling</h2>
-</section>
+
+<img data-src="media/grteclyn_strong_scaling_cosma8_actual.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="grteclyn-gpu-scaling" class="slide level2">
 <h2>GRTeclyn GPU scaling</h2>
-</section>
+
+<img data-src="media/grteclyn_strong_scaling_tursa_actual.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="mhduet-problem-configuration" class="slide level2">
 <h2>MHDuet problem configuration</h2>
+<ul>
+<li>10 levels of mesh refinement (including coarsest level).</li>
+<li><span class="math inline">\(256^3\)</span> cells and <span class="math inline">\(1024^3\)</span> length in code units on the coarsest level.</li>
+<li>Fixed mesh refinement for the coarsest 6 levels with boxes of lengths: 1024, 512, 256, 128, 64, 32</li>
+<li><span class="math inline">\(1/128\)</span> resolution on the finest level.</li>
+<li>Subcycling on all levels.</li>
+<li>1 timestep on the coarsest level (<span class="math inline">\(t_{\text{end}} = 1.6\)</span>).</li>
+</ul>
 </section>
 <section id="mhduet-cpu-scaling" class="slide level2">
 <h2>MHDuet CPU scaling</h2>
-</section>
+
+<img data-src="media/mhduet_strong_scaling_cosma8_actual.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="mhduet-gpu-scaling" class="slide level2">
 <h2>MHDuet GPU scaling</h2>
-</section></section>
+
+<img data-src="media/mhduet_strong_scaling_tursa_actual.svg" class="quarto-figure quarto-figure-center r-stretch"></section></section>
 <section>
 <section id="conclusions" class="title-slide slide level1 center">
 <h1>Conclusions</h1>
