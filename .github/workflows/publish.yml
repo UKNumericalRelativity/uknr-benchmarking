@@ -18,12 +18,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
-        with:
-          sparse-checkout: |
-            presentation
-            slides_files
-            .
-
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
