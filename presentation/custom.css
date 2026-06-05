@@ -1,0 +1,17 @@
+/* Make the header and footer logos the same height */
+:root {
+  --logo-height: 50px;
+}
+
+.reveal .slide-logo {
+  height: var(--logo-height) !important;
+  width: auto !important;
+  max-width: unset !important;
+}
+
+.reveal .header-logo img,
+.reveal .header-logo svg {
+  height: var(--logo-height) !important;
+  max-height: var(--logo-height) !important;
+  width: auto;
+}
