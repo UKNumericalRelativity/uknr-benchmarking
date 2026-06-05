@@ -10,7 +10,7 @@
 <script src="slides_files/libs/quarto-contrib/reveal-header-1.0.0/add_header.js" defer="true"></script>
 <link href="slides_files/libs/quarto-contrib/reveal-header-1.0.0/add_header.css" rel="stylesheet">
 <script src="slides_files/libs/quarto-contrib/sc-sb-title-1.0.0/sc_sb_title.js" defer="true"></script>
-<link href="slides_files/libs/quarto-contrib/grid-no-htext-1.0.0/grid_no_htext.css" rel="stylesheet"><meta charset="utf-8">
+<link href="slides_files/libs/quarto-contrib/grid-htext-1.0.0/grid_htext.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.38">
 
   <title>UKNR Code Assessment</title>
@@ -36,6 +36,7 @@
     }
   </style>
   <link rel="stylesheet" href="slides_files/libs/revealjs/dist/theme/quarto-b2736e9fcda83c748fd63b6e579550ef.css">
+  <link rel="stylesheet" href="custom.css">
   <link href="slides_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="slides_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="slides_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -158,11 +159,11 @@ Miren Radia
 <section id="motivation" class="slide level2">
 <h2>Motivation</h2>
 <ul>
-<li>There are many 3+1 NR codes that are being developed and/or used by the UKNR community.</li>
+<li>There are many <span class="alert">3+1 NR codes</span> that are being developed and/or used by the <span class="alert">UKNR community</span> community.</li>
 <li>There have been some efforts to compare some of these codes but most of these have focused on just two codes and/or their results.</li>
-<li>If we are provided with funding to form a full UKNR CCP, it’s important to understand the current state of the codes that are being used:
+<li>If we are provided with funding to form a <span class="alert">full UKNR CCP</span>, it’s important to understand the current state of the codes that are being used:
 <ul>
-<li>What are their methods and capabilities?</li>
+<li>What are their <span class="alert">methods and capabilities</span>[^no-physics]?</li>
 <li>How are they like to use/get started with?</li>
 <li>For codes that are currently under active development, what is their current development status?</li>
 <li>How do they perform?</li>
@@ -177,19 +178,19 @@ Miren Radia
 <li>Matter (we looked at vacuum BHs only)<sup>1</sup></li>
 <li>Testing out every feature and capability</li>
 <li>Accuracy of the results</li>
-<li>Rigorous performance comparisons between the codes<sup>2</sup></li>
-<li>Weak scaling</li>
+<li><span class="alert">Rigorous performance comparisons</span> between the codes<sup>2</sup></li>
+<li><span class="alert">Weak scaling</span></li>
 </ul></li>
-<li>Assessment is a snapshot in time so subject to change.</li>
+<li>Assessment is a <span class="alert">snapshot in time</span> so subject to change.</li>
 </ul>
 <aside><ol class="aside-footnotes"><li id="fn1"><p>Not all codes support the same types of matter hence why we focussed on BHs.</p></li><li id="fn2"><p>To make performance comparisons fair, it would be necessary to determine the configuration for each code to achieve the same accuracy.</p></li></ol></aside></section>
 <section id="criteria-for-assessment" class="slide level2">
 <h2>Criteria for assessment</h2>
 <p>Although there are many other codes that are used internationally, we have chosen to only consider those that met the following criteria:</p>
 <ol type="1">
-<li>The code has some relevance within the UKNR community. For example, there is at least one developer based in the UK or there is a non-trivial number of users.</li>
-<li>The code is capable of evolving in 3+1 dimensions (i.e.&nbsp;it is not dimensionally reduced and does not require the use of symmetries).</li>
-<li>The code is capable of evolving a binary-black hole spacetime through inspiral, merger and ringdown.</li>
+<li>The code has some <span class="alert">relevance within the UKNR community</span>. For example, there is at least one developer based in the UK or there is a non-trivial number of users.</li>
+<li>The code is capable of evolving in <span class="alert">3+1 dimensions</span> (i.e.&nbsp;it is not dimensionally reduced and does not require the use of symmetries).</li>
+<li>The code is capable of evolving a <span class="alert">binary black hole spacetime</span> through <span class="alert">inspiral, merger and ringdown</span>.</li>
 </ol>
 <p>This criteria is not exhaustive so we didn’t include every code meeting this criteria.</p>
 </section>
@@ -197,15 +198,15 @@ Miren Radia
 <h2>The codes we investigated</h2>
 <p>Using the criteria described on the previous slide, we identified the following codes:</p>
 <ul>
-<li>BAM<sup>1</sup><sup>2</sup></li>
-<li>The Einstein Toolkit (ETK)
+<li><span class="alert">BAM</span><sup>1</sup><sup>2</sup></li>
+<li>The <span class="alert">Einstein Toolkit</span> (ETK)
 <ul>
 <li>with the Carpet driver (on CPUs)</li>
-<li>with the CarpetX driver(on GPUs)</li>
+<li>with the CarpetX driver (on GPUs)</li>
 </ul></li>
-<li>ExaGRyPE<sup>3</sup></li>
-<li>GRTeclyn</li>
-<li>MHDuet (AMReX version only)</li>
+<li><span class="alert">ExaGRyPE</span><sup>3</sup></li>
+<li><span class="alert">GRTeclyn</span></li>
+<li><span class="alert">MHDuet</span> (AMReX version only)</li>
 </ul>
 <aside><ol class="aside-footnotes"><li id="fn3"><p>We used the version of BAM used by Mark Hannam’s group.</p></li><li id="fn4"><p>Only tested on CPUs.</p></li><li id="fn5"><p>This code was not benchmarked.</p></li></ol></aside></section></section>
 <section>
@@ -217,179 +218,23 @@ Miren Radia
 <h2>Common features</h2>
 <p>All of these codes use the following common methods:</p>
 <ul>
-<li>Finite difference methods for spatial discretisation</li>
-<li>Method of Lines for time integration</li>
-<li>Mesh refinement</li>
+<li><span class="alert">Finite difference</span> methods for spatial discretisation</li>
+<li><span class="alert">Method of Lines</span> for time integration</li>
+<li><span class="alert">Mesh refinement</span></li>
 <li>3+1 evolution systems: BSSN, CCZ4 or Z4c with some variant of the moving puncture gauge conditions</li>
 <li>Kreiss-Oliger dissipation</li>
-<li>Parallelised using the Message Passing Interface (MPI)</li>
+<li>Parallelised using the <span class="alert">Message Passing Interface (MPI)</span></li>
 </ul>
 </section>
-<section id="bam" class="slide level2">
-<h2>BAM</h2>
+<section id="slide-code-details" class="slide level2">
+<h2>Code details</h2>
+<p>Further details about each code can be found in the appendices linked below:</p>
 <ul>
-<li>Written in (old-style) C with pure MPI parallelisation</li>
-<li>Very few dependencies (just a C compiler, Make, MPI, and optional HDF5)</li>
-<li>Originally written in the 1990s, it reached its current form in the mid-late 2000s and has not changed much since then.</li>
-<li>Node/vertex-centred with moving-box-style mesh refinement</li>
-<li>Berger-Oliger subcycling is used for most of the finer levels but disabled on coarser levels for stability.</li>
-<li>Sixth-order spatial differencing with eighth order KO dissipation</li>
-</ul>
-</section>
-<section id="bam-continued" class="slide level2">
-<h2>BAM (continued)</h2>
-<ul>
-<li>BSSN evolution scheme with Sommerfeld BCs.</li>
-<li>Puncture tracking</li>
-<li>Apparent Horizon finder</li>
-<li>Grid symmetries (e.g.&nbsp;bitant, quadrant, octant, etc.)</li>
-<li>Fourth or sixth order Lagrange polynomial interpolation of grid variables</li>
-<li>GW extraction via the Newman-Penrose formalism.</li>
-</ul>
-</section>
-<section id="einstein-toolkit-etk" class="slide level2 smaller">
-<h2>Einstein Toolkit (ETK)</h2>
-<ul>
-<li>The Einstein Toolkit is built on the Cactus Computational Toolkit (CCTK) software framework.</li>
-<li>A CCTK code comprises the Cactus <em>flesh</em> with additional <em>thorns</em> that implement a specific problem.</li>
-<li>The ETK is not really a single code but rather a collection of thorns with the Cactus flesh that can be used for various problems.</li>
-<li>Thorns can be written in C, C++ or Fortran but they have a standardized interface to the flesh and other thorns.</li>
-<li>The recommended way to build, manage and run simulations is with the SimFactory2 thorn which provides an abstraction layer over different HPC systems. It requires the local system to be configured in its database.</li>
-<li>One of the core thorns is the <em>driver</em> which implements the computational grid, mesh refinement (if relevant) and associated infrastructure.</li>
-<li>The most popular and well-supported driver is <em>Carpet</em> which works on just CPUs.
-<ul>
-<li>Carpet supports OpenMP parallelisation.</li>
-</ul></li>
-<li>The next generation replacement for Carpet is <em>CarpetX</em> which is built on the AMReX framework for block-structured AMR.
-<ul>
-<li>CarpetX supports OpenMP parallelisation and offloading to Nvidia GPUs via CUDA<sup>1</sup>.</li>
-</ul></li>
-</ul>
-<aside><ol class="aside-footnotes"><li id="fn6"><p>In principle, AMReX supports offloading to AMD and Intel GPUs via HIP and SYCL respectively but this is not exposed by CarpetX yet.</p></li></ol></aside></section>
-<section id="einstein-toolkit---cpu-tests" class="slide level2 smaller">
-<h2>Einstein Toolkit - CPU tests</h2>
-<p>For our CPU tests, we used:</p>
-<ul>
-<li>A subset of the thorns from the 2025_05 Kruskal ETK release.</li>
-<li>The Carpet driver.</li>
-<li>The McLachlan BSSN evolution thorn with Sommerfeld BCs.</li>
-<li>Eighth-order spatial differencing.</li>
-<li>Subcycling using buffer zones with fifth-order spatial prolongation (interpolation from coarse to fine) and second-order temporal prolongation.</li>
-<li>Moving-box style mesh refinement provided by the CarpetRegrid2 thorn.</li>
-</ul>
-<p>This is loosely based on the GW150914 ETK gallery example but with the Llama multipatch infrastructure removed (for fairer comparison with other codes).</p>
-</section>
-<section id="einstein-toolkit---gpu-tests" class="slide level2 smaller">
-<h2>Einstein Toolkit - GPU tests</h2>
-<p>For our GPU tests, we used:</p>
-<ul>
-<li>Recent development versions of the CarpetX and SpacetimeX thorn collections from Liwei Ji with subcycling support.</li>
-<li>The CarpetX driver.</li>
-<li>The Z4c evolution thorn from SpacetimeX</li>
-<li>Fourth-order spatial differencing.</li>
-<li>Subcycling with fifth-order prolongation.</li>
-<li>Moving-box style mesh refinement provided by the BoxInBox thorn.</li>
-<li>Sommerfeld BCs provided by the NewRadX thorn.</li>
-</ul>
-<p>CarpetX is still under active development and the software versions used for testing were not even merged into the main repositories so observations should be interpreted with this caveat.</p>
-</section>
-<section id="einstein-toolkit---additional-capabilities" class="slide level2 smaller">
-<h2>Einstein Toolkit - additional capabilities</h2>
-<p>The ETK has an extensive list of additional capabilities some of which have multiple implementations via different thorns. These include<sup>1</sup></p>
-<ul>
-<li>Multipatch support with “cubed sphere” outer patches (Llama infrastructure for Carpet and CapyrX infrastructure for CarpetX).</li>
-<li>Puncture tracking (PunctureTracker thorn).</li>
-<li>Apparent Horizon finding (AHFinder, AHFinderDirect, ET_BHaHAHA thorns).</li>
-<li>GW extraction via the NP formalism (WeylScal4, NPScalar and Multipole thorns).</li>
-<li>Lagrange polynomial interpolation of grid variables (CarpetInterp2 and AEILocalInterp thorns for Carpet and core capability for CarpetX).</li>
-<li>Reflection and rotational grid symmetries.</li>
-<li>Output of data that can be used with the SpECTRE Cauchy Characteristic Extraction code provided by the CCE_Export thorn.</li>
-</ul>
-<p>Note that many Carpet-compatible thorns have been rewritten to support CarpetX and are often renamed by appending with an “X” (e.g.&nbsp;TwoPunctures <span class="math inline">\(\to\)</span> TwoPuncturesX)</p>
-<aside><ol class="aside-footnotes"><li id="fn7"><p>This list is far from exhaustive.</p></li></ol></aside></section>
-<section id="exagrype" class="slide level2 smaller">
-<h2>ExaGRyPE</h2>
-<ul>
-<li>ExaGRyPE is an NR code built upon ExaHyPE 2 (second generation Exascale Hyperbolic PDE Engine) which in turn is built upon the Peano framework for solvers on dynamical adaptive Cartesian meshes.</li>
-<li>ExaGRyPE, ExaHyPE 2 and Peano are written in a mix of C++ and Python.</li>
-<li>To build a simulation executable, a Python script is invoked with simulation parameters passed as arguments (which cannot be changed at runtime).</li>
-<li>ExaGRyPE uses a mix of domain decomposition and task-based parallelism:
-<ul>
-<li>MPI is used for domain decomposition</li>
-<li>On CPUs, Peano/ExaHyPE 2 supports task-based parallelism via C++ standard library threading, Intel Threading Building Blocks (TBB), OpenMP and SYCL.</li>
-<li>On GPUs, they support offloading via SYCL and OpenMP (vendor-agnostic).</li>
-<li>Note that ExaGRyPE support for these programming models is not yet guaranteed.</li>
-</ul></li>
-<li>Cell-centred grid with spacetree<sup>1</sup> AMR.</li>
-<li>Fourth-order spatial differencing with sixth-order KO dissipation.</li>
-<li>First-order explicit time integration is generally used but RK4 is also supported.</li>
-<li>Trilinear spatial prolongation and averaging for restriction (interpolation from fine to coarse).</li>
-</ul>
-<aside><ol class="aside-footnotes"><li id="fn8"><p>In the case of a refinement ratio of 2, spacetree is often called octree. ExaGRyPE uses a ratio of 3.</p></li></ol></aside></section>
-<section id="exagrype-continued" class="slide level2">
-<h2>ExaGRyPE (continued)</h2>
-<ul>
-<li>CCZ4 evolution scheme which is recast as first-order-in-space so there are 58 evolved variables. Algebraic constraints are enforced.</li>
-<li>Sommerfeld BCs.</li>
-<li>Bowen-York initial data provided by TwoPunctures.</li>
-<li>Trilinear interpolation from grid variables onto particle tracers</li>
-<li>GW extraction via the NP formalism using the above particle tracer interpolation.</li>
-<li>Puncture tracking using the particle tracer interpolation.</li>
-</ul>
-</section>
-<section id="grteclyn" class="slide level2 smaller">
-<h2>GRTeclyn</h2>
-<ul>
-<li>Written in modern C++.</li>
-<li>Built upon and integrated with the AMReX framework for block-structured AMR.</li>
-<li>Successor to GRChombo which was built on the Chombo AMR libraries</li>
-<li>Few dependencies: C++20 compiler (with GPU support if required), GNU Make, MPI and AMReX.</li>
-<li>MPI+X parallelized with X is OpenMP, CUDA (on Nvidia GPUs), HIP (on AMD GPUs) or SYCL (on Intel GPUs).</li>
-<li>Cell-centred grid with block-structured AMR.</li>
-<li>Arbitrary mesh refinement criteria but something emulating moving boxes is typically used on the finest few levels for BH binaries.</li>
-<li>Fourth-order spatial differencing with sixth-order KO dissipation.</li>
-<li>Fourth-order spatial prolongation, third-order temporal prolongation and fourth-order restriction.</li>
-</ul>
-</section>
-<section id="grteclyn-continued" class="slide level2">
-<h2>GRTeclyn (continued)</h2>
-<ul>
-<li>CCZ4 evolution scheme with Sommerfeld BCs and algebraic constraint enforcement</li>
-<li>Puncture tracking</li>
-<li>Lagrange polynomial interpolation of grid variables using AMReX particle infrastructure (usually fourth order)</li>
-<li>GW extraction via the NP formalism using above interpolation</li>
-<li>Grid symmetries (e.g.&nbsp;bitant, quadrant, etc)</li>
-</ul>
-</section>
-<section id="mhduet" class="slide level2 smaller">
-<h2>MHDuet</h2>
-<ul>
-<li>MHDuet is a code that is automatically generated using the Simflowny infrastructure.</li>
-<li>To generate a code using Simflowny, the scientific user needs to provide the following information in MathML format (typically generated using a Maple script):
-<ul>
-<li>Evolution equations</li>
-<li>Initial conditions</li>
-<li>Boundary conditions</li>
-<li>Discretisation scheme</li>
-</ul></li>
-<li>The generate code is built on either the SAMRAI or AMReX libraries. We focus on the AMReX version from now on.</li>
-<li>The generated code is written in C++ and parallelized with MPI+X where X is OpenMP, CUDA (on Nvidia GPUs) or HIP (on AMD GPUs).</li>
-<li>Mainly focused on MHD spacetimes rather than vacuum BHs.</li>
-<li>Relatively small number of dependencies in the vacuum case (similar to GRTeclyn but also with HDF5) but more in the MHD case (which we don’t consider).</li>
-</ul>
-</section>
-<section id="mhduet-continued" class="slide level2 smaller">
-<h2>MHDuet (continued)</h2>
-<ul>
-<li>Node/vertex-centred grid with block-structured AMR</li>
-<li>Fixed mesh refinement in the form of concentric boxes is typically used on coarser levels.</li>
-<li>On finer levels, function-based refinement and shadow-based refinement are supported.</li>
-<li>Fourth-order spatial differencing with sixth-order KO dissipation</li>
-<li>Fifth order spatial prolongation and third-order temporal prolongation</li>
-<li>CCZ4 evolution scheme with algebraic constraint violations damped.</li>
-<li>Extrapolating BCs are typically used.-</li>
-<li>Various reductions of grid variables can be computed (e.g.&nbsp;sums, extrema, norms, integrals, etc.)</li>
-<li>Linear interpolation of grid variables on spheres and planes for diagnostics and GW extraction.</li>
+<li><a href="#/bam-appendix"><span class="button">BAM</span></a></li>
+<li><a href="#/etk-appendix"><span class="button">Einstein Toolkit</span></a></li>
+<li><a href="#/exagrype-appendix"><span class="button">ExaGRyPE</span></a></li>
+<li><a href="#/grteclyn-appendix"><span class="button">GRTeclyn</span></a></li>
+<li><a href="#/mhduet-appendix"><span class="button">MHDuet</span></a></li>
 </ul>
 </section></section>
 <section>
@@ -400,7 +245,7 @@ Miren Radia
 <section id="cosma8" class="slide level2 smaller">
 <h2>COSMA8</h2>
 <ul>
-<li>CPU-based DiRAC system hosted at Durham University.</li>
+<li><span class="alert">CPU-based</span> DiRAC system hosted at Durham University.</li>
 <li>528 compute nodes in total:
 <ul>
 <li>360 nodes with AMD Rome/Zen 2 CPUs</li>
@@ -414,13 +259,13 @@ Miren Radia
 <li>1 TB DDR4 RAM</li>
 <li>1x Mellanox ConnectX-6 HDR InfiniBand NIC, 200 Gbps</li>
 </ul></li>
-<li>HDR200 InfiniBand network with a non-blocking fat-tree topology.</li>
+<li><span class="alert">HDR200 InfiniBand</span> network with a non-blocking fat-tree topology.</li>
 </ul>
 </section>
 <section id="tursa" class="slide level2 smaller">
 <h2>Tursa</h2>
 <ul>
-<li>GPU-based DiRAC system hosted by EPCC at the University of Edinburgh.</li>
+<li><span class="alert">GPU-based</span> DiRAC system hosted by EPCC at the University of Edinburgh.</li>
 <li>178 compute nodes in total:
 <ul>
 <li>114 nodes with Nvidia A100 40 GB GPUs</li>
@@ -443,13 +288,13 @@ Miren Radia
 <h1>Qualitative setup and user experience</h1>
 
 </section>
-<section id="bam-1" class="slide level2 smaller">
+<section id="bam" class="slide level2 smaller">
 <h2>BAM</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <h3 id="pros">Pros</h3>
 <ul>
-<li><p>Few dependencies and simple build system so easy to get set up with on a new system.</p></li>
+<li><p><span class="alert">Few dependencies</span> and simple build system so easy to get set up with on a new system.</p></li>
 <li><p>Quick to build.</p></li>
 <li><p>Structure of the code is easy to understand and follow which makes modification straightforward.</p></li>
 <li><p>Familiar workflow:</p>
@@ -459,7 +304,7 @@ Miren Radia
 </div><div class="column" style="width:50%;">
 <h3 id="cons">Cons</h3>
 <ul>
-<li>Private code</li>
+<li><span class="alert">Private code</span></li>
 <li>Limited documentation</li>
 <li>Old style C requires some workaround with modern compilers</li>
 <li>No support for GPU offloading</li>
@@ -472,7 +317,7 @@ Miren Radia
 <div class="column" style="width:50%;">
 <h3 id="pros-1">Pros</h3>
 <ul>
-<li><p>Open source with a large and active community.</p></li>
+<li><p><span class="alert">Open source</span> with a large and active community.</p></li>
 <li><p>Extensive collection of thorns that provide lots of capabilities and flexibility.</p></li>
 <li><p>SimFactory2 provides a convenient abstraction layer for building and running simulations on supported HPC systems.</p></li>
 <li><p>Cactus thorn interface means that the process to adding new capabilities is standardised.</p></li>
@@ -480,11 +325,12 @@ Miren Radia
 <li><p>Some thorns have great documentation.</p></li>
 <li><p>Can print information about all parameters by doing</p>
 <pre><code>./cactus_sim --describe-all-parameters</code></pre></li>
+<li><p>Many thorns are mature and have been used in many production simulations.</p></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <h3 id="cons-1">Cons</h3>
 <ul>
-<li>Large number of dependencies and complex build system.</li>
+<li><span class="alert">Large number of dependencies</span> and complex build system.</li>
 <li>Slow to build (especially if using default release thornlist used).</li>
 <li>Difficult to set up on a new unsupported system.</li>
 <li>Some thorns have very little documentation.</li>
@@ -494,13 +340,13 @@ Miren Radia
 </ul>
 </div></div>
 </section>
-<section id="exagrype-1" class="slide level2 smaller">
+<section id="exagrype" class="slide level2 smaller">
 <h2>ExaGRyPE</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <h3 id="pros-2">Pros</h3>
 <ul>
-<li>Open source</li>
+<li><span class="alert">Open source</span></li>
 <li>Abstracted interface so scientific user shouldn’t need to worry about technical details</li>
 <li>Python domain-specific language (DSL)</li>
 <li>Good connections with core developers</li>
@@ -510,21 +356,21 @@ Miren Radia
 </div><div class="column" style="width:50%;">
 <h3 id="cons-2">Cons</h3>
 <ul>
-<li>Many parameters are hardcoded and not exposed to the user<sup>1</sup>.</li>
+<li><span class="alert">Many parameters are hardcoded</span> and not exposed to the user<sup>1</sup>.</li>
 <li>Non-standard workflow: no ability to change parameters at runtime.</li>
 <li>Only uses open GPU programming models (SYCL, OpenMP) which are often not first-party supported by GPU vendors and less performant than vendor-specific models (CUDA, HIP).</li>
 <li>GPU support finicky (development ongoing).</li>
 <li>Slightly difficult to debug build errors due to Python wrapper.</li>
 </ul>
 </div></div>
-<aside><ol class="aside-footnotes"><li id="fn9"><p>This prevented us from performing scaling tests with ExaGRyPE.</p></li></ol></aside></section>
-<section id="grteclyn-1" class="slide level2 smaller">
+<aside><ol class="aside-footnotes"><li id="fn6"><p>This prevented us from performing scaling tests with ExaGRyPE.</p></li></ol></aside></section>
+<section id="grteclyn" class="slide level2 smaller">
 <h2>GRTeclyn</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <h3 id="pros-3">Pros</h3>
 <ul>
-<li><p>Open source</p></li>
+<li><p><span class="alert">Open source</span></p></li>
 <li><p>Not too many dependencies so relatively straightforward to port to a new system</p></li>
 <li><p>Relatively quick to build</p></li>
 <li><p>Familiar workflow:</p>
@@ -542,13 +388,13 @@ Miren Radia
 </ul>
 </div></div>
 </section>
-<section id="mhduet-1" class="slide level2 smaller">
+<section id="mhduet" class="slide level2 smaller">
 <h2>MHDuet</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <h3 id="pros-4">Pros</h3>
 <ul>
-<li><p>Simflowny code generation means it can be quicker for scientific users to get from new equations to code.</p></li>
+<li><p><span class="alert">Simflowny code generation</span> means it can be quicker for scientific users to get from new equations to code.</p></li>
 <li><p>Simflowny is open source</p></li>
 <li><p>Simple build system (just a single Makefile)</p></li>
 <li><p>Not too many dependencies (especially in the vacuum case)</p></li>
@@ -575,8 +421,8 @@ Miren Radia
 <section id="setup-and-common-configuration" class="slide level2 smaller">
 <h2>Setup and common configuration</h2>
 <ul>
-<li>We only considered strong scaling (i.e.&nbsp;increasing the computational resources for a fixed problem size).</li>
-<li>BH binary simulation with initial data based on the GW150914 event.</li>
+<li>We only considered <span class="alert">strong scaling</span> (i.e.&nbsp;increasing the computational resources for a fixed problem size).</li>
+<li>BH binary simulation with initial data based on the <span class="alert">GW150914 event</span>.</li>
 <li>For an individual code, we used the same problem configuration for both CPU and GPU scaling tests<sup>1</sup> to make comparisons between them fairer.</li>
 <li>For each code, we started with a grid configuration that could be plausibly used in a production simulation and then iterated on the size of this grid until we found a configuration that saturated most of the RAM on a single COSMA8 node or a single Tursa node.</li>
 <li>Grid configurations therefore differ between codes but they are in a similar ballpark.</li>
@@ -587,24 +433,27 @@ Miren Radia
 <li>On COSMA8, we used between 1 and 32 nodes (128 to 4096 cores).</li>
 <li>On Tursa, we used between 1 and 32 nodes (4 to 128 GPUs).</li>
 </ul>
-<aside><ol class="aside-footnotes"><li id="fn10"><p>This is not true in the ETK case because of the change in mesh refinement driver between CPU and GPU tests.</p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn7"><p>This is not true in the ETK case because of the change in mesh refinement driver between CPU and GPU tests.</p></li></ol></aside></section>
 <section id="bam-problem-configuration" class="slide level2">
 <h2>BAM problem configuration</h2>
 <ul>
 <li>12 levels of mesh refinement (including coarsest level).</li>
 <li>6 levels of fixed boxes and 6 levels of moving boxes.</li>
-<li>$320^2 $ points and <span class="math inline">\(4400^2 \times 2200\)</span> (bitant symmetry) length in code units on the coarsest level.</li>
+<li><span class="math inline">\(320^2 \times 160\)</span> points and <span class="math inline">\(4400^2 \times 2200\)</span> (bitant symmetry) length in code units on the coarsest level.</li>
 <li><span class="math inline">\(\sim 1/149\)</span> resolution on the finest level.</li>
 <li>2 timesteps on the coarsest level with subcycling from level 7 onwards (<span class="math inline">\(t_{\text{end}} = 0.107421875\)</span>).</li>
-<li>Due to BAM’s data distribution, we were only able to go up to 16 nodes (2048 cores) on COSMA8 (there was an error with 4096 cores).</li>
+<li>Due to BAM’s data distribution, we were only able to go up to <span class="alert">16 nodes</span> (2048 cores) on COSMA8 (there was an error with 4096 cores).</li>
 </ul>
 </section>
-<section id="bam-cpu-scaling" class="slide level2">
-<h2>BAM CPU scaling</h2>
+<section id="bam-scaling" class="slide level2">
+<h2>BAM scaling</h2>
 
 <img data-src="media/bam_strong_scaling_cosma8_actual.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="etk-carpet-problem-configuration" class="slide level2">
-<h2>ETK Carpet problem configuration</h2>
+<section id="etk-problem-configuration" class="slide level2 smaller">
+<h2>ETK problem configuration</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="carpet-cpu-tests">Carpet CPU tests</h3>
 <ul>
 <li>10 levels of mesh refinement (including coarsest level).</li>
 <li><span class="math inline">\(320^2 \times 160\)</span> points and <span class="math inline">\(1024^2 \times 512\)</span> (bitant symmetry) length in code units on the coarsest level.</li>
@@ -612,13 +461,8 @@ Miren Radia
 <li>Subcycling on all but the coarsest two levels.</li>
 <li>Terminate after 256 iterations (1 timestep on the coarsest level: <span class="math inline">\(t_{\text{end}} = 0.4\)</span>).</li>
 </ul>
-</section>
-<section id="etk-carpet-cpu-scaling" class="slide level2">
-<h2>ETK Carpet CPU scaling</h2>
-
-<img data-src="media/etk_strong_scaling_cosma8_actual.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="etk-carpetx-problem-configuration" class="slide level2">
-<h2>ETK CarpetX problem configuration</h2>
+</div><div class="column" style="width:50%;">
+<h3 id="carpetx-gpu-tests">CarpetX GPU tests</h3>
 <ul>
 <li>10 levels of mesh refinement (including coarsest level).</li>
 <li><span class="math inline">\(288^3\)</span> points and <span class="math inline">\(1024^3\)</span> length in code units on the coarsest level.</li>
@@ -627,11 +471,25 @@ Miren Radia
 <li>Subcycling on all levels.</li>
 <li>Terminate after 512 iterations (1 timestep on the coarsest level: <span class="math inline">\(t_{\text{end}} \approx 0.889\)</span>).</li>
 </ul>
+</div></div>
 </section>
-<section id="etk-carpetx-gpu-scaling" class="slide level2">
-<h2>ETK CarpetX GPU scaling</h2>
-
-<img data-src="media/etk_strong_scaling_tursa_actual.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="etk-scaling" class="slide level2">
+<h2>ETK scaling</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="media/etk_strong_scaling_cosma8_actual.svg" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="media/etk_strong_scaling_tursa_actual.svg" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div></div>
+</section>
 <section id="grteclyn-problem-configuration" class="slide level2">
 <h2>GRTeclyn problem configuration</h2>
 <ul>
@@ -642,14 +500,23 @@ Miren Radia
 <li>1 timestep on the coarsest level (<span class="math inline">\(t_{\text{end}} = 0.8\)</span>).</li>
 </ul>
 </section>
-<section id="grteclyn-cpu-scaling" class="slide level2">
-<h2>GRTeclyn CPU scaling</h2>
-
-<img data-src="media/grteclyn_strong_scaling_cosma8_actual.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="grteclyn-gpu-scaling" class="slide level2">
-<h2>GRTeclyn GPU scaling</h2>
-
-<img data-src="media/grteclyn_strong_scaling_tursa_actual.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="grteclyn-scaling" class="slide level2">
+<h2>GRTeclyn scaling</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="media/grteclyn_strong_scaling_cosma8_actual.svg" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="media/grteclyn_strong_scaling_tursa_actual.svg" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div></div>
+</section>
 <section id="mhduet-problem-configuration" class="slide level2">
 <h2>MHDuet problem configuration</h2>
 <ul>
@@ -661,14 +528,61 @@ Miren Radia
 <li>1 timestep on the coarsest level (<span class="math inline">\(t_{\text{end}} = 1.6\)</span>).</li>
 </ul>
 </section>
-<section id="mhduet-cpu-scaling" class="slide level2">
-<h2>MHDuet CPU scaling</h2>
+<section id="mhduet-scaling" class="slide level2">
+<h2>MHDuet scaling</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="media/mhduet_strong_scaling_cosma8_actual.svg" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="media/mhduet_strong_scaling_tursa_actual.svg" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="all-codes-cpu-scaling" class="slide level2 scrollable">
+<h2>All codes CPU scaling</h2>
+<div class="columns">
+<div class="column center" style="width:50%;">
+<p><img data-src="media/bam_strong_scaling_cosma8_actual.svg" class="quarto-figure quarto-figure-center"> <img data-src="media/grteclyn_strong_scaling_cosma8_actual.svg" class="quarto-figure quarto-figure-center"></p>
+</div><div class="column center" style="width:50%;">
+<p><img data-src="media/etk_strong_scaling_cosma8_actual.svg" class="quarto-figure quarto-figure-center"> <img data-src="media/mhduet_strong_scaling_cosma8_actual.svg" class="quarto-figure quarto-figure-center"></p>
+</div></div>
+</section>
+<section id="all-codes-gpu-scaling" class="slide level2 scrollable">
+<h2>All codes GPU scaling</h2>
+<div class="columns">
+<div class="column center" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="media/etk_strong_scaling_tursa_actual.svg" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div><div class="column center" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="media/grteclyn_strong_scaling_tursa_actual.svg" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div></div>
+<div class="columns">
+<div class="column center" style="width:25%;">
 
-<img data-src="media/mhduet_strong_scaling_cosma8_actual.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="mhduet-gpu-scaling" class="slide level2">
-<h2>MHDuet GPU scaling</h2>
+</div><div class="column center" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="media/mhduet_strong_scaling_tursa_actual.svg" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div><div class="column center" style="width:25%;">
 
-<img data-src="media/mhduet_strong_scaling_tursa_actual.svg" class="quarto-figure quarto-figure-center r-stretch"></section></section>
+</div></div>
+</section></section>
 <section>
 <section id="conclusions" class="title-slide slide level1 center">
 <h1>Conclusions</h1>
@@ -676,16 +590,209 @@ Miren Radia
 </section>
 <section id="summary-and-future-work" class="slide level2">
 <h2>Summary and future work</h2>
+<ul>
+<li>We have explored the user experience and performance of some popular UKNR 3+1 codes on CPU and GPU-based HPC systems.</li>
+<li>We will analyze the profiling data from the scaling tests to identify where time is being spent during simulations.</li>
+<li>We are writing a report on our findings which will be made publicly available and feed into the main UKNR scoping report.</li>
+<li>With greater time, we would have liked to have done the following:
+<ul>
+<li>Weak scaling analysis</li>
+<li>Accuracy comparison between the codes of a full BBH simulation</li>
+<li>Resources required to achieve the same accuracy</li>
+</ul></li>
+</ul>
+</section></section>
+<section id="any-questions" class="title-slide slide level1 center">
+<h1>Any questions?</h1>
+
+</section>
+
+<section>
+<section id="appendices" class="title-slide slide level1 center">
+<h1>Appendices</h1>
+
+</section>
+<section id="bam-appendix" class="slide level2">
+<h2>BAM</h2>
+<ul>
+<li>Written in (old-style) C with <span class="alert">pure MPI parallelisation</span></li>
+<li><span class="alert">Very few dependencies</span> (just a C compiler, Make, MPI, and optional HDF5)</li>
+<li>Originally written in the 1990s, it reached its current form in the mid-late 2000s and has not changed much since then.</li>
+<li>Node/vertex-centred with moving-box-style mesh refinement</li>
+<li>Berger-Oliger subcycling is used for most of the finer levels but disabled on coarser levels for stability.</li>
+<li>Sixth-order spatial differencing with eighth order KO dissipation</li>
+</ul>
+</section>
+<section id="bam-continued" class="slide level2">
+<h2>BAM (continued)</h2>
+<ul>
+<li><span class="alert">BSSN evolution scheme</span> with Sommerfeld BCs.</li>
+<li>Puncture tracking</li>
+<li><span class="alert">Apparent Horizon finder</span></li>
+<li>Grid symmetries (e.g.&nbsp;bitant, quadrant, octant, etc.)</li>
+<li>Fourth or sixth order Lagrange polynomial interpolation of grid variables</li>
+<li>GW extraction via the Newman-Penrose formalism.</li>
+</ul>
+<p><a href="#/slide-code-details"><span class="button">Return to code details</span></a></p>
+</section>
+<section id="etk-appendix" class="slide level2 smaller">
+<h2>Einstein Toolkit (ETK)</h2>
+<ul>
+<li>The Einstein Toolkit is built on the <span class="alert">Cactus Computational Toolkit (CCTK)</span> software framework.</li>
+<li>A CCTK code comprises the Cactus <em>flesh</em> with additional <em>thorns</em> that implement a specific problem.</li>
+<li>The ETK is <span class="alert">not really a single code</span> but rather a collection of thorns with the Cactus flesh that can be used for various problems.</li>
+<li>Thorns can be written in C, C++ or Fortran but they have a standardized interface to the flesh and other thorns.</li>
+<li>The recommended way to build, manage and run simulations is with the SimFactory2 thorn which provides an abstraction layer over different HPC systems. It requires the local system to be configured in its database.</li>
+<li>One of the core thorns is the <em>driver</em> which implements the computational grid, mesh refinement (if relevant) and associated infrastructure.</li>
+<li>The most popular and well-supported driver is <span class="alert"><em>Carpet</em></span> which works on just CPUs.
+<ul>
+<li>Carpet supports OpenMP parallelisation.</li>
+</ul></li>
+<li>The next generation replacement for Carpet is <span class="alert"><em>CarpetX</em></span> which is built on the AMReX framework for block-structured AMR.
+<ul>
+<li>CarpetX supports OpenMP parallelisation and offloading to Nvidia GPUs via CUDA<sup>1</sup>.</li>
+</ul></li>
+</ul>
+<aside><ol class="aside-footnotes"><li id="fn8"><p>In principle, AMReX supports offloading to AMD and Intel GPUs via HIP and SYCL respectively but this is not exposed by CarpetX yet.</p></li></ol></aside></section>
+<section id="einstein-toolkit---cpu-tests" class="slide level2 smaller">
+<h2>Einstein Toolkit - CPU tests</h2>
+<p>For our CPU tests, we used:</p>
+<ul>
+<li>A subset of the thorns from the <span class="alert">2025_05 Kruskal ETK release</span>.</li>
+<li>The Carpet driver.</li>
+<li>The McLachlan BSSN evolution thorn with Sommerfeld BCs.</li>
+<li>Eighth-order spatial differencing.</li>
+<li>Subcycling using buffer zones with fifth-order spatial prolongation (interpolation from coarse to fine) and second-order temporal prolongation.</li>
+<li>Moving-box style mesh refinement provided by the CarpetRegrid2 thorn.</li>
+</ul>
+<p>This is loosely based on the GW150914 ETK gallery example but with the Llama multipatch infrastructure removed (for fairer comparison with other codes).</p>
+</section>
+<section id="einstein-toolkit---gpu-tests" class="slide level2 smaller">
+<h2>Einstein Toolkit - GPU tests</h2>
+<p>For our GPU tests, we used:</p>
+<ul>
+<li><span class="alert">Recent development versions</span> of the CarpetX and SpacetimeX thorn collections from Liwei Ji with subcycling support.</li>
+<li>The CarpetX driver.</li>
+<li>The Z4c evolution thorn from SpacetimeX</li>
+<li>Fourth-order spatial differencing.</li>
+<li>Subcycling with fifth-order prolongation.</li>
+<li>Moving-box style mesh refinement provided by the BoxInBox thorn.</li>
+<li>Sommerfeld BCs provided by the NewRadX thorn.</li>
+</ul>
+<p>CarpetX is still <span class="alert">under active development</span> and the software versions used for testing were not even merged into the main repositories so observations should be interpreted with this caveat.</p>
+</section>
+<section id="einstein-toolkit---additional-capabilities" class="slide level2 smaller">
+<h2>Einstein Toolkit - additional capabilities</h2>
+<p>The ETK has an extensive list of additional capabilities some of which have multiple implementations via different thorns. These include (but are by far not limited to):</p>
+<ul>
+<li>Multipatch support with “cubed sphere” outer patches (Llama infrastructure for Carpet and CapyrX infrastructure for CarpetX).</li>
+<li>Puncture tracking (PunctureTracker thorn).</li>
+<li>Apparent Horizon finding (AHFinder, AHFinderDirect, ET_BHaHAHA thorns).</li>
+<li>GW extraction via the NP formalism (WeylScal4, NPScalar and Multipole thorns).</li>
+<li>Lagrange polynomial interpolation of grid variables (CarpetInterp2 and AEILocalInterp thorns for Carpet and core capability for CarpetX).</li>
+<li>Reflection and rotational grid symmetries.</li>
+<li>Output of data that can be used with the SpECTRE Cauchy Characteristic Extraction code provided by the CCE_Export thorn.</li>
+</ul>
+<p>Note that many Carpet-compatible thorns have been rewritten to support CarpetX and are often renamed by appending with an “X” (e.g.&nbsp;TwoPunctures <span class="math inline">\(\to\)</span> TwoPuncturesX)</p>
+<p><a href="#/slide-code-details"><span class="button">Return to code details</span></a></p>
+</section>
+<section id="exagrype-appendix" class="slide level2 smaller">
+<h2>ExaGRyPE</h2>
+<ul>
+<li>ExaGRyPE is an NR code built upon <span class="alert">ExaHyPE 2</span> (second generation Exascale Hyperbolic PDE Engine) which in turn is built upon the Peano framework for solvers on dynamical adaptive Cartesian meshes.</li>
+<li>ExaGRyPE, ExaHyPE 2 and Peano are written in a mix of C++ and Python.</li>
+<li>To build a simulation executable, a Python script is invoked with simulation parameters passed as arguments (which cannot be changed at runtime).</li>
+<li>ExaGRyPE uses a mix of <span class="alert">domain decomposition</span> and <span class="alert">task-based parallelism</span>:
+<ul>
+<li>MPI is used for domain decomposition</li>
+<li>On CPUs, Peano/ExaHyPE 2 supports task-based parallelism via C++ standard library threading, Intel Threading Building Blocks (TBB), OpenMP and SYCL.</li>
+<li>On GPUs, they support offloading via SYCL and OpenMP (vendor-agnostic).</li>
+<li>Note that ExaGRyPE support for these programming models is not yet guaranteed.</li>
+</ul></li>
+<li>Cell-centred grid with <span class="alert">spacetree</span><sup>1</sup> AMR.</li>
+<li>Fourth-order spatial differencing with sixth-order KO dissipation.</li>
+<li>First-order explicit time integration is generally used but RK4 is also supported.</li>
+<li>Trilinear spatial prolongation and averaging for restriction (interpolation from fine to coarse).</li>
+</ul>
+<aside><ol class="aside-footnotes"><li id="fn9"><p>In the case of a refinement ratio of 2, spacetree is often called octree. ExaGRyPE uses a ratio of 3.</p></li></ol></aside></section>
+<section id="exagrype-continued" class="slide level2">
+<h2>ExaGRyPE (continued)</h2>
+<ul>
+<li>CCZ4 evolution scheme which is recast as first-order-in-space so there are 58 evolved variables. Algebraic constraints are enforced.</li>
+<li>Sommerfeld BCs.</li>
+<li>Bowen-York initial data provided by TwoPunctures.</li>
+<li>Trilinear interpolation from grid variables onto particle tracers</li>
+<li>GW extraction via the NP formalism using the above particle tracer interpolation.</li>
+<li>Puncture tracking using the particle tracer interpolation.</li>
+</ul>
+<p><a href="#/slide-code-details"><span class="button">Return to code details</span></a></p>
+</section>
+<section id="grteclyn-appendix" class="slide level2 smaller">
+<h2>GRTeclyn</h2>
+<ul>
+<li>Written in <span class="alert">modern C++</span>.</li>
+<li>Built upon and integrated with the <span class="alert">AMReX framework</span> for block-structured AMR.</li>
+<li>Successor to GRChombo which was built on the Chombo AMR libraries</li>
+<li>Few dependencies: C++20 compiler (with GPU support if required), GNU Make, MPI and AMReX.</li>
+<li><span class="alert">MPI+X</span> parallelized with X is OpenMP, CUDA (on Nvidia GPUs), HIP (on AMD GPUs) or SYCL (on Intel GPUs).</li>
+<li>Cell-centred grid with block-structured AMR.</li>
+<li>Arbitrary mesh refinement criteria but something emulating moving boxes is typically used on the finest few levels for BH binaries.</li>
+<li>Fourth-order spatial differencing with sixth-order KO dissipation.</li>
+<li>Fourth-order spatial prolongation, third-order temporal prolongation and fourth-order restriction.</li>
+</ul>
+</section>
+<section id="grteclyn-continued" class="slide level2">
+<h2>GRTeclyn (continued)</h2>
+<ul>
+<li>CCZ4 evolution scheme with Sommerfeld BCs and algebraic constraint enforcement</li>
+<li>Puncture tracking</li>
+<li>Lagrange polynomial interpolation of grid variables using AMReX particle infrastructure (usually fourth order)</li>
+<li>GW extraction via the NP formalism using above interpolation</li>
+<li>Grid symmetries (e.g.&nbsp;bitant, quadrant, etc)</li>
+</ul>
+<p><a href="#/slide-code-details"><span class="button">Return to code details</span></a></p>
+</section>
+<section id="mhduet-appendix" class="slide level2 smaller">
+<h2>MHDuet</h2>
+<ul>
+<li>MHDuet is a code that is <span class="alert">automatically generated</span> using the Simflowny infrastructure.</li>
+<li>To generate a code using Simflowny, the scientific user needs to provide the following information in MathML format (typically generated using a Maple script):
+<ul>
+<li>Evolution equations</li>
+<li>Initial conditions</li>
+<li>Boundary conditions</li>
+<li>Discretisation scheme</li>
+</ul></li>
+<li>The generate code is built on either the SAMRAI or AMReX libraries. We focus on the AMReX version from now on.</li>
+<li>The generated code is written in C++ and parallelized with MPI+X where X is OpenMP, CUDA (on Nvidia GPUs) or HIP (on AMD GPUs).</li>
+<li>Mainly focused on MHD spacetimes rather than vacuum BHs.</li>
+<li>Relatively small number of dependencies in the vacuum case (similar to GRTeclyn but also with HDF5) but more in the MHD case (which we don’t consider).</li>
+</ul>
+</section>
+<section id="mhduet-continued" class="slide level2 smaller">
+<h2>MHDuet (continued)</h2>
+<ul>
+<li>Node/vertex-centred grid with block-structured AMR</li>
+<li>Fixed mesh refinement in the form of concentric boxes is typically used on coarser levels.</li>
+<li>On finer levels, function-based refinement and shadow-based refinement are supported.</li>
+<li>Fourth-order spatial differencing with sixth-order KO dissipation</li>
+<li>Fifth order spatial prolongation and third-order temporal prolongation</li>
+<li>CCZ4 evolution scheme with algebraic constraint violations damped.</li>
+<li>Extrapolating BCs are typically used.-</li>
+<li>Various reductions of grid variables can be computed (e.g.&nbsp;sums, extrema, norms, integrals, etc.)</li>
+<li>Linear interpolation of grid variables on spheres and planes for diagnostics and GW extraction.</li>
+</ul>
+<p><a href="#/slide-code-details"><span class="button">Return to code details</span></a></p>
 
 <div class="reveal-header">
-<div class="header-logo" data-footer-logo-link="https://www.cosec.ac.uk/">
-<img data-src="">
+<div class="header-logo" data-header-logo-link="https://shareing-dri.github.io/" data-footer-logo-link="https://www.cosec.ac.uk/">
+<img data-src="https://raw.githubusercontent.com/SHAREing-DRI/SHAREing-DRI.github.io/refs/heads/main/assets/images/logo.svg">
 </div>
 <div class="sc-title">
 <p> </p>
 </div>
 <div class="header-text">
-<p> </p>
+<p>https://uknumericalrelativity.github.io/uknr-benchmarking/</p>
 </div>
 <div class="sb-title">
 <p> </p>
