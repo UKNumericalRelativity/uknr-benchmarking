@@ -8,7 +8,7 @@ format:
     embed-resources: false
     css: custom.css
     transition: slide
-    header: "https://uknumericalrelativity.github.io/uknr-benchmarking/"
+    header: "https://tinyurl.com/uknr-benchmarking"
     header-logo: https://raw.githubusercontent.com/SHAREing-DRI/SHAREing-DRI.github.io/refs/heads/main/assets/images/logo.svg
     header-logo-link: https://shareing-dri.github.io/
     logo: media/cosec-uknr-logos.png
