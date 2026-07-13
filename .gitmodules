@@ -12,3 +12,7 @@
 [submodule "codes/GRTeclyn/amrex"]
 	path = codes/GRTeclyn/amrex
 	url = ../../AMReX-Codes/amrex
+[submodule "codes/ExaGRyPE/Peano"]
+	path = codes/ExaGRyPE/Peano
+	url = https://gitlab.lrz.de/hpcsoftware/Peano.git
+	branch = exahype
