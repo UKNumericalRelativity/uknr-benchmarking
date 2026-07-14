@@ -15,4 +15,4 @@
 [submodule "codes/ExaGRyPE/Peano"]
 	path = codes/ExaGRyPE/Peano
 	url = https://gitlab.lrz.de/hpcsoftware/Peano.git
-	branch = exahype
+	branch = applications-ccz4
