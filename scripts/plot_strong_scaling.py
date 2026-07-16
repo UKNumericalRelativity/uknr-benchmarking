@@ -159,6 +159,8 @@ CODE_CONFIGS: Dict[str, Dict[str, object]] = {
         "systems": {
             "COSMA8": {
                 "x_label": "Number of COSMA8 cores",
+                "resources_per_node": 128,
+                "evolution_time": 0.107421875,
                 "collector": lambda: collect_bam_times(
                     REPO_ROOT / "codes" / "BAM" / "COSMA8" / "outputs",
                     [128, 256, 512, 1024, 2048],
@@ -170,6 +172,8 @@ CODE_CONFIGS: Dict[str, Dict[str, object]] = {
         "systems": {
             "COSMA8": {
                 "x_label": "Number of COSMA8 cores",
+                "resources_per_node": 128,
+                "evolution_time": 1.6,
                 "collector": lambda: collect_pattern_times(
                     REPO_ROOT / "codes" / "MHDuet" / "COSMA8" / "submit",
                     [32, 64, 128, 256, 512, 1024],
@@ -180,6 +184,8 @@ CODE_CONFIGS: Dict[str, Dict[str, object]] = {
             },
             "Tursa": {
                 "x_label": "Number of GPUs",
+                "resources_per_node": 4,
+                "evolution_time": 1.6,
                 "collector": lambda: collect_pattern_times(
                     REPO_ROOT / "codes" / "MHDuet" / "Tursa" / "submit",
                     [1, 2, 4, 8, 16, 32],
@@ -194,6 +200,8 @@ CODE_CONFIGS: Dict[str, Dict[str, object]] = {
         "systems": {
             "COSMA8": {
                 "x_label": "Number of COSMA8 cores",
+                "resources_per_node": 128,
+                "evolution_time": 0.8,
                 "collector": lambda: collect_pattern_times(
                     REPO_ROOT / "codes" / "GRTeclyn" / "COSMA8" / "submit",
                     [32, 64, 128, 256, 512, 1024],
@@ -204,6 +212,8 @@ CODE_CONFIGS: Dict[str, Dict[str, object]] = {
             },
             "Tursa": {
                 "x_label": "Number of GPUs",
+                "resources_per_node": 4,
+                "evolution_time": 0.8,
                 "collector": lambda: collect_pattern_times(
                     REPO_ROOT / "codes" / "GRTeclyn" / "Tursa" / "submit",
                     [1, 2, 4, 8, 16, 32],
@@ -218,6 +228,8 @@ CODE_CONFIGS: Dict[str, Dict[str, object]] = {
         "systems": {
             "COSMA8": {
                 "x_label": "Number of COSMA8 cores",
+                "resources_per_node": 128,
+                "evolution_time": 0.4,
                 "collector": lambda: collect_pattern_times(
                     REPO_ROOT / "codes" / "ETK" / "COSMA8" / "submit",
                     [32, 64, 128, 256, 512, 1024],
@@ -228,6 +240,8 @@ CODE_CONFIGS: Dict[str, Dict[str, object]] = {
             },
             "Tursa": {
                 "x_label": "Number of GPUs",
+                "resources_per_node": 4,
+                "evolution_time": 256 / 288,
                 "collector": lambda: collect_pattern_times(
                     REPO_ROOT / "codes" / "ETK" / "Tursa" / "submit",
                     [1, 2, 4, 8, 16, 32],
@@ -254,13 +268,25 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     parser.add_argument(
         "--system",
         required=True,
-        help="System name, e.g. COSMA8 or Tursa.",
+        help="System name, e.g. COSMA8 or Tursa, or combined for both systems.",
+    )
+    parser.add_argument(
+        "--alignment-multiplier",
+        type=float,
+        default=1.0,
+        help=(
+            "Multiply COSMA8 node counts in combined plots to align the "
+            "horizontal axis with Tursa (default: 1)."
+        ),
     )
     parser.add_argument(
         "--scale",
         choices=["normalized", "actual"],
         default="normalized",
-        help="Plot normalized walltime or actual walltime in seconds.",
+        help=(
+            "Plot walltime per unit of evolution time or actual walltime "
+            "in seconds."
+        ),
     )
     parser.add_argument(
         "--save",
@@ -276,59 +302,141 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     args = parser.parse_args(argv)
 
     valid_systems = sorted(CODE_CONFIGS[args.code]["systems"].keys())
-    if args.system not in valid_systems:
+    allowed_systems = valid_systems + (
+        ["combined"] if len(valid_systems) > 1 else []
+    )
+    if args.system not in allowed_systems:
         parser.error(
-            f"system must be one of {', '.join(valid_systems)} for code {args.code}"
+            f"system must be one of {', '.join(allowed_systems)} "
+            f"for code {args.code}"
         )
+    if args.alignment_multiplier <= 0:
+        parser.error("alignment-multiplier must be greater than zero")
 
     return args
 
 
 def main(argv: Sequence[str] | None = None) -> None:
     args = parse_args(argv)
-    code_config = CODE_CONFIGS[args.code]
-    system_config = code_config["systems"][args.system]
-    times_by_resource = system_config["collector"]()
-    x_values = sorted(times_by_resource.keys())
-    mean_times = [mean(times_by_resource[value]) for value in x_values]
-    baseline = mean_times[0]
+    systems = CODE_CONFIGS[args.code]["systems"]
 
-    if args.scale == "normalized":
-        plot_times = [time / baseline for time in mean_times]
-        ideal_times = compute_scaling_line(x_values, 1.0)
-        y_label = "Normalized walltime"
+    if args.system == "combined":
+        selected_systems = list(systems.items())
+        x_label = (
+            "Number of nodes"
+            if args.alignment_multiplier == 1
+            else "Number of resources"
+        )
     else:
-        plot_times = mean_times
-        ideal_times = compute_scaling_line(x_values, baseline)
-        y_label = "Walltime (s)"
-
-    efficiencies = [ideal / actual for ideal, actual in zip(ideal_times, plot_times)]
+        selected_systems = [(args.system, systems[args.system])]
+        x_label = systems[args.system]["x_label"]
 
     fig, ax_left = plt.subplots(figsize=(7, 5))
-    ax_left.loglog(x_values, plot_times, marker="o", label="Measured walltime", color="tab:blue")
-    ax_left.loglog(x_values, ideal_times, linestyle="--", label="Ideal scaling walltime", color="tab:orange")
-    ax_left.set_xticks(x_values)
-    ax_left.set_xticklabels([str(value) for value in x_values])
-    ax_left.set_xlabel(system_config["x_label"])
-    ax_left.set_ylabel(y_label, color="tab:blue")
+    ax_right = ax_left.twinx()
+    node_ticks: set[float] = set()
+
+    colours = {
+        "COSMA8": "tab:blue",
+        "Tursa": "tab:red",
+    }
+
+    for system_name, system_config in selected_systems:
+        times_by_resource = system_config["collector"]()
+        resources = sorted(times_by_resource.keys())
+        mean_times = [mean(times_by_resource[value]) for value in resources]
+        baseline = mean_times[0]
+
+        if args.system == "combined":
+            x_values = [
+                (
+                    value / system_config["resources_per_node"]
+                    * (args.alignment_multiplier if system_name == "COSMA8" else 1)
+                )
+                for value in resources
+            ]
+            node_ticks.update(x_values)
+        else:
+            x_values = resources
+
+        if args.scale == "normalized":
+            evolution_time = float(system_config["evolution_time"])
+            plot_times = [time / evolution_time for time in mean_times]
+            ideal_times = compute_scaling_line(x_values, plot_times[0])
+            y_label = "Walltime per unit evolution time (s/M)"
+        else:
+            plot_times = mean_times
+            ideal_times = compute_scaling_line(x_values, plot_times[0])
+            y_label = "Walltime (s)"
+
+        efficiencies = [
+            ideal / actual for ideal, actual in zip(ideal_times, plot_times)
+        ]
+        colour = colours.get(system_name, "tab:blue")
+        label_prefix = f"{system_name} " if args.system == "combined" else ""
+
+        ax_left.loglog(
+            x_values,
+            plot_times,
+            marker="o",
+            label=f"{label_prefix}measured walltime",
+            color=colour,
+        )
+        ax_left.loglog(
+            x_values,
+            ideal_times,
+            linestyle="--",
+            label=f"{label_prefix}ideal scaling walltime",
+            color=colour,
+        )
+        ax_right.plot(
+            x_values,
+            efficiencies,
+            color=colour,
+            marker="s",
+            linestyle=":",
+            label=f"{label_prefix}scaling efficiency",
+        )
+
+    if args.system == "combined":
+        x_ticks = sorted(node_ticks)
+    else:
+        x_ticks = sorted(times_by_resource.keys())
+
+    ax_left.set_xticks(x_ticks)
+    ax_left.set_xticklabels([f"{value:g}" for value in x_ticks])
+    ax_left.set_xlabel(x_label)
+    ax_left.set_ylabel(y_label)
     ax_left.set_title(f"{args.code} Strong Scaling ({args.system})")
     ax_left.xaxis.set_minor_locator(NullLocator())
     ax_left.grid(True, which="major", linestyle=":", linewidth=0.6)
     ax_left.grid(True, which="minor", axis="y", linestyle=":", linewidth=0.4)
 
-    ax_right = ax_left.twinx()
-    ax_right.plot(x_values, efficiencies, color="tab:green", marker="s", label="Scaling efficiency")
-    ax_right.set_ylabel("Strong scaling efficiency (%)", color="tab:green")
+    ax_right.set_ylabel("Strong scaling efficiency (%)")
     ax_right.yaxis.set_major_formatter(PercentFormatter(xmax=1.0))
 
     left_handles, left_labels = ax_left.get_legend_handles_labels()
     right_handles, right_labels = ax_right.get_legend_handles_labels()
-    ax_left.legend(left_handles + right_handles, left_labels + right_labels, loc="best")
+    ax_left.legend(
+        left_handles + right_handles,
+        left_labels + right_labels,
+        loc="best",
+    )
 
     fig.tight_layout()
     if args.save:
-        output_parts = [args.code.lower(), "strong", "scaling", args.system.lower(), args.scale]
-        output_path = REPO_ROOT / "codes" / args.code / ("_".join(output_parts) + f".{args.format}")
+        output_parts = [
+            args.code.lower(),
+            "strong",
+            "scaling",
+            args.system.lower(),
+            args.scale,
+        ]
+        output_path = (
+            REPO_ROOT
+            / "codes"
+            / args.code
+            / ("_".join(output_parts) + f".{args.format}")
+        )
         fig.savefig(output_path, dpi=300)
     else:
         plt.show()
