@@ -305,20 +305,20 @@ def main(argv: Sequence[str] | None = None) -> None:
     efficiencies = [ideal / actual for ideal, actual in zip(ideal_times, plot_times)]
 
     fig, ax_left = plt.subplots(figsize=(7, 5))
-    ax_left.loglog(x_values, plot_times, marker="o", label="Measured")
-    ax_left.loglog(x_values, ideal_times, linestyle="--", label="Ideal scaling")
+    ax_left.loglog(x_values, plot_times, marker="o", label="Measured walltime", color="tab:blue")
+    ax_left.loglog(x_values, ideal_times, linestyle="--", label="Ideal scaling walltime", color="tab:orange")
     ax_left.set_xticks(x_values)
     ax_left.set_xticklabels([str(value) for value in x_values])
     ax_left.set_xlabel(system_config["x_label"])
-    ax_left.set_ylabel(y_label)
+    ax_left.set_ylabel(y_label, color="tab:blue")
     ax_left.set_title(f"{args.code} Strong Scaling ({args.system})")
     ax_left.xaxis.set_minor_locator(NullLocator())
     ax_left.grid(True, which="major", linestyle=":", linewidth=0.6)
     ax_left.grid(True, which="minor", axis="y", linestyle=":", linewidth=0.4)
 
     ax_right = ax_left.twinx()
-    ax_right.plot(x_values, efficiencies, color="tab:green", marker="s", label="Efficiency")
-    ax_right.set_ylabel("Strong scaling efficiency (%)")
+    ax_right.plot(x_values, efficiencies, color="tab:green", marker="s", label="Scaling efficiency")
+    ax_right.set_ylabel("Strong scaling efficiency (%)", color="tab:green")
     ax_right.yaxis.set_major_formatter(PercentFormatter(xmax=1.0))
 
     left_handles, left_labels = ax_left.get_legend_handles_labels()
