@@ -3,6 +3,13 @@ test*
 # plots
 *.png
 *.pdf
+*.svg
+
+# Data files
+*.dat
+
+# Temporary files
+__pycache__
 
 # Cactus/ETK
 Cactus*
