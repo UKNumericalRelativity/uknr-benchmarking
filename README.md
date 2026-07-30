@@ -71,11 +71,10 @@ configuration was created using the following procedure:
 5. Iterate on the grid spacing/resolution until a configuration is obtained that
    fills most of the available RAM/total GPU memory on a single node. This is
    usually in the range $M/128 \geq \Delta x_{\text{finest}} \geq M/160$.
-
-   > [!IMPORTANT]
-   > For configurations that will be used on both Tursa and COSMA8, since the
-   > total GPU memory on Tursa (4×80GB = 320GB) is smaller than the total RAM on
-   > COSMA8 (1TB), do this step on Tursa rather than COSMA8.
+> [!IMPORTANT]
+> For configurations that will be used on both Tursa and COSMA8, since the
+> total GPU memory on Tursa (4×80GB = 320GB) is smaller than the total RAM on
+> COSMA8 (1TB), do this step on Tursa rather than COSMA8.
 
 ## Repository structure
 
@@ -114,13 +113,13 @@ tests:
    ```bash
    git clone --recurse-submodules https://github.com/UKNumericalRelativity/uknr-benchmarking
    ```
-   > [!NOTE]
-   > The repositories for MHDuet and BAM are private so it is not possible to
-   > reproduce these without access. Please contact the following to request
-   > access:
-   > * BAM: Mark Hannam, Cardiff University
-   > * MHDuet: Miguel Bezares, University of Nottingham
-1. Change into the relevant code and system directory:
+  > [!NOTE]
+  > The repositories for MHDuet and BAM are private so it is not possible to
+  > reproduce these without access. Please contact the following to request
+  > access:
+  > * BAM: Mark Hannam, Cardiff University
+  > * MHDuet: Miguel Bezares, University of Nottingham
+3. Change into the relevant code and system directory:
    ```bash
    cd uknr-benchmarking/codes/<code>/<system>
    ```
@@ -141,16 +140,17 @@ tests:
    ```bash
    sbatch --account=<my allocation> submit-<config>.slurm
    ```
-   > [!NOTE]
-   > Each script (except for ExaGRyPE) is an array of 3 identical jobs.
-1. The jobs stdout/stderr will be written to the usual `slurm-<jobid>.out` file
-   in the `submit` subdirectory and then a symbolic link to it will be created
-   of the form `<job config>_<array index>.out`. The job configs are in one of
-   the form:
-   * `n<num MPI processes>` for pure MPI jobs e.g. `n512`
-   * `n<num MPI proccesses>c<num OpenMP threads>` for hybrid MPI/OpenMP jobs
-     e.g. `n128c4`
-   * `N<num nodes>g<num GPUs per node>` for GPU-accelerated configs e.g. `N4g4`
+> [!NOTE]
+> Each script (except for ExaGRyPE) is an array of 3 identical jobs.
+
+The jobs stdout/stderr will be written to the usual `slurm-<jobid>.out` file
+in the `submit` subdirectory and then a symbolic link to it will be created
+of the form `<job config>_<array index>.out`. The job configs are in one of
+the form:
+* `n<num MPI processes>` for pure MPI jobs e.g. `n512`
+* `n<num MPI proccesses>c<num OpenMP threads>` for hybrid MPI/OpenMP jobs
+  e.g. `n128c4`
+* `N<num nodes>g<num GPUs per node>` for GPU-accelerated configs e.g. `N4g4`
 
 ## Scripts
 
